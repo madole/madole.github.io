@@ -26,4 +26,4 @@ so they wouldn't have to make the mistakes I did.
 I've included this presentation in a PDF format below so take a look, have a play about and leave me some feedback so
 I can make this as useful as possible for others just starting out with these tools too
 
-[Compass SASS - Get started with the awesome](../assets/pdfs/compass-sass-getting-started.pdf)
+[Compass SASS - Get started with the awesome](/assets/pdfs/compass-sass-getting-started.pdf)
