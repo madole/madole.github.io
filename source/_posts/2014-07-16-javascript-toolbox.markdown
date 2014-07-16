@@ -8,7 +8,7 @@ categories: ['Javascript', 'MongoDb', 'Webstorm', Sublime Text', 'Atom', 'GitHub
 
 I write javascript most days and have done so for a few years now. I still find new tools, websites, frameworks and 
 ways to do things. I thought I'd write them down and get the list online as it may help other people discover some 
-useful tools of the trade.
+useful tools of the trade. If you have any other suggestions, let me know in the comments section. 
 
 ##IDEs and editors
 
@@ -101,6 +101,7 @@ blog post about this a few weeks ago
 These are only micro-performance improvements, but in work, I write 
 javascript to run in a browser on embedded devices with limited resources so every little helps! 
 
+[JSPerf](http://jsperf.com)
 
 ##Podcasts
 
