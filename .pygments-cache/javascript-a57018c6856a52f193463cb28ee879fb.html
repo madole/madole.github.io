@@ -1,0 +1,25 @@
+<div class="highlight"><pre><span class="kd">function</span> <span class="nx">asyncFunction</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">defer</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">Deferred</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+        <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;http://getPerson.com/?gender=female&#39;</span>
+        <span class="nx">context</span><span class="o">:</span> <span class="k">this</span>
+    <span class="p">}).</span><span class="nx">done</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">returnObj</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">defer</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">returnObj</span><span class="p">);</span>
+    <span class="p">}).</span><span class="nx">fail</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="nx">defer</span><span class="p">.</span><span class="nx">reject</span><span class="p">();</span>
+    <span class="p">});</span>
+    <span class="k">return</span> <span class="nx">defer</span><span class="p">.</span><span class="nx">promise</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">myFunction</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">personPromise</span> <span class="o">=</span> <span class="nx">asyncFunction</span><span class="p">();</span>
+    <span class="nx">personPromise</span><span class="p">.</span><span class="nx">done</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">returnObj</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//executes when promise is resolved</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">returnObj</span><span class="p">.</span><span class="nx">name</span><span class="p">)</span>
+        <span class="p">});</span>
+    <span class="nx">personPromise</span><span class="p">.</span><span class="nx">fail</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="c1">//executes when promise is rejected</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Failed to get the person&#39;</span><span class="p">);</span>
+        <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="nx">myFunction</span><span class="p">();</span>
+</pre></div>
