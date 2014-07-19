@@ -1,0 +1,23 @@
+<div class="highlight"><pre><span class="kd">function</span> <span class="nx">Person</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">species</span> <span class="o">=</span> <span class="s1">&#39;human&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">speak</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sleep</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Snore...zzz&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+<span class="kd">var</span> <span class="nx">andrew</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">andrew</span><span class="p">.</span><span class="nx">species</span><span class="p">);</span> <span class="c1">//human</span>
+<span class="nx">andrew</span><span class="p">.</span><span class="nx">speak</span><span class="p">();</span> <span class="c1">//Hello</span>
+<span class="nx">andrew</span><span class="p">.</span><span class="nx">sleep</span><span class="p">();</span> <span class="c1">//Snore...zzz</span>
+
+<span class="kd">var</span> <span class="nx">andy</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span> 
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">andy</span><span class="p">.</span><span class="nx">species</span><span class="p">);</span> <span class="c1">//undefined</span>
+<span class="nx">andy</span><span class="p">.</span><span class="nx">speak</span><span class="p">();</span> <span class="c1">//Hello</span>
+<span class="nx">andy</span><span class="p">.</span><span class="nx">sleep</span><span class="p">();</span> <span class="c1">//Snore...zzz</span>
+</pre></div>

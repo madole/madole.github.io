@@ -1,0 +1,10 @@
+<div class="highlight"><pre><span class="nx">openMyFile</span><span class="p">();</span>
+<span class="k">try</span> <span class="p">{</span>
+    <span class="c1">//tie up the resource</span>
+    <span class="nx">writeTofile</span><span class="p">();</span>
+<span class="p">}</span> 
+<span class="k">finally</span> <span class="p">{</span>
+    <span class="c1">//release the resource</span>
+    <span class="nx">closeMyFile</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>

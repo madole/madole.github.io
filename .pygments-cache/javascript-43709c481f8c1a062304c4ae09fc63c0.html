@@ -1,0 +1,13 @@
+<div class="highlight"><pre><span class="k">try</span> <span class="p">{</span>
+    <span class="c1">//do stuff</span>
+    <span class="nx">myRoutine</span><span class="p">();</span> <span class="c1">//may throw three exceptions</span>
+<span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="k">if</span> <span class="nx">e</span> <span class="k">instanceof</span> <span class="nx">TypeError</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//handle type errors</span>
+<span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="k">if</span> <span class="nx">e</span> <span class="k">instanceof</span> <span class="nx">RangeError</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//handle range errors</span>
+<span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="k">if</span> <span class="nx">e</span> <span class="k">instanceof</span> <span class="nx">EvalError</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//handle eval errors</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">logMyErrors</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>

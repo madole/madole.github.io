@@ -80,12 +80,20 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/sublime-text/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/sublime-text/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/webstorm/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/webstorm/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/about/index.html" afterPath="$PROJECT_DIR$/public/about/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/2014/07/13/compass-sass/index.html" afterPath="$PROJECT_DIR$/public/blog/2014/07/13/compass-sass/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/2014/07/16/javascript-toolbox/index.html" afterPath="$PROJECT_DIR$/public/blog/2014/07/16/javascript-toolbox/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/archives/index.html" afterPath="$PROJECT_DIR$/public/blog/archives/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/atom/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/atom/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/bootstrap/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/bootstrap/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/compass/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/compass/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/css/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/css/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/github/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/github/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/javascript/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/javascript/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/mongodb/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/mongodb/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/ruby/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/ruby/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/sass/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/sass/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/scout/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/scout/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/sublime-text/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/sublime-text/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/webstorm/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/webstorm/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
@@ -112,11 +120,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_config.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
+      <file leaf-file-name="navigation.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_includes/custom/navigation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1635">
-              <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
+              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_includes/custom/asides/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.markdown" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/about/index.markdown">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -135,7 +166,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/blog/archives/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="360">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -148,7 +179,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="525">
+            <state vertical-scroll-proportion="-15.555555" vertical-offset="0" max-vertical-offset="525">
               <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
               <folding />
             </state>
@@ -158,8 +189,8 @@
       <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Rakefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1756" max-vertical-offset="6180">
-              <caret line="118" column="26" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="5475" max-vertical-offset="6150">
+              <caret line="362" column="7" selection-start-line="362" selection-start-column="7" selection-end-line="362" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -171,18 +202,21 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="2745">
-              <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+            <state vertical-scroll-proportion="-53.333332" vertical-offset="0" max-vertical-offset="2715">
+              <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
+      <file leaf-file-name="2014-07-19-javascript-interview-questions.markdown" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24812031" vertical-offset="0" max-vertical-offset="665">
-              <caret line="11" column="87" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="87" />
+            <state vertical-scroll-proportion="0.8820755" vertical-offset="5214" max-vertical-offset="5895">
+              <caret line="385" column="0" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -223,7 +257,7 @@
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown" />
-        <option value="$PROJECT_DIR$/source/_includes/head.html" />
+        <option value="$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown" />
       </list>
     </option>
   </component>
@@ -321,11 +355,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
+              <option name="myItemId" value="_deploy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -443,6 +473,38 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5475" max-vertical-offset="6150">
+          <caret line="362" column="7" selection-start-line="362" selection-start-column="7" selection-end-line="362" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_includes/google_analytics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="300">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_includes/custom/navigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/custom/asides/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
@@ -748,15 +810,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/blog/archives/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/default.html">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="689">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -766,16 +820,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="105">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5475" max-vertical-offset="6150">
+          <caret line="362" column="7" selection-start-line="362" selection-start-column="7" selection-end-line="362" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -785,48 +831,22 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="525">
+        <state vertical-scroll-proportion="-15.555555" vertical-offset="0" max-vertical-offset="525">
           <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/stylesheets/screen.css">
+    <entry file="file://$PROJECT_DIR$/source/blog/archives/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="678">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1756" max-vertical-offset="6180">
-          <caret line="118" column="26" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_deploy/blog/2014/07/16/javascript-toolbox/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6510">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1635">
-          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="525">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -836,16 +856,19 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="2745">
-          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+        <state vertical-scroll-proportion="-53.333332" vertical-offset="0" max-vertical-offset="2715">
+          <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
+    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24812031" vertical-offset="0" max-vertical-offset="665">
-          <caret line="11" column="87" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="87" />
+        <state vertical-scroll-proportion="0.8820755" vertical-offset="5214" max-vertical-offset="5895">
+          <caret line="385" column="0" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
           <folding />
         </state>
       </provider>

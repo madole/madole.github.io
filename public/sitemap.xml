@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://madole.github.io/blog/2014/07/19/javascript-interview-questions/</loc>
+    <lastmod>2014-07-19T18:29:09+10:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://madole.github.io/blog/2014/07/16/javascript-toolbox/</loc>
     <lastmod>2014-07-16T19:05:22+10:00</lastmod>
     <priority>0.8</priority>
@@ -17,33 +23,21 @@
   
   <url>
     <loc>http://madole.github.io/blog/archives/</loc>
-<<<<<<< Updated upstream
-    <lastmod>2014-07-16T20:05:00+10:00</lastmod>
-=======
-    <lastmod>2014-07-17T00:28:26+10:00</lastmod>
->>>>>>> Stashed changes
+    <lastmod>2014-07-19T22:35:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://madole.github.io/</loc>
-<<<<<<< Updated upstream
-    <lastmod>2014-07-16T20:05:00+10:00</lastmod>
-=======
-    <lastmod>2014-07-17T00:28:26+10:00</lastmod>
->>>>>>> Stashed changes
+    <lastmod>2014-07-19T22:35:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://madole.github.io/about/</loc>
-<<<<<<< Updated upstream
-    <lastmod>2014-07-16T20:05:00+10:00</lastmod>
-=======
-    <lastmod>2014-07-17T00:28:26+10:00</lastmod>
->>>>>>> Stashed changes
+    <lastmod>2014-07-19T22:35:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
