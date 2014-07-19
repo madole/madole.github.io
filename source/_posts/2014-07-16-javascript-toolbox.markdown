@@ -3,12 +3,18 @@ layout: post
 title: "Javascript Toolbox"
 date: 2014-07-16 19:05:22 +1000
 comments: true
-categories: ['Javascript', 'MongoDb', 'Webstorm', Sublime Text', 'Atom', 'GitHub']
+categories: ['Javascript', 'MongoDb', 'Webstorm', 'Sublime Text', 'Atom', 'GitHub']
+keywords: "Javascript, MongoDb, Webstorm, Sublime Text, Atom, GitHub"
+description: 'A post detailing a Javascript engineers toolbox' 
 ---
 
-I write javascript most days and have done so for a few years now. I still find new tools, websites, frameworks and 
+I write Javascript most days and have done so for a few years now. I still find new tools, websites, frameworks and 
 ways to do things. I thought I'd write them down and get the list online as it may help other people discover some 
+<<<<<<< Updated upstream
 useful tools of the trade. If you have any other suggestions, let me know in the comments section. 
+=======
+useful tools of the trade. If you have any suggestions, stick them in the comments section.
+>>>>>>> Stashed changes
 
 ##IDEs and editors
 
@@ -16,7 +22,7 @@ useful tools of the trade. If you have any other suggestions, let me know in the
 
 
 Your go to text editor. When you download it fresh, it won't feel like much but once you load it full of plugins 
-that you can find at [Package Control](https://sublime.wbond.net/). It becomes a great tool for knocking up javascript. I'll do another post on my sublime 2
+that you can find at [Package Control](https://sublime.wbond.net/). It becomes a great tool for knocking up Javascript. I'll do another post on my sublime 2
  plugins later.
 
 [Sublime Text 2](http://www.sublimetext.com/)
@@ -34,7 +40,7 @@ JSGutter to run Node.js and jshint my code in real time instead of just on every
 
 I used Webstorm in a project in my previous job, and I'm not sure whether it was my laptop being substandard or Webstorm 
 being a resource hungry beast but it was slow and sluggish for a JS IDE. But, fast forward a year, I'm not sure if it 
-got more efficient or my machine upgrades provide it with the juice it needs but WHOAAA! I'm running its on both Fedora 20 
+got more efficient or my machine upgrades provide it with the juice it needs but WHOAAA! I'm running it on both Fedora 20 
 and OSX with i5 and i7 processors and 16Gb ram in each, it's the tool I was expecting it to be. Fast, great linting, 
 unmatched intellisense. It's a great product. Sometimes you can get the feeling it's got too much on screen but it's 
 just a case of finding the configuration that works for you. It is loaded with keyboard shortcuts so my advice is to 
@@ -54,13 +60,13 @@ suprised to find it written in CoffeeScript. I'm quite happy about this as I've 
 
 [Atom.io](http://atom.io)
 
-##Online JavaScript Playgrounds
+##Online Javascript Playgrounds
 
 ###Jsfiddle.net
 
 
 I like this webapp to test out exactly what happens in a particular scenario that you're not quite sure what way 
-javascript will react. Yesterday, I had a case during a code review I was doing where a setInterval as being assigned 
+Javascript will react. Yesterday, I had a case during a code review I was doing where a setInterval as being assigned 
 to a var and a clearInterval was being called a little later, but a deviation in the code path caused a second 
 setInterval to be assigned to that same var. I had suspected then that the var would only hold reference to the 
 last one and therefore keep the first one ticking on but just wanted to make sure. A few seconds later I confirmed 
@@ -81,7 +87,7 @@ each time. Just write your JS and watch your logs appear  in the console or outp
 
 
 A very clean interface that does much the same as the above two. I get the feeling this is more for mocking up full html 
-pages rather than just knocking out a bit of JavaScript though. Some very interesting demos on the "Picked Pens" section
+pages rather than just knocking out a bit of Javascript though. Some very interesting demos on the "Picked Pens" section
 of the homepage
 
 [Codepen.io](http://codepen.io/)
@@ -97,9 +103,9 @@ of the homepage
 Great website for comparing the performance of different ways to do the same thing. For instance, whether an 
 incrementing for loop is quicker than a decrementing for loop or while loop or a for in loop. My team mate did a 
 blog post about this a few weeks ago 
-([For Loop Performance](http://www.christopherlaughlin.co.uk/2014/06/29/javascript-loop-performance/)). 
+([For Loop Performance](http://www.christopherlaughlin.co.uk/2014/06/29/Javascript-loop-performance/)). 
 These are only micro-performance improvements, but in work, I write 
-javascript to run in a browser on embedded devices with limited resources so every little helps! 
+Javascript to run in a browser on embedded devices with limited resources so every little helps! 
 
 [JSPerf](http://jsperf.com)
 
@@ -112,7 +118,7 @@ javascript to run in a browser on embedded devices with limited resources so eve
 My favorite Javascript podcast. They do weekly shows and have people on who are either working for some of the top 
 Javascript companies or are big contributors to the open source JS community. 
 
-[javascriptjabber.com/](http://javascriptjabber.com/)
+[Javascriptjabber.com/](http://Javascriptjabber.com/)
 
 ###Frontside the podcast
 
@@ -134,7 +140,7 @@ they're starting a NodeDown for the Southern Hemisphere. I'll be checking these 
 ##Meetups
 
 
-I live in Sydney and there are many JavaScript meetups. Just checkout [Meetup.com](http://www.meetup.com/). 
+I live in Sydney and there are many Javascript meetups. Just checkout [Meetup.com](http://www.meetup.com/). 
 I've been meaning to get myself to [SydJS](http://www.sydjs.com/) and the Sydney NodeJs meetups. 
 Someday I'll get there. 
 
@@ -155,7 +161,7 @@ crew are super friendly and always willing to help out if you have any issues wi
 The first Javascript book I ever read. Takes you through all the concepts and topics you need to know about to get 
 on your way to being a great Javascript programmer.
 
-[JavaScript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do)
+[Javascript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do)
 
 ###Clean Code - Robert C. Martin
 

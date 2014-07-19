@@ -4,7 +4,7 @@
   <title><![CDATA[Madole's Ramblings]]></title>
   <link href="http://madole.github.io/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-07-17T00:28:26+10:00</updated>
+  <updated>2014-07-16T20:05:00+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -18,16 +18,16 @@
     <link href="http://madole.github.io/blog/2014/07/16/javascript-toolbox/"/>
     <updated>2014-07-16T19:05:22+10:00</updated>
     <id>http://madole.github.io/blog/2014/07/16/javascript-toolbox</id>
-    <content type="html"><![CDATA[<p>I write Javascript most days and have done so for a few years now. I still find new tools, websites, frameworks and
+    <content type="html"><![CDATA[<p>I write javascript most days and have done so for a few years now. I still find new tools, websites, frameworks and
 ways to do things. I thought I&rsquo;d write them down and get the list online as it may help other people discover some
-useful tools of the trade. If you have any suggestions, stick them in the comments section.</p>
+useful tools of the trade. If you have any other suggestions, let me know in the comments section.</p>
 
 <h2>IDEs and editors</h2>
 
 <h3>Sublime Text 2</h3>
 
 <p>Your go to text editor. When you download it fresh, it won&rsquo;t feel like much but once you load it full of plugins
-that you can find at <a href="https://sublime.wbond.net/">Package Control</a>. It becomes a great tool for knocking up Javascript. I&rsquo;ll do another post on my sublime 2
+that you can find at <a href="https://sublime.wbond.net/">Package Control</a>. It becomes a great tool for knocking up javascript. I&rsquo;ll do another post on my sublime 2
  plugins later.</p>
 
 <p><a href="http://www.sublimetext.com/">Sublime Text 2</a></p>
@@ -43,7 +43,7 @@ JSGutter to run Node.js and jshint my code in real time instead of just on every
 
 <p>I used Webstorm in a project in my previous job, and I&rsquo;m not sure whether it was my laptop being substandard or Webstorm
 being a resource hungry beast but it was slow and sluggish for a JS IDE. But, fast forward a year, I&rsquo;m not sure if it
-got more efficient or my machine upgrades provide it with the juice it needs but WHOAAA! I&rsquo;m running it on both Fedora 20
+got more efficient or my machine upgrades provide it with the juice it needs but WHOAAA! I&rsquo;m running its on both Fedora 20
 and OSX with i5 and i7 processors and 16Gb ram in each, it&rsquo;s the tool I was expecting it to be. Fast, great linting,
 unmatched intellisense. It&rsquo;s a great product. Sometimes you can get the feeling it&rsquo;s got too much on screen but it&rsquo;s
 just a case of finding the configuration that works for you. It is loaded with keyboard shortcuts so my advice is to
@@ -62,12 +62,12 @@ suprised to find it written in CoffeeScript. I&rsquo;m quite happy about this as
 
 <p><a href="http://atom.io">Atom.io</a></p>
 
-<h2>Online Javascript Playgrounds</h2>
+<h2>Online JavaScript Playgrounds</h2>
 
 <h3>Jsfiddle.net</h3>
 
 <p>I like this webapp to test out exactly what happens in a particular scenario that you&rsquo;re not quite sure what way
-Javascript will react. Yesterday, I had a case during a code review I was doing where a setInterval as being assigned
+javascript will react. Yesterday, I had a case during a code review I was doing where a setInterval as being assigned
 to a var and a clearInterval was being called a little later, but a deviation in the code path caused a second
 setInterval to be assigned to that same var. I had suspected then that the var would only hold reference to the
 last one and therefore keep the first one ticking on but just wanted to make sure. A few seconds later I confirmed
@@ -86,7 +86,7 @@ each time. Just write your JS and watch your logs appear  in the console or outp
 <h3>Codepen.io</h3>
 
 <p>A very clean interface that does much the same as the above two. I get the feeling this is more for mocking up full html
-pages rather than just knocking out a bit of Javascript though. Some very interesting demos on the &ldquo;Picked Pens&rdquo; section
+pages rather than just knocking out a bit of JavaScript though. Some very interesting demos on the &ldquo;Picked Pens&rdquo; section
 of the homepage</p>
 
 <p><a href="http://codepen.io/">Codepen.io</a></p>
@@ -98,9 +98,9 @@ of the homepage</p>
 <p>Great website for comparing the performance of different ways to do the same thing. For instance, whether an
 incrementing for loop is quicker than a decrementing for loop or while loop or a for in loop. My team mate did a
 blog post about this a few weeks ago
-(<a href="http://www.christopherlaughlin.co.uk/2014/06/29/Javascript-loop-performance/">For Loop Performance</a>).
+(<a href="http://www.christopherlaughlin.co.uk/2014/06/29/javascript-loop-performance/">For Loop Performance</a>).
 These are only micro-performance improvements, but in work, I write
-Javascript to run in a browser on embedded devices with limited resources so every little helps!</p>
+javascript to run in a browser on embedded devices with limited resources so every little helps!</p>
 
 <p><a href="http://jsperf.com">JSPerf</a></p>
 
@@ -111,7 +111,7 @@ Javascript to run in a browser on embedded devices with limited resources so eve
 <p>My favorite Javascript podcast. They do weekly shows and have people on who are either working for some of the top
 Javascript companies or are big contributors to the open source JS community.</p>
 
-<p><a href="http://Javascriptjabber.com/">Javascriptjabber.com/</a></p>
+<p><a href="http://javascriptjabber.com/">javascriptjabber.com/</a></p>
 
 <h3>Frontside the podcast</h3>
 
@@ -129,7 +129,7 @@ they&rsquo;re starting a NodeDown for the Southern Hemisphere. I&rsquo;ll be che
 
 <h2>Meetups</h2>
 
-<p>I live in Sydney and there are many Javascript meetups. Just checkout <a href="http://www.meetup.com/">Meetup.com</a>.
+<p>I live in Sydney and there are many JavaScript meetups. Just checkout <a href="http://www.meetup.com/">Meetup.com</a>.
 I&rsquo;ve been meaning to get myself to <a href="http://www.sydjs.com/">SydJS</a> and the Sydney NodeJs meetups.
 Someday I&rsquo;ll get there.</p>
 
@@ -148,7 +148,7 @@ crew are super friendly and always willing to help out if you have any issues wi
 <p>The first Javascript book I ever read. Takes you through all the concepts and topics you need to know about to get
 on your way to being a great Javascript programmer.</p>
 
-<p><a href="http://shop.oreilly.com/product/9780596517748.do">Javascript: The Good Parts</a></p>
+<p><a href="http://shop.oreilly.com/product/9780596517748.do">JavaScript: The Good Parts</a></p>
 
 <h3>Clean Code &ndash; Robert C. Martin</h3>
 

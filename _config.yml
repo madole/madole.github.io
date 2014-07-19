@@ -7,7 +7,9 @@ title: Madole's Ramblings
 subtitle: Things I've learned about code.
 author: Andrew McDowell
 simple_search: https://www.google.com/search
-description:
+
+description: 'Software Engineering blog focusing on Javascript, Nodejs and web development'
+keywords: "Javascript, Code, NodeJs, web, development, software"
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
