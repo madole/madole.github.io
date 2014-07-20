@@ -407,7 +407,17 @@ console.log(returnTrueIfLessThanTen(29)); //false
 
 ####Using bitwise operators in place of Math.floor 
 
-You can have a play with these and see them in action at [JSFiddle.net](http://jsfiddle.net/madole404/g34mL/)
+You can have a play with these and see them in action at [JSFiddle](http://jsfiddle.net/madole404/g34mL/)
+
+#####Why use them?
+ They are marginally faster than Math.floor as we can see from this [JSPerf](http://jsperf.com/math-floor-vs-math-round-vs-parseint/70)
+ 
+#####Why not to use them?
+ -  They reduce clarity in your coding
+ -  They only work 32-bit signed integers
+ -  You might not get the outcome you are expecting
+    -   Math.floor(NaN) === NaN
+    -   (NaN >> 0) === 0
 
 ```javascript
 var result = 84.3/12.5;

@@ -4,7 +4,7 @@
   <title><![CDATA[Madole's Ramblings]]></title>
   <link href="http://madole.github.io/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-07-20T16:14:50+10:00</updated>
+  <updated>2014-07-20T16:45:04+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -637,7 +637,26 @@ function will get executed.</p>
 
 <h4>Using bitwise operators in place of Math.floor</h4>
 
-<p>You can have a play with these and see them in action at <a href="http://jsfiddle.net/madole404/g34mL/">JSFiddle.net</a></p>
+<p>You can have a play with these and see them in action at <a href="http://jsfiddle.net/madole404/g34mL/">JSFiddle</a></p>
+
+<h5>Why use them?</h5>
+
+<p> They are marginally faster than Math.floor as we can see from this <a href="http://jsperf.com/math-floor-vs-math-round-vs-parseint/70">JSPerf</a></p>
+
+<h5>Why not to use them?</h5>
+
+<ul>
+<li>They reduce clarity in your coding</li>
+<li>They only work 32-bit signed integers</li>
+<li>You might not get the outcome you are expecting
+
+<ul>
+<li>Math.floor(NaN) === NaN</li>
+<li>(NaN >> 0) === 0</li>
+</ul>
+</li>
+</ul>
+
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
