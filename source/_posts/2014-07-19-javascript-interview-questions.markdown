@@ -388,7 +388,7 @@ These are useful when you are making calls out to a webservice for data.
 
 ##Some Javascript shortcuts/hacks
 
-####Ternary operators 
+###Ternary operators 
 
 These are great for situations where you want to assign a var based on a condition.
 
@@ -405,7 +405,7 @@ console.log(returnTrueIfLessThanTen(9)); //true
 console.log(returnTrueIfLessThanTen(29)); //false
 ```
 
-####Using bitwise operators in place of Math.floor 
+###Using bitwise operators in place of Math.floor 
 
 You can have a play with these and see them in action at [JSFiddle](http://jsfiddle.net/madole404/g34mL/)
 
