@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javascript | Madole's Ramblings]]></title>
   <link href="http://madole.github.io/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-07-19T22:35:53+10:00</updated>
+  <updated>2014-07-20T16:07:35+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -511,6 +511,59 @@ gets resolved after the ajax request returns, the done function will get execute
 function will get executed.</p>
 
 <p>These are useful when you are making calls out to a webservice for data.</p>
+
+<h2>Some Javascript shortcuts/hacks</h2>
+
+<h4>Ternary operators</h4>
+
+<p>These are great for situations where you want to assign a var based on a condition.</p>
+
+<p>test ? expression1 : expression2</p>
+
+<p>You can play with these here at <a href="http://jsfiddle.net/madole404/KdnJ7/">JSFiddle</a></p>
+
+<p>```javascript
+function returnTrueIfLessThanTen(checkVal) {</p>
+
+<pre><code>var returnVal = (checkVal &lt; 10) ? true : false;
+return returnVal;
+</code></pre>
+
+<p>}
+console.log(returnTrueIfLessThanTen(9)); //true
+console.log(returnTrueIfLessThanTen(29)); //false
+```</p>
+
+<h4>Using bitwise operators in place of Math.floor</h4>
+
+<p>You can have a play with these and see them in action at <a href="http://jsfiddle.net/madole404/g34mL/">JSFiddle.net</a></p>
+
+<p>```javascript
+var result = 84.3/12.5;
+console.log(result); //6.744</p>
+
+<p>var round = Math.round(84.3/12.5);
+console.log(round) //7</p>
+
+<p>var floor = Math.floor(84.3/12.5);
+console.log(floor) //6</p>
+
+<p>var doubleNeg = ~~(84.3/12.5);
+console.log(doubleNeg) //6</p>
+
+<p>var bitwiseRight = (84.3/12.5) >>0;
+console.log(bitwiseRight) //6</p>
+
+<p>var bitwiseLeft = (84.3/12.5) &lt;&lt; 0;
+console.log(bitwiseLeft) //6</p>
+
+<p>var bitwiseOr = (84.3/12.5) &lt;&lt; 0;
+console.log(bitwiseOr); //6</p>
+
+<p>var parseInteger = parseInt(84.3/12.5);
+console.log(parseInteger) //6</p>
+
+<p>```</p>
 ]]></content>
   </entry>
   
@@ -521,11 +574,13 @@ function will get executed.</p>
     <id>http://madole.github.io/blog/2014/07/16/javascript-toolbox</id>
     <content type="html"><![CDATA[<p>I write Javascript most days and have done so for a few years now. I still find new tools, websites, frameworks and
 ways to do things. I thought I&rsquo;d write them down and get the list online as it may help other people discover some
-<<<<<<< Updated upstream
-useful tools of the trade. If you have any other suggestions, let me know in the comments section.</p>
-=======
-useful tools of the trade. If you have any suggestions, stick them in the comments section.</p>
->>>>>>> Stashed changes
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream</p>
+
+<h1>useful tools of the trade. If you have any other suggestions, let me know in the comments section. </h1>
+
+<p>useful tools of the trade. If you have any suggestions, stick them in the comments section.</p>
+
+<blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>Stashed changes</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote>
 
 <h2>IDEs and editors</h2>
 

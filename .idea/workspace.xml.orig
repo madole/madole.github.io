@@ -1,84 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48f2680d-0ca4-43ba-aac6-badfd2b79bf0" name="Default" comment="">
-<<<<<<< Updated upstream
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/46c4f64f40e6badf7c44823d56fc6194965582bb/_base.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/46c4f64f40e6badf7c44823d56fc6194965582bb/_partials.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/46c4f64f40e6badf7c44823d56fc6194965582bb/screen.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dbfb6a5358f874dd2132c3be7bba5a96949c7c3/_layout.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dbfb6a5358f874dd2132c3be7bba5a96949c7c3/_solarized.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dbfb6a5358f874dd2132c3be7bba5a96949c7c3/_theme.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dbfb6a5358f874dd2132c3be7bba5a96949c7c3/_typography.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dbfb6a5358f874dd2132c3be7bba5a96949c7c3/_utilities.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_archive.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_blog.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_footer.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_header.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_navigation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_sharing.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_sidebar.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_syntax.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/c551f7312ade3e76ae2a58eccef19867dcda2a24/screen.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/db21e486f947d7855e19b97ca4d27f8438cae9ec/_plugins.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/dee6bd536aa22152300d41396745d482f8c77dbc/_colors.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/dee6bd536aa22152300d41396745d482f8c77dbc/_fonts.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/dee6bd536aa22152300d41396745d482f8c77dbc/_layout.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/dee6bd536aa22152300d41396745d482f8c77dbc/_styles.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e6a870f757da9b866fb552f20cbefe6bbd4fdcfd/_base.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e6a870f757da9b866fb552f20cbefe6bbd4fdcfd/_delicious.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e6a870f757da9b866fb552f20cbefe6bbd4fdcfd/_googleplus.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e6a870f757da9b866fb552f20cbefe6bbd4fdcfd/_pinboard.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e6a870f757da9b866fb552f20cbefe6bbd4fdcfd/_twitter.scssc" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_appearance.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_appearance.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_background-clip.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_background-clip.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_background-origin.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_background-origin.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/70b6b6a4e54d16df6bd4ed7f1fb59dc2a77fda23/_base.scssc" afterPath="$PROJECT_DIR$/.sass-cache/70b6b6a4e54d16df6bd4ed7f1fb59dc2a77fda23/_base.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_border-radius.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_border-radius.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/5cc2430aeaae95b73814700706afe3c0bfdb670f/_borders.scssc" afterPath="$PROJECT_DIR$/.sass-cache/5cc2430aeaae95b73814700706afe3c0bfdb670f/_borders.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_box-shadow.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_box-shadow.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_box.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_box.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/458fead6b49a4d396fd2f5e8ef38ab7d648ab8ad/_bullets.scssc" afterPath="$PROJECT_DIR$/.sass-cache/458fead6b49a4d396fd2f5e8ef38ab7d648ab8ad/_bullets.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_columns.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_columns.scssc" />
+    <list default="true" id="055710dc-5f8f-4d37-8289-f6e8b8f6904b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/atom.xml.BACKUP.53978.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/atom.xml.BASE.53978.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/atom.xml.LOCAL.53978.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/atom.xml.REMOTE.53978.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/atom.xml.orig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blog/2014/07/16/javascript-toolbox/index.html.orig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blog/categories/atom/atom.xml.orig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blog/categories/bootstrap/atom.xml.orig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blog/categories/compass/atom.xml.orig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blog/categories/css/atom.xml.orig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blog/categories/github/atom.xml.orig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blog/categories/javascript/atom.xml.BACKUP.54088.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blog/categories/javascript/atom.xml.BASE.54088.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blog/categories/javascript/atom.xml.LOCAL.54088.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/blog/categories/javascript/atom.xml.REMOTE.54088.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_deploy" afterPath="$PROJECT_DIR$/_deploy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_filter.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_filter.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/7c8a94bae89fe024597c36dcb1fe3de542d76dc7/_float.scssc" afterPath="$PROJECT_DIR$/.sass-cache/7c8a94bae89fe024597c36dcb1fe3de542d76dc7/_float.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_font-face.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_font-face.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57328560ff9f81a3a3bda0420fd20de4da72f622/_grid-background.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57328560ff9f81a3a3bda0420fd20de4da72f622/_grid-background.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/7c8a94bae89fe024597c36dcb1fe3de542d76dc7/_hacks.scssc" afterPath="$PROJECT_DIR$/.sass-cache/7c8a94bae89fe024597c36dcb1fe3de542d76dc7/_hacks.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/458fead6b49a4d396fd2f5e8ef38ab7d648ab8ad/_horizontal-list.scssc" afterPath="$PROJECT_DIR$/.sass-cache/458fead6b49a4d396fd2f5e8ef38ab7d648ab8ad/_horizontal-list.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_hyphenation.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_hyphenation.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_images.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_images.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_inline-block.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_inline-block.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/458fead6b49a4d396fd2f5e8ef38ab7d648ab8ad/_inline-list.scssc" afterPath="$PROJECT_DIR$/.sass-cache/458fead6b49a4d396fd2f5e8ef38ab7d648ab8ad/_inline-list.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/7c8a94bae89fe024597c36dcb1fe3de542d76dc7/_min.scssc" afterPath="$PROJECT_DIR$/.sass-cache/7c8a94bae89fe024597c36dcb1fe3de542d76dc7/_min.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_opacity.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_opacity.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_regions.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_regions.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/d103bfdbe14cf732654d1f847530a1dfb09b4fe9/_replacement.scssc" afterPath="$PROJECT_DIR$/.sass-cache/d103bfdbe14cf732654d1f847530a1dfb09b4fe9/_replacement.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_shared.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_shared.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/70b6b6a4e54d16df6bd4ed7f1fb59dc2a77fda23/_sprite-img.scssc" afterPath="$PROJECT_DIR$/.sass-cache/70b6b6a4e54d16df6bd4ed7f1fb59dc2a77fda23/_sprite-img.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_text-shadow.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_text-shadow.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_transform.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_transform.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_transition.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_transition.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_user-interface.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_user-interface.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4916e2617e72294e99d67c49caa184778d2541df/_utilities.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4916e2617e72294e99d67c49caa184778d2541df/_utilities.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/164ddecf13e282c5dd7fcb216b472f47eadd34ab/_vertical_rhythm.scssc" afterPath="$PROJECT_DIR$/.sass-cache/164ddecf13e282c5dd7fcb216b472f47eadd34ab/_vertical_rhythm.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_background-size.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_background-size.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_box-sizing.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_box-sizing.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/d103bfdbe14cf732654d1f847530a1dfb09b4fe9/_ellipsis.scssc" afterPath="$PROJECT_DIR$/.sass-cache/d103bfdbe14cf732654d1f847530a1dfb09b4fe9/_ellipsis.scssc" />
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_deploy" afterPath="$PROJECT_DIR$/_deploy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
->>>>>>> Stashed changes
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/atom.xml" afterPath="$PROJECT_DIR$/public/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/atom/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/atom/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/bootstrap/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/bootstrap/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/compass/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/compass/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/css/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/css/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/github/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/github/atom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/interview-questions/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/interview-questions/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/javascript/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/javascript/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/mongodb/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/mongodb/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/ruby/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/ruby/atom.xml" />
@@ -88,16 +36,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/webstorm/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/webstorm/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/2014/07/16/javascript-toolbox/index.html" afterPath="$PROJECT_DIR$/public/blog/2014/07/16/javascript-toolbox/index.html" />
-<<<<<<< Updated upstream
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/archives/index.html" afterPath="$PROJECT_DIR$/public/blog/archives/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/atom/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/atom/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/github/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/github/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/javascript/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/javascript/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/mongodb/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/mongodb/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/sublime-text/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/sublime-text/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/webstorm/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/webstorm/index.html" />
->>>>>>> Stashed changes
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/2014/07/19/javascript-interview-questions/index.html" afterPath="$PROJECT_DIR$/public/blog/2014/07/19/javascript-interview-questions/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -122,97 +61,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_config.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1635">
-              <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_deploy/blog/2014/07/16/javascript-toolbox/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="6495">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/blog/archives/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-07-13-compass-sass.markdown" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown">
+      <file leaf-file-name="2014-07-19-javascript-interview-questions.markdown" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="525">
-              <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rakefile">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state vertical-scroll-proportion="0.0" vertical-offset="5475" max-vertical-offset="6150">
-              <caret line="362" column="7" selection-start-line="362" selection-start-column="7" selection-end-line="362" selection-end-column="7" />
-=======
-            <state vertical-scroll-proportion="0.0" vertical-offset="1756" max-vertical-offset="6180">
-              <caret line="118" column="26" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
->>>>>>> Stashed changes
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-07-16-javascript-toolbox.markdown" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state vertical-scroll-proportion="0.5691824" vertical-offset="1183" max-vertical-offset="2730">
-              <caret line="103" column="27" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
-=======
-            <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="2745">
-              <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
->>>>>>> Stashed changes
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24812031" vertical-offset="0" max-vertical-offset="665">
-              <caret line="11" column="87" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="87" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/stylesheets/screen.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7960725" vertical-offset="5413" max-vertical-offset="6645">
+              <caret line="396" column="80" selection-start-line="396" selection-start-column="80" selection-end-line="396" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -231,19 +87,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/source/about-me/index.markdown" />
-        <option value="$PROJECT_DIR$/source/_posts/2014-07-13-compass.markdown" />
-        <option value="$PROJECT_DIR$/source/_includes/custom/asides/about.html" />
-        <option value="$PROJECT_DIR$/source/about/index.markdown" />
-        <option value="$PROJECT_DIR$/source/_includes/custom/navigation.html" />
-        <option value="$PROJECT_DIR$/source/_includes/google_analytics.html" />
-        <option value="$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown" />
-        <option value="$PROJECT_DIR$/source/stylesheets/screen.css" />
-        <option value="$PROJECT_DIR$/source/_includes/custom/header.html" />
-        <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown" />
-        <option value="$PROJECT_DIR$/source/_includes/head.html" />
+        <option value="$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown" />
       </list>
     </option>
   </component>
@@ -277,10 +121,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default" />
-        <subPane subId="Project Files" />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -331,80 +171,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="madole.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="madole.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
-    <property name="FullScreen" value="true" />
-    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="name" value="Dart" />
-      <option name="saveOutputToFile" value="false" />
-      <option name="showConsoleOnStdErr" value="false" />
-      <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
-      <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="" />
-      <setting name="serverType" value="INTERNAL" />
-      <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <method />
-    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -413,30 +189,30 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="48f2680d-0ca4-43ba-aac6-badfd2b79bf0" name="Default" comment="" />
-      <created>1405243730603</created>
-      <updated>1405243730603</updated>
+      <changelist id="055710dc-5f8f-4d37-8289-f6e8b8f6904b" name="Default" comment="" />
+      <created>1405832323821</created>
+      <updated>1405832323821</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -457,495 +233,18 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="525">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5475" max-vertical-offset="6150">
-          <caret line="362" column="7" selection-start-line="362" selection-start-column="7" selection-end-line="362" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/google_analytics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="300">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> Stashed changes
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/asides/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/about/index.markdown">
+    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="735">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="905" max-vertical-offset="1605">
-          <caret line="84" column="10" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/blog/archives/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4005" max-vertical-offset="6150">
-          <caret line="267" column="23" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/google_analytics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="300">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/asides/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/about/index.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="735">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="905" max-vertical-offset="1605">
-          <caret line="84" column="10" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/blog/archives/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="525">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4005" max-vertical-offset="6150">
-          <caret line="267" column="23" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/google_analytics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="300">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/asides/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/about/index.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="735">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="916" max-vertical-offset="1605">
-          <caret line="84" column="10" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="525">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3695" max-vertical-offset="6150">
-          <caret line="267" column="23" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/google_analytics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="300">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/asides/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="210">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-<<<<<<< Updated upstream
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
->>>>>>> Stashed changes
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08559201" vertical-offset="0" max-vertical-offset="701">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/octopress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.3061223" vertical-offset="0" max-vertical-offset="2505">
-          <caret line="156" column="242" selection-start-line="156" selection-start-column="242" selection-end-line="156" selection-end-column="242" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="712">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> Stashed changes
-    <entry file="file://$PROJECT_DIR$/source/_layouts/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="735">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/asides/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/about/index.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/google_analytics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="300">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/blog/archives/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="689">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state vertical-scroll-proportion="0.0" vertical-offset="5475" max-vertical-offset="6150">
-          <caret line="362" column="7" selection-start-line="362" selection-start-column="7" selection-end-line="362" selection-end-column="7" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> Stashed changes
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="525">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-=======
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="105">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> Stashed changes
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="525">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/stylesheets/screen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="678">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state vertical-scroll-proportion="0.5691824" vertical-offset="1183" max-vertical-offset="2730">
-          <caret line="103" column="27" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="1756" max-vertical-offset="6180">
-          <caret line="118" column="26" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
->>>>>>> Stashed changes
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_deploy/blog/2014/07/16/javascript-toolbox/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6510">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1635">
-          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="2745">
-          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24812031" vertical-offset="0" max-vertical-offset="665">
-          <caret line="11" column="87" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="87" />
+        <state vertical-scroll-proportion="0.7960725" vertical-offset="5413" max-vertical-offset="6645">
+          <caret line="396" column="80" selection-start-line="396" selection-start-column="80" selection-end-line="396" selection-end-column="80" />
           <folding />
         </state>
       </provider>
