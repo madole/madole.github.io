@@ -4,7 +4,7 @@
   <title><![CDATA[Category: interview questions | Madole's Ramblings]]></title>
   <link href="http://madole.github.io/blog/categories/interview-questions/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-07-20T17:05:03+10:00</updated>
+  <updated>2014-07-20T22:03:39+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -576,7 +576,7 @@ console.log(bitwiseRight) //6</p>
 <p>var bitwiseLeft = (84.3/12.5) &lt;&lt; 0;
 console.log(bitwiseLeft) //6</p>
 
-<p>var bitwiseOr = (84.3/12.5) &lt;&lt; 0;
+<p>var bitwiseOr = (84.3/12.5) | 0;
 console.log(bitwiseOr); //6</p>
 
 <p>var parseInteger = parseInt(84.3/12.5);

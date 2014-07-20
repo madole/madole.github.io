@@ -438,7 +438,7 @@ console.log(bitwiseRight) //6
 var bitwiseLeft = (84.3/12.5) << 0;
 console.log(bitwiseLeft) //6
 
-var bitwiseOr = (84.3/12.5) << 0;
+var bitwiseOr = (84.3/12.5) | 0;
 console.log(bitwiseOr); //6
 
 var parseInteger = parseInt(84.3/12.5);
