@@ -385,3 +385,53 @@ gets resolved after the ajax request returns, the done function will get execute
 function will get executed.
 
 These are useful when you are making calls out to a webservice for data. 
+
+##Some Javascript shortcuts/hacks
+
+####Ternary operators 
+
+These are great for situations where you want to assign a var based on a condition.
+
+test ? expression1 : expression2
+
+You can play with these here at [JSFiddle](http://jsfiddle.net/madole404/KdnJ7/)
+
+```javascript
+function returnTrueIfLessThanTen(checkVal) {
+    var returnVal = (checkVal < 10) ? true : false;
+    return returnVal;
+}
+console.log(returnTrueIfLessThanTen(9)); //true
+console.log(returnTrueIfLessThanTen(29)); //false
+```
+
+####Using bitwise operators in place of Math.floor 
+
+You can have a play with these and see them in action at [JSFiddle.net](http://jsfiddle.net/madole404/g34mL/)
+
+```javascript
+var result = 84.3/12.5;
+console.log(result); //6.744
+
+var round = Math.round(84.3/12.5);
+console.log(round) //7
+
+var floor = Math.floor(84.3/12.5);
+console.log(floor) //6
+
+var doubleNeg = ~~(84.3/12.5);
+console.log(doubleNeg) //6
+
+var bitwiseRight = (84.3/12.5) >>0;
+console.log(bitwiseRight) //6
+
+var bitwiseLeft = (84.3/12.5) << 0;
+console.log(bitwiseLeft) //6
+
+var bitwiseOr = (84.3/12.5) << 0;
+console.log(bitwiseOr); //6
+
+var parseInteger = parseInt(84.3/12.5);
+console.log(parseInteger) //6
+
+```
