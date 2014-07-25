@@ -225,6 +225,102 @@ because they can cause issues where things don&rsquo;t seem to act like they sho
 </span></code></pre></td></tr></table></div></figure>
 
 
+<h2>What does variable hoisting mean in Javascript?</h2>
+
+<p>Javascript has a way of hoisting variable declarations to the top of the function. This can produce some unexpected
+results if you are not aware of it them.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="c1">//5</span>
+</span><span class='line'><span class="p">})()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The above example is interpreted exactly the same as this</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">x</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="c1">//5</span>
+</span><span class='line'><span class="p">})()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Where this gets confusing is in an example like this</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">test</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">199</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">//undefined</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">test</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>What&rsquo;s going on here? Well we&rsquo;ve declared x outside the function text and set it to 100.
+Inside the test function, the interpreter has seen there&rsquo;s a variable declaration, ignored the fact that it
+ is inside a code block and hoisted it to the top of the function scope. The condition is not met so x<br/>
+ has not been set to 199 and remains to have a value of &lsquo;undefined&rsquo;</p>
+
+<p>It is the same as writing</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">test</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">x</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">x</span> <span class="o">=</span> <span class="mi">199</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">//undefined</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">test</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
 <h2>What is the difference between == and === in Javascript?</h2>
 
 <p>== checks equality whereas === checks equality and type. What does this mean?</p>
@@ -340,9 +436,11 @@ because they can cause issues where things don&rsquo;t seem to act like they sho
 
 
 <p>
-This would satisfy if condition===&lsquo;undefined&rsquo;, also if condition===null and also if condition===false.
-This is a common way of checking for null or undefined but you have to double check that your variable
-would not ever be set to false or it will also satisfy.</p>
+This would satisfy if condition===&lsquo;undefined&rsquo;, also if condition===null, also if condition===0 and
+also if condition===false.</p>
+
+<p>This is a common way of checking for null or undefined but you have to double check that your variable
+would not ever be set to false or 0 because it will also satisfy.</p>
 
 <h2>What kind of loops are available in Javascript?</h2>
 
@@ -453,6 +551,57 @@ array each iteration. Micro-performance improvement that can add up over time.</
 </span><span class='line'><span class="nx">arr5</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Them&#39;</span><span class="p">;</span>
 </span><span class='line'>
 </span><span class='line'><span class="kd">var</span> <span class="nx">arr6</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Me&#39;</span><span class="p">,</span> <span class="s1">&#39;You&#39;</span><span class="p">,</span> <span class="s1">&#39;Them&#39;</span><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>How do you write an immediately invoked function?</h3>
+
+<p>If you were to write the following code, it would assign the function to the var, in order to access the
+return value, you would have to execute the function.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">addFirstFiveNumbers</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;=</span><span class="mi">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">count</span> <span class="o">+=</span> <span class="nx">i</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">count</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">addFirstFiveNumbers</span><span class="p">())</span> <span class="c1">//15</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you wanted the function to execute immediately and store the return value in the var instead of the function,
+you use an immediately invoked function. To do this, wrap your function in parenthesis and put a set of empty
+parenthesis after it</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">addFirstSixNumbers</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">j</span><span class="o">&lt;=</span><span class="mi">6</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">count</span> <span class="o">+=</span> <span class="nx">j</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">count</span><span class="p">;</span>
+</span><span class='line'><span class="p">})();</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">addFirstSixNumbers</span><span class="p">);</span> <span class="c1">//21</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -577,6 +726,101 @@ array each iteration. Micro-performance improvement that can add up over time.</
 single inheritance). The specialized class is commonly called the child, and the other class is commonly called the
 parent. In JavaScript you do this by assigning an instance of the parent class to the child class, and then
 specializing it. In modern browsers you can also use Object.create to implement inheritance.</p></blockquote>
+
+<h3>What is the difference between .call() and .apply()</h3>
+
+<p>At first you might think they do the same thing. Take a <em>this</em> arg and pass it to a function, lets see that
+in action</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">car1</span> <span class="o">=</span> <span class="p">{</span><span class="nx">make</span><span class="o">:</span> <span class="s1">&#39;Vauxhall&#39;</span><span class="p">,</span> <span class="nx">model</span><span class="o">:</span> <span class="s1">&#39;Corsa&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="s1">&#39;2005&#39;</span><span class="p">};</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">car2</span> <span class="o">=</span> <span class="p">{</span><span class="nx">make</span><span class="o">:</span> <span class="s1">&#39;Bugatti&#39;</span><span class="p">,</span> <span class="nx">model</span><span class="o">:</span> <span class="s1">&#39;Veyron&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="s1">&#39;2014&#39;</span><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">printMake</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">make</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">printModel</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">model</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">printMake</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">car1</span><span class="p">);</span><span class="c1">//Vauxhall</span>
+</span><span class='line'><span class="nx">printMake</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">car1</span><span class="p">);</span><span class="c1">//Vauxhall</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">printMake</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">car2</span><span class="p">);</span><span class="c1">//Bugatti</span>
+</span><span class='line'><span class="nx">printMake</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">car2</span><span class="p">);</span><span class="c1">//Bugatti</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">printModel</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">car1</span><span class="p">);</span><span class="c1">//Corsa</span>
+</span><span class='line'><span class="nx">printModel</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">car1</span><span class="p">);</span><span class="c1">//Corsa</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">printModel</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">car2</span><span class="p">);</span><span class="c1">//Veyron</span>
+</span><span class='line'><span class="nx">printModel</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">car2</span><span class="p">);</span><span class="c1">//Veyron</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Where .call() and .apply() differ is the arguments you pass after the <em>this</em> arg.</p>
+
+<p>In a .call(), you pass your <em>this</em> arg
+then followed by the args the function is expecting.</p>
+
+<p>In a .apply(), you pass your <em>this</em> arg followed by an array containing the arguments to be passed which then get split
+out into the function params.</p>
+
+<p>Lets see these in action</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">car1</span> <span class="o">=</span> <span class="p">{</span><span class="nx">make</span><span class="o">:</span> <span class="s1">&#39;Vauxhall&#39;</span><span class="p">,</span> <span class="nx">model</span><span class="o">:</span> <span class="s1">&#39;Corsa&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="s1">&#39;2005&#39;</span><span class="p">};</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">car2</span> <span class="o">=</span> <span class="p">{</span><span class="nx">make</span><span class="o">:</span> <span class="s1">&#39;Bugatti&#39;</span><span class="p">,</span> <span class="nx">model</span><span class="o">:</span> <span class="s1">&#39;Veyron&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="s1">&#39;2014&#39;</span><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">udpateCar</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">make</span><span class="p">,</span> <span class="nx">model</span><span class="p">,</span> <span class="nx">year</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">this</span><span class="p">.</span><span class="nx">make</span> <span class="o">=</span> <span class="nx">make</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">this</span><span class="p">.</span><span class="nx">model</span> <span class="o">=</span> <span class="nx">model</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">this</span><span class="p">.</span><span class="nx">year</span> <span class="o">=</span> <span class="nx">year</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">udpateCar</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">car1</span><span class="p">,</span> <span class="s1">&#39;Vauxhall&#39;</span><span class="p">,</span> <span class="s1">&#39;Astra&#39;</span><span class="p">,</span> <span class="s1">&#39;2014&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nx">udpateCar</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">car2</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Mini&#39;</span><span class="p">,</span> <span class="s1">&#39;Cooper&#39;</span><span class="p">,</span> <span class="s1">&#39;2014&#39;</span><span class="p">]</span> <span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">car1</span><span class="p">);</span> <span class="c1">//{ make: &#39;Vauxhall&#39;, model: &#39;Astra&#39;, year: &#39;2014&#39; }</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">car2</span><span class="p">);</span> <span class="c1">//{ make: &#39;Mini&#39;, model: &#39;Cooper&#39;, year: &#39;2014&#39; }</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <h3>Difference between Object.create and the new operator</h3>
 
@@ -737,6 +981,7 @@ function will get executed.</p>
 <ul>
 <li>They reduce clarity in your coding</li>
 <li>They only work 32-bit signed integers</li>
+<li>They work by truncating the decimal rather than working out what the floor is</li>
 <li>You might not get the outcome you are expecting
 
 <ul>

@@ -93,6 +93,67 @@ function test() {
 console.log(a); //1
 ```
 
+##What does variable hoisting mean in Javascript?
+Javascript has a way of hoisting variable declarations to the top of the function. This can produce some unexpected
+results if you are not aware of it them.
+
+```javascript
+
+(function() {
+    if(true) {
+        var x = 5;
+    }
+    console.log(x) //5
+})()
+
+```
+
+The above example is interpreted exactly the same as this
+
+```javascript
+(function() {
+    var x; 
+    if(true) {
+        x = 5;
+    }
+    console.log(x) //5
+})()
+```
+
+Where this gets confusing is in an example like this
+
+```javascript
+var x = 100;
+
+function test() {
+    if(false) {
+        var x = 199;
+    }
+    console.log(x); //undefined
+}
+
+test();
+```
+What's going on here? Well we've declared x outside the function text and set it to 100. 
+Inside the test function, the interpreter has seen there's a variable declaration, ignored the fact that it
+ is inside a code block and hoisted it to the top of the function scope. The condition is not met so x  
+ has not been set to 199 and remains to have a value of 'undefined'
+
+It is the same as writing 
+
+```javascript
+var x = 100;
+
+function test() {
+    var x;
+    if(false) {
+        x = 199;
+    }
+    console.log(x); //undefined
+}
+
+test();
+```
 
 ##What is the difference between == and === in Javascript?
 
@@ -162,9 +223,11 @@ if (!condition) {
     //... 
 }
 ``` 
-This would satisfy if condition==='undefined', also if condition===null and also if condition===false. 
+This would satisfy if condition==='undefined', also if condition===null, also if condition===0 and 
+also if condition===false. 
+
 This is a common way of checking for null or undefined but you have to double check that your variable 
-would not ever be set to false or it will also satisfy. 
+would not ever be set to false or 0 because it will also satisfy. 
 
 
 ##What kind of loops are available in Javascript? 
@@ -231,6 +294,37 @@ arr5[2] = 'Them';
 
 var arr6 = ['Me', 'You', 'Them']
 
+```
+
+###How do you write an immediately invoked function? 
+If you were to write the following code, it would assign the function to the var, in order to access the 
+return value, you would have to execute the function. 
+
+```javascript 
+var addFirstFiveNumbers = function() {
+    var count = 0;
+    for(var i=0; i<=5; i++) {
+        count += i;
+    }
+    return count;
+}
+
+console.log(addFirstFiveNumbers()) //15
+```
+If you wanted the function to execute immediately and store the return value in the var instead of the function,
+you use an immediately invoked function. To do this, wrap your function in parenthesis and put a set of empty 
+parenthesis after it
+
+```javascript 
+var addFirstSixNumbers = (function(){
+    var count = 0;
+    for(var j=0; j<=6; j++) {
+        count += j;
+    }
+    return count;
+})();
+
+console.log(addFirstSixNumbers); //21
 ```
 
 ##How can you handle errors in Javascript?
@@ -310,6 +404,67 @@ MDN explains:
 >single inheritance). The specialized class is commonly called the child, and the other class is commonly called the 
 >parent. In JavaScript you do this by assigning an instance of the parent class to the child class, and then 
 >specializing it. In modern browsers you can also use Object.create to implement inheritance.
+
+
+###What is the difference between .call() and .apply()
+
+At first you might think they do the same thing. Take a *this* arg and pass it to a function, lets see that
+in action
+
+```javascript
+var car1 = {make: 'Vauxhall', model: 'Corsa', year: '2005'};
+var car2 = {make: 'Bugatti', model: 'Veyron', year: '2014'};
+
+var printMake = function () {
+    console.log(this.make);
+}
+
+var printModel = function () {
+    console.log(this.model);
+}
+
+printMake.call(car1);//Vauxhall
+printMake.apply(car1);//Vauxhall
+
+printMake.call(car2);//Bugatti
+printMake.apply(car2);//Bugatti
+
+printModel.call(car1);//Corsa
+printModel.apply(car1);//Corsa
+
+printModel.call(car2);//Veyron
+printModel.apply(car2);//Veyron
+
+```
+
+Where .call() and .apply() differ is the arguments you pass after the *this* arg. 
+
+In a .call(), you pass your *this* arg
+then followed by the args the function is expecting. 
+
+In a .apply(), you pass your *this* arg followed by an array containing the arguments to be passed which then get split
+out into the function params. 
+
+Lets see these in action
+
+```javascript
+    var car1 = {make: 'Vauxhall', model: 'Corsa', year: '2005'};
+    var car2 = {make: 'Bugatti', model: 'Veyron', year: '2014'};
+
+
+    var udpateCar = function(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    };
+
+    udpateCar.call(car1, 'Vauxhall', 'Astra', '2014');
+    udpateCar.apply(car2, ['Mini', 'Cooper', '2014'] )
+
+    console.log(car1); //{ make: 'Vauxhall', model: 'Astra', year: '2014' }
+    console.log(car2); //{ make: 'Mini', model: 'Cooper', year: '2014' }
+
+```
 
 ### Difference between Object.create and the new operator
 
@@ -415,6 +570,7 @@ You can have a play with these and see them in action at [JSFiddle](http://jsfid
 #####Why not to use them?
  -  They reduce clarity in your coding
  -  They only work 32-bit signed integers
+ -  They work by truncating the decimal rather than working out what the floor is
  -  You might not get the outcome you are expecting
     -   Math.floor(NaN) === NaN
     -   (NaN >> 0) === 0

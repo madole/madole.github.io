@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javascript | Madole's Ramblings]]></title>
   <link href="http://madole.github.io/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-07-20T22:03:39+10:00</updated>
+  <updated>2014-07-25T12:56:32+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -121,6 +121,81 @@ function test() {</p>
 <p>console.log(a); //1
 ```</p>
 
+<h2>What does variable hoisting mean in Javascript?</h2>
+
+<p>Javascript has a way of hoisting variable declarations to the top of the function. This can produce some unexpected
+results if you are not aware of it them.</p>
+
+<p>```javascript</p>
+
+<p>(function() {</p>
+
+<pre><code>if(true) {
+    var x = 5;
+}
+console.log(x) //5
+</code></pre>
+
+<p>})()</p>
+
+<p>```</p>
+
+<p>The above example is interpreted exactly the same as this</p>
+
+<p>```javascript
+(function() {</p>
+
+<pre><code>var x; 
+if(true) {
+    x = 5;
+}
+console.log(x) //5
+</code></pre>
+
+<p>})()
+```</p>
+
+<p>Where this gets confusing is in an example like this</p>
+
+<p>```javascript
+var x = 100;</p>
+
+<p>function test() {</p>
+
+<pre><code>if(false) {
+    var x = 199;
+}
+console.log(x); //undefined
+</code></pre>
+
+<p>}</p>
+
+<p>test();
+```
+What&rsquo;s going on here? Well we&rsquo;ve declared x outside the function text and set it to 100.
+Inside the test function, the interpreter has seen there&rsquo;s a variable declaration, ignored the fact that it
+ is inside a code block and hoisted it to the top of the function scope. The condition is not met so x<br/>
+ has not been set to 199 and remains to have a value of &lsquo;undefined&rsquo;</p>
+
+<p>It is the same as writing</p>
+
+<p>```javascript
+var x = 100;</p>
+
+<p>function test() {</p>
+
+<pre><code>var x;
+if(false) {
+    x = 199;
+}
+console.log(x); //undefined
+</code></pre>
+
+<p>}</p>
+
+<p>test();
+```</p>
+
 <h2>What is the difference between == and === in Javascript?</h2>
 
 <p>== checks equality whereas === checks equality and type. What does this mean?</p>
@@ -215,9 +290,11 @@ if (!condition) {</p>
 
 <p>}
 ```
-This would satisfy if condition===&lsquo;undefined&rsquo;, also if condition===null and also if condition===false.
-This is a common way of checking for null or undefined but you have to double check that your variable
-would not ever be set to false or it will also satisfy.</p>
+This would satisfy if condition===&lsquo;undefined&rsquo;, also if condition===null, also if condition===0 and
+also if condition===false.</p>
+
+<p>This is a common way of checking for null or undefined but you have to double check that your variable
+would not ever be set to false or 0 because it will also satisfy.</p>
 
 <h2>What kind of loops are available in Javascript?</h2>
 
@@ -305,6 +382,44 @@ arr5[2] = &lsquo;Them&rsquo;;</p>
 <p>var arr6 = [&lsquo;Me&rsquo;, &lsquo;You&rsquo;, &lsquo;Them&rsquo;]</p>
 
 <p>```</p>
+
+<h3>How do you write an immediately invoked function?</h3>
+
+<p>If you were to write the following code, it would assign the function to the var, in order to access the
+return value, you would have to execute the function.</p>
+
+<p>```javascript
+var addFirstFiveNumbers = function() {</p>
+
+<pre><code>var count = 0;
+for(var i=0; i&lt;=5; i++) {
+    count += i;
+}
+return count;
+</code></pre>
+
+<p>}</p>
+
+<p>console.log(addFirstFiveNumbers()) //15
+```
+If you wanted the function to execute immediately and store the return value in the var instead of the function,
+you use an immediately invoked function. To do this, wrap your function in parenthesis and put a set of empty
+parenthesis after it</p>
+
+<p>```javascript
+var addFirstSixNumbers = (function(){</p>
+
+<pre><code>var count = 0;
+for(var j=0; j&lt;=6; j++) {
+    count += j;
+}
+return count;
+</code></pre>
+
+<p>})();</p>
+
+<p>console.log(addFirstSixNumbers); //21
+```</p>
 
 <h2>How can you handle errors in Javascript?</h2>
 
@@ -422,6 +537,74 @@ clearInterval(interval);
 single inheritance). The specialized class is commonly called the child, and the other class is commonly called the
 parent. In JavaScript you do this by assigning an instance of the parent class to the child class, and then
 specializing it. In modern browsers you can also use Object.create to implement inheritance.</p></blockquote>
+
+<h3>What is the difference between .call() and .apply()</h3>
+
+<p>At first you might think they do the same thing. Take a <em>this</em> arg and pass it to a function, lets see that
+in action</p>
+
+<p>```javascript
+var car1 = {make: &lsquo;Vauxhall&rsquo;, model: &lsquo;Corsa&rsquo;, year: &lsquo;2005&rsquo;};
+var car2 = {make: &lsquo;Bugatti&rsquo;, model: &lsquo;Veyron&rsquo;, year: &lsquo;2014&rsquo;};</p>
+
+<p>var printMake = function () {</p>
+
+<pre><code>console.log(this.make);
+</code></pre>
+
+<p>}</p>
+
+<p>var printModel = function () {</p>
+
+<pre><code>console.log(this.model);
+</code></pre>
+
+<p>}</p>
+
+<p>printMake.call(car1);//Vauxhall
+printMake.apply(car1);//Vauxhall</p>
+
+<p>printMake.call(car2);//Bugatti
+printMake.apply(car2);//Bugatti</p>
+
+<p>printModel.call(car1);//Corsa
+printModel.apply(car1);//Corsa</p>
+
+<p>printModel.call(car2);//Veyron
+printModel.apply(car2);//Veyron</p>
+
+<p>```</p>
+
+<p>Where .call() and .apply() differ is the arguments you pass after the <em>this</em> arg.</p>
+
+<p>In a .call(), you pass your <em>this</em> arg
+then followed by the args the function is expecting.</p>
+
+<p>In a .apply(), you pass your <em>this</em> arg followed by an array containing the arguments to be passed which then get split
+out into the function params.</p>
+
+<p>Lets see these in action</p>
+
+<p>```javascript</p>
+
+<pre><code>var car1 = {make: 'Vauxhall', model: 'Corsa', year: '2005'};
+var car2 = {make: 'Bugatti', model: 'Veyron', year: '2014'};
+
+
+var udpateCar = function(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+};
+
+udpateCar.call(car1, 'Vauxhall', 'Astra', '2014');
+udpateCar.apply(car2, ['Mini', 'Cooper', '2014'] )
+
+console.log(car1); //{ make: 'Vauxhall', model: 'Astra', year: '2014' }
+console.log(car2); //{ make: 'Mini', model: 'Cooper', year: '2014' }
+</code></pre>
+
+<p>```</p>
 
 <h3>Difference between Object.create and the new operator</h3>
 
@@ -547,6 +730,7 @@ console.log(returnTrueIfLessThanTen(29)); //false
 <ul>
 <li>They reduce clarity in your coding</li>
 <li>They only work 32-bit signed integers</li>
+<li>They work by truncating the decimal rather than working out what the floor is</li>
 <li>You might not get the outcome you are expecting
 
 <ul>

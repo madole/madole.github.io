@@ -1,0 +1,16 @@
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">car1</span> <span class="o">=</span> <span class="p">{</span><span class="nx">make</span><span class="o">:</span> <span class="s1">&#39;Vauxhall&#39;</span><span class="p">,</span> <span class="nx">model</span><span class="o">:</span> <span class="s1">&#39;Corsa&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="s1">&#39;2005&#39;</span><span class="p">};</span>
+<span class="kd">var</span> <span class="nx">car2</span> <span class="o">=</span> <span class="p">{</span><span class="nx">make</span><span class="o">:</span> <span class="s1">&#39;Bugatti&#39;</span><span class="p">,</span> <span class="nx">model</span><span class="o">:</span> <span class="s1">&#39;Veyron&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="s1">&#39;2014&#39;</span><span class="p">};</span>
+
+
+<span class="kd">var</span> <span class="nx">udpateCar</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">make</span><span class="p">,</span> <span class="nx">model</span><span class="p">,</span> <span class="nx">year</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">make</span> <span class="o">=</span> <span class="nx">make</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">model</span> <span class="o">=</span> <span class="nx">model</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">year</span> <span class="o">=</span> <span class="nx">year</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="nx">udpateCar</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">car1</span><span class="p">,</span> <span class="s1">&#39;Vauxhall&#39;</span><span class="p">,</span> <span class="s1">&#39;Astra&#39;</span><span class="p">,</span> <span class="s1">&#39;2014&#39;</span><span class="p">);</span>
+<span class="nx">udpateCar</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">car2</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Mini&#39;</span><span class="p">,</span> <span class="s1">&#39;Cooper&#39;</span><span class="p">,</span> <span class="s1">&#39;2014&#39;</span><span class="p">]</span> <span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">car1</span><span class="p">);</span> <span class="c1">//{ make: &#39;Vauxhall&#39;, model: &#39;Astra&#39;, year: &#39;2014&#39; }</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">car2</span><span class="p">);</span> <span class="c1">//{ make: &#39;Mini&#39;, model: &#39;Cooper&#39;, year: &#39;2014&#39; }</span>
+</pre></div>
