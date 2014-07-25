@@ -13,6 +13,8 @@ a Javascript interview. I looked by to my last interview and came up with a few 
 I thought I'd write them down so others might make use of them. If you were asked anything I've not included, let me
 know in the comments section. 
 
+<!--more--> 
+
 We'll start easy...
 
 ###What is Javascript?
@@ -26,6 +28,8 @@ Mozilla Developer Network describes Javascript as:
 The standards for Javascript are written in the ECMAScript documents. Currently we're on ES5 but ES6 has just been 
 locked down so I'm looking forward to checking out some of the goodies it has to offer such as native promises and 
 modules and classes. 
+
+
 
 ###What is variable scoping?
 Variable scoping in Javascript can get complicated so lets do some examples. 

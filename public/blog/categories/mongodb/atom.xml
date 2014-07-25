@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mongodb | Madole's Ramblings]]></title>
   <link href="http://madole.github.io/blog/categories/mongodb/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-07-25T12:56:32+10:00</updated>
+  <updated>2014-07-25T13:04:57+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -21,6 +21,11 @@
     <content type="html"><![CDATA[<p>I write javascript most days and have done so for a few years now. I still find new tools, websites, frameworks and
 ways to do things. I thought I&rsquo;d write them down and get the list online as it may help other people discover some
 useful tools of the trade.</p>
+
+<!--more-->
+
+
+<p></p>
 
 <h2>IDEs and editors</h2>
 

@@ -9,7 +9,7 @@ categories: ['SASS', 'Bootstrap', 'Compass', 'Ruby', 'Scout', 'CSS']
 About a month ago, we decided to use SASS on our side project because we wanted to learn some of the new ways to 
 pre-process CSS. I have used LESS before (which is a Node.js preprocessor) in a work project so it makes sense
 to use something different for this learning experience. We then boiled down the choices to just two, SASS or Stylus. 
-
+<!--more--> 
 We chose SASS and I got down to doing some research. I learned it was built on Ruby, I also learned that a lot of people 
 who use SASS also use Compass as it provides a bunch of mixins that are pretty handy when you come to writing 
 your SASS. We wanted to use Bootstrap but at that point we weren't aware of the Bootstrap-SASS port, and it was only officially

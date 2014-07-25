@@ -10,6 +10,8 @@ I write javascript most days and have done so for a few years now. I still find 
 ways to do things. I thought I'd write them down and get the list online as it may help other people discover some 
 useful tools of the trade.
 
+<!--more--> 
+
 ##IDEs and editors
 
 ###Sublime Text 2

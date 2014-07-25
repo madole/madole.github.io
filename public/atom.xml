@@ -4,7 +4,7 @@
   <title><![CDATA[Madole's Ramblings]]></title>
   <link href="http://madole.github.io/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-07-25T12:56:32+10:00</updated>
+  <updated>2014-07-25T13:04:57+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -24,6 +24,11 @@
 a Javascript interview. I looked by to my last interview and came up with a few topics for him to brush up on.
 I thought I&rsquo;d write them down so others might make use of them. If you were asked anything I&rsquo;ve not included, let me
 know in the comments section.</p>
+
+<!--more-->
+
+
+<p></p>
 
 <p>We&rsquo;ll start easy&hellip;</p>
 
@@ -963,6 +968,11 @@ function will get executed.</p>
 ways to do things. I thought I&rsquo;d write them down and get the list online as it may help other people discover some
 useful tools of the trade.</p>
 
+<!--more-->
+
+
+<p></p>
+
 <h2>IDEs and editors</h2>
 
 <h3>Sublime Text 2</h3>
@@ -1117,7 +1127,11 @@ you should be up and running in CoffeeScript in no time.</p>
 pre-process CSS. I have used LESS before (which is a Node.js preprocessor) in a work project so it makes sense
 to use something different for this learning experience. We then boiled down the choices to just two, SASS or Stylus.</p>
 
-<p>We chose SASS and I got down to doing some research. I learned it was built on Ruby, I also learned that a lot of people
+<!--more-->
+
+
+<p>
+We chose SASS and I got down to doing some research. I learned it was built on Ruby, I also learned that a lot of people
 who use SASS also use Compass as it provides a bunch of mixins that are pretty handy when you come to writing
 your SASS. We wanted to use Bootstrap but at that point we weren&rsquo;t aware of the Bootstrap-SASS port, and it was only officially
 written in CSS and LESS.</p>
