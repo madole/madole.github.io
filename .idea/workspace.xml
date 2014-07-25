@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48f2680d-0ca4-43ba-aac6-badfd2b79bf0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/atom.xml" afterPath="$PROJECT_DIR$/public/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/atom/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/atom/atom.xml" />
@@ -19,7 +17,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/scout/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/scout/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/sublime-text/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/sublime-text/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/webstorm/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/webstorm/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/2014/07/19/javascript-interview-questions/index.html" afterPath="$PROJECT_DIR$/public/blog/2014/07/19/javascript-interview-questions/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -65,13 +62,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-07-13-compass-sass.markdown" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2014-07-13-compass-sass.markdown" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4125" vertical-offset="0" max-vertical-offset="525">
+            <state vertical-scroll-proportion="-6.111111" vertical-offset="0" max-vertical-offset="525">
               <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
               <folding />
             </state>
@@ -101,14 +98,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-07-19-javascript-interview-questions.markdown" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="2014-07-19-javascript-interview-questions.markdown" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4150944" vertical-offset="135" max-vertical-offset="9195">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.28985506" vertical-offset="8600" max-vertical-offset="9195">
+              <caret line="580" column="0" selection-start-line="580" selection-start-column="0" selection-end-line="580" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -179,9 +176,9 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/source/_posts/callApply.js" />
-        <option value="$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown" />
         <option value="$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown" />
         <option value="$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown" />
+        <option value="$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown" />
       </list>
     </option>
   </component>
@@ -858,17 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4150944" vertical-offset="135" max-vertical-offset="9195">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -885,8 +871,19 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4125" vertical-offset="0" max-vertical-offset="525">
+        <state vertical-scroll-proportion="-6.111111" vertical-offset="0" max-vertical-offset="525">
           <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28985506" vertical-offset="8600" max-vertical-offset="9195">
+          <caret line="580" column="0" selection-start-line="580" selection-start-column="0" selection-end-line="580" selection-end-column="0" />
           <folding />
         </state>
       </provider>

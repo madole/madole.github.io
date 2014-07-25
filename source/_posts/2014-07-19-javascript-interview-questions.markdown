@@ -176,7 +176,7 @@ test();
  3  === "3" //false
 ```
 
-##What kind of conditional statements are available in javascript
+##What kind of conditional statements are available in Javascript
 
 ####if statement
 
@@ -258,7 +258,7 @@ for (var x in arr) {
 
 ####while loop 
 ```javascript
-while(x===true) {
+while(x === true) {
     //do stuff
 }
 ```
@@ -301,8 +301,8 @@ var arr6 = ['Me', 'You', 'Them']
 ```
 
 ###How do you write an immediately invoked function? 
-If you were to write the following code, it would assign the function to the var, in order to access the 
-return value, you would have to execute the function. 
+If you were to write the following code, it would assign the function to the var addFirstFiveNumbers. 
+In order to access the return value, you would have to execute the function. 
 
 ```javascript 
 var addFirstFiveNumbers = function() {
@@ -400,7 +400,6 @@ var interval = setInterval(function() {
 clearInterval(interval);
 ```
 
-
 ##Explain Inheritance in Javascript
 
 MDN explains: 
@@ -409,8 +408,42 @@ MDN explains:
 >parent. In JavaScript you do this by assigning an instance of the parent class to the child class, and then 
 >specializing it. In modern browsers you can also use Object.create to implement inheritance.
 
+### Difference between Object.create and the new operator
 
-###What is the difference between .call() and .apply()
+Both are ways to inherit from a base class, but Object.create inherits from the prototype. What does this mean? Well lets
+do an example. 
+
+```javascript
+function Person() {
+    this.species = 'human';
+}
+
+Person.prototype.speak = function () {
+    console.log('Hello');
+}
+
+Person.prototype.sleep = function () {
+    console.log('Snore...zzz');
+}
+
+
+var andrew = new Person();
+console.log(andrew.species); //human
+andrew.speak(); //Hello
+andrew.sleep(); //Snore...zzz
+
+var andy = Object.create(Person.prototype); 
+console.log(andy.species); //undefined
+andy.speak(); //Hello
+andy.sleep(); //Snore...zzz
+```
+
+Here, Andrew is an instance of the Person class and so has species set on it. Andy on the other hand has inherited
+from the Person class's prototype *only* and so has access to the prototype functions of the Person class but 
+none of the attributes set on the class.
+
+
+##What is the difference between .call() and .apply()
 
 At first you might think they do the same thing. Take a *this* arg and pass it to a function, lets see that
 in action
@@ -470,39 +503,6 @@ Lets see these in action
 
 ```
 
-### Difference between Object.create and the new operator
-
-Both are ways to inherit from a base class, but Object.create inherits from the prototype. What does this mean? Well lets
-do an example. 
-
-```javascript
-function Person() {
-    this.species = 'human';
-}
-
-Person.prototype.speak = function () {
-    console.log('Hello');
-}
-
-Person.prototype.sleep = function () {
-    console.log('Snore...zzz');
-}
-
-
-var andrew = new Person();
-console.log(andrew.species); //human
-andrew.speak(); //Hello
-andrew.sleep(); //Snore...zzz
-
-var andy = Object.create(Person.prototype); 
-console.log(andy.species); //undefined
-andy.speak(); //Hello
-andy.sleep(); //Snore...zzz
-```
-
-Here, Andrew is an instance of the Person class and so has species set on it. Andy on the other hand has inherited
-from the Person class's prototype *only* and so has access to the prototype functions of the Person class but 
-none of the attributes set on the class.
 
 ##How would you go about dealing with an asynchronous request? 
 

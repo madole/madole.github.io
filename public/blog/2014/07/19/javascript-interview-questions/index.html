@@ -353,7 +353,7 @@ Inside the test function, the interpreter has seen there&rsquo;s a variable decl
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h2>What kind of conditional statements are available in javascript</h2>
+<h2>What kind of conditional statements are available in Javascript</h2>
 
 <h4>if statement</h4>
 
@@ -487,7 +487,7 @@ array each iteration. Micro-performance improvement that can add up over time.</
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="k">while</span><span class="p">(</span><span class="nx">x</span><span class="o">===</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="k">while</span><span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
 </span><span class='line'>    <span class="c1">//do stuff</span>
 </span><span class='line'><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -561,8 +561,8 @@ array each iteration. Micro-performance improvement that can add up over time.</
 
 <h3>How do you write an immediately invoked function?</h3>
 
-<p>If you were to write the following code, it would assign the function to the var, in order to access the
-return value, you would have to execute the function.</p>
+<p>If you were to write the following code, it would assign the function to the var addFirstFiveNumbers.
+In order to access the return value, you would have to execute the function.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -732,7 +732,63 @@ single inheritance). The specialized class is commonly called the child, and the
 parent. In JavaScript you do this by assigning an instance of the parent class to the child class, and then
 specializing it. In modern browsers you can also use Object.create to implement inheritance.</p></blockquote>
 
-<h3>What is the difference between .call() and .apply()</h3>
+<h3>Difference between Object.create and the new operator</h3>
+
+<p>Both are ways to inherit from a base class, but Object.create inherits from the prototype. What does this mean? Well lets
+do an example.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">Person</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">this</span><span class="p">.</span><span class="nx">species</span> <span class="o">=</span> <span class="s1">&#39;human&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">speak</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sleep</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Snore...zzz&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">andrew</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">();</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">andrew</span><span class="p">.</span><span class="nx">species</span><span class="p">);</span> <span class="c1">//human</span>
+</span><span class='line'><span class="nx">andrew</span><span class="p">.</span><span class="nx">speak</span><span class="p">();</span> <span class="c1">//Hello</span>
+</span><span class='line'><span class="nx">andrew</span><span class="p">.</span><span class="nx">sleep</span><span class="p">();</span> <span class="c1">//Snore...zzz</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">andy</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">andy</span><span class="p">.</span><span class="nx">species</span><span class="p">);</span> <span class="c1">//undefined</span>
+</span><span class='line'><span class="nx">andy</span><span class="p">.</span><span class="nx">speak</span><span class="p">();</span> <span class="c1">//Hello</span>
+</span><span class='line'><span class="nx">andy</span><span class="p">.</span><span class="nx">sleep</span><span class="p">();</span> <span class="c1">//Snore...zzz</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here, Andrew is an instance of the Person class and so has species set on it. Andy on the other hand has inherited
+from the Person class&rsquo;s prototype <em>only</em> and so has access to the prototype functions of the Person class but
+none of the attributes set on the class.</p>
+
+<h2>What is the difference between .call() and .apply()</h2>
 
 <p>At first you might think they do the same thing. Take a <em>this</em> arg and pass it to a function, lets see that
 in action</p>
@@ -826,62 +882,6 @@ out into the function params.</p>
 </span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">car2</span><span class="p">);</span> <span class="c1">//{ make: &#39;Mini&#39;, model: &#39;Cooper&#39;, year: &#39;2014&#39; }</span>
 </span></code></pre></td></tr></table></div></figure>
 
-
-<h3>Difference between Object.create and the new operator</h3>
-
-<p>Both are ways to inherit from a base class, but Object.create inherits from the prototype. What does this mean? Well lets
-do an example.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">Person</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">this</span><span class="p">.</span><span class="nx">species</span> <span class="o">=</span> <span class="s1">&#39;human&#39;</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">speak</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sleep</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Snore...zzz&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">andrew</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">();</span>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">andrew</span><span class="p">.</span><span class="nx">species</span><span class="p">);</span> <span class="c1">//human</span>
-</span><span class='line'><span class="nx">andrew</span><span class="p">.</span><span class="nx">speak</span><span class="p">();</span> <span class="c1">//Hello</span>
-</span><span class='line'><span class="nx">andrew</span><span class="p">.</span><span class="nx">sleep</span><span class="p">();</span> <span class="c1">//Snore...zzz</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">andy</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">andy</span><span class="p">.</span><span class="nx">species</span><span class="p">);</span> <span class="c1">//undefined</span>
-</span><span class='line'><span class="nx">andy</span><span class="p">.</span><span class="nx">speak</span><span class="p">();</span> <span class="c1">//Hello</span>
-</span><span class='line'><span class="nx">andy</span><span class="p">.</span><span class="nx">sleep</span><span class="p">();</span> <span class="c1">//Snore...zzz</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Here, Andrew is an instance of the Person class and so has species set on it. Andy on the other hand has inherited
-from the Person class&rsquo;s prototype <em>only</em> and so has access to the prototype functions of the Person class but
-none of the attributes set on the class.</p>
 
 <h2>How would you go about dealing with an asynchronous request?</h2>
 

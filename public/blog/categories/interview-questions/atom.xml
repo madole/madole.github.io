@@ -4,7 +4,7 @@
   <title><![CDATA[Category: interview questions | Madole's Ramblings]]></title>
   <link href="http://madole.github.io/blog/categories/interview-questions/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-07-25T13:04:57+10:00</updated>
+  <updated>2014-07-25T13:15:21+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -218,7 +218,7 @@ console.log(x); //undefined
  3  === &ldquo;3&rdquo; //false
 ```</p>
 
-<h2>What kind of conditional statements are available in javascript</h2>
+<h2>What kind of conditional statements are available in Javascript</h2>
 
 <h4>if statement</h4>
 
@@ -338,7 +338,7 @@ for (var x in arr) {</p>
 <h4>while loop</h4>
 
 <p>```javascript
-while(x===true) {</p>
+while(x === true) {</p>
 
 <pre><code>//do stuff
 </code></pre>
@@ -390,8 +390,8 @@ arr5[2] = &lsquo;Them&rsquo;;</p>
 
 <h3>How do you write an immediately invoked function?</h3>
 
-<p>If you were to write the following code, it would assign the function to the var, in order to access the
-return value, you would have to execute the function.</p>
+<p>If you were to write the following code, it would assign the function to the var addFirstFiveNumbers.
+In order to access the return value, you would have to execute the function.</p>
 
 <p>```javascript
 var addFirstFiveNumbers = function() {</p>
@@ -543,7 +543,49 @@ single inheritance). The specialized class is commonly called the child, and the
 parent. In JavaScript you do this by assigning an instance of the parent class to the child class, and then
 specializing it. In modern browsers you can also use Object.create to implement inheritance.</p></blockquote>
 
-<h3>What is the difference between .call() and .apply()</h3>
+<h3>Difference between Object.create and the new operator</h3>
+
+<p>Both are ways to inherit from a base class, but Object.create inherits from the prototype. What does this mean? Well lets
+do an example.</p>
+
+<p>```javascript
+function Person() {</p>
+
+<pre><code>this.species = 'human';
+</code></pre>
+
+<p>}</p>
+
+<p>Person.prototype.speak = function () {</p>
+
+<pre><code>console.log('Hello');
+</code></pre>
+
+<p>}</p>
+
+<p>Person.prototype.sleep = function () {</p>
+
+<pre><code>console.log('Snore...zzz');
+</code></pre>
+
+<p>}</p>
+
+<p>var andrew = new Person();
+console.log(andrew.species); //human
+andrew.speak(); //Hello
+andrew.sleep(); //Snore&hellip;zzz</p>
+
+<p>var andy = Object.create(Person.prototype);
+console.log(andy.species); //undefined
+andy.speak(); //Hello
+andy.sleep(); //Snore&hellip;zzz
+```</p>
+
+<p>Here, Andrew is an instance of the Person class and so has species set on it. Andy on the other hand has inherited
+from the Person class&rsquo;s prototype <em>only</em> and so has access to the prototype functions of the Person class but
+none of the attributes set on the class.</p>
+
+<h2>What is the difference between .call() and .apply()</h2>
 
 <p>At first you might think they do the same thing. Take a <em>this</em> arg and pass it to a function, lets see that
 in action</p>
@@ -610,48 +652,6 @@ console.log(car2); //{ make: 'Mini', model: 'Cooper', year: '2014' }
 </code></pre>
 
 <p>```</p>
-
-<h3>Difference between Object.create and the new operator</h3>
-
-<p>Both are ways to inherit from a base class, but Object.create inherits from the prototype. What does this mean? Well lets
-do an example.</p>
-
-<p>```javascript
-function Person() {</p>
-
-<pre><code>this.species = 'human';
-</code></pre>
-
-<p>}</p>
-
-<p>Person.prototype.speak = function () {</p>
-
-<pre><code>console.log('Hello');
-</code></pre>
-
-<p>}</p>
-
-<p>Person.prototype.sleep = function () {</p>
-
-<pre><code>console.log('Snore...zzz');
-</code></pre>
-
-<p>}</p>
-
-<p>var andrew = new Person();
-console.log(andrew.species); //human
-andrew.speak(); //Hello
-andrew.sleep(); //Snore&hellip;zzz</p>
-
-<p>var andy = Object.create(Person.prototype);
-console.log(andy.species); //undefined
-andy.speak(); //Hello
-andy.sleep(); //Snore&hellip;zzz
-```</p>
-
-<p>Here, Andrew is an instance of the Person class and so has species set on it. Andy on the other hand has inherited
-from the Person class&rsquo;s prototype <em>only</em> and so has access to the prototype functions of the Person class but
-none of the attributes set on the class.</p>
 
 <h2>How would you go about dealing with an asynchronous request?</h2>
 
