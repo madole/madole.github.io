@@ -53,19 +53,6 @@ function test() {
 }
 ```
 
-####Intermediately scoped variable 
-
-```javascript
-var a = 1;
-var x = true;
-function test() {
-    if (x) {
-        var a = 100;
-    }
-    console.log(a) //100
-}
-```
-
 ####Closure
 
 The return function still has access to the internal variable by trapping it in the closure. 
@@ -227,8 +214,13 @@ if (!condition) {
     //... 
 }
 ``` 
-This would satisfy if condition==='undefined', also if condition===null, also if condition===0 and 
-also if condition===false. 
+This would satisfy if 
+condition==='undefined' or
+condition===null  or
+condition===0     or
+condition===""    or
+condition===NaN   or
+condition===false. 
 
 This is a common way of checking for null or undefined but you have to double check that your variable 
 would not ever be set to false or 0 because it will also satisfy. 
@@ -237,7 +229,8 @@ would not ever be set to false or 0 because it will also satisfy.
 ##What kind of loops are available in Javascript? 
 ####for loop
 You can see in the second loop, we cache the length of the array so we don't need to calculate the length of the 
-array each iteration. Micro-performance improvement that can add up over time.  
+array each iteration. Micro-performance improvement that can add up over time, although newer Javascript engines like
+V8 will more than likely JIT compile for loops automatically into their most efficient form.  
 
 ```javascript
 for(var i=0; i<arr.length; i++) {
@@ -359,7 +352,7 @@ finally {
 }
 ```
 
-####Try Catch Conditional statements
+####Try Catch Conditional statements - THESE ARE NON STANDARD (and do not work in V8) 
 ```javascript
 try {
     //do stuff
@@ -507,7 +500,7 @@ Lets see these in action
 ##How would you go about dealing with an asynchronous request? 
 
 ####Deferred promises
-jQuery and Q both provide a way to do promises and ECMAScript6 will provide a way to do native promises. 
+jQuery and Q both provide a way to do promises and ECMAScript6 will provide a way to do native Javascript promises. 
 
 Lets look at the jQuery Deferred object.
 

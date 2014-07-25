@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javascript | Madole's Ramblings]]></title>
   <link href="http://madole.github.io/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-07-25T13:15:21+10:00</updated>
+  <updated>2014-07-25T18:40:57+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -69,22 +69,6 @@ function test() {</p>
 
 <pre><code>var a = 1;
 console.log(a); //1
-</code></pre>
-
-<p>}
-```</p>
-
-<h4>Intermediately scoped variable</h4>
-
-<p>```javascript
-var a = 1;
-var x = true;
-function test() {</p>
-
-<pre><code>if (x) {
-    var a = 100;
-}
-console.log(a) //100
 </code></pre>
 
 <p>}
@@ -295,8 +279,13 @@ if (!condition) {</p>
 
 <p>}
 ```
-This would satisfy if condition===&lsquo;undefined&rsquo;, also if condition===null, also if condition===0 and
-also if condition===false.</p>
+This would satisfy if
+condition===&lsquo;undefined&rsquo; or
+condition===null  or
+condition===0     or
+condition===&ldquo;&rdquo;    or
+condition===NaN   or
+condition===false.</p>
 
 <p>This is a common way of checking for null or undefined but you have to double check that your variable
 would not ever be set to false or 0 because it will also satisfy.</p>
@@ -306,7 +295,8 @@ would not ever be set to false or 0 because it will also satisfy.</p>
 <h4>for loop</h4>
 
 <p>You can see in the second loop, we cache the length of the array so we don&rsquo;t need to calculate the length of the
-array each iteration. Micro-performance improvement that can add up over time.</p>
+array each iteration. Micro-performance improvement that can add up over time, although newer Javascript engines like
+V8 will more than likely JIT compile for loops automatically into their most efficient form.</p>
 
 <p>```javascript
 for(var i=0; i&lt;arr.length; i++) {</p>
@@ -469,7 +459,7 @@ closeMyFile();
 <p>}
 ```</p>
 
-<h4>Try Catch Conditional statements</h4>
+<h4>Try Catch Conditional statements &ndash; THESE ARE NON STANDARD (and do not work in V8)</h4>
 
 <p>```javascript
 try {</p>
@@ -657,7 +647,7 @@ console.log(car2); //{ make: 'Mini', model: 'Cooper', year: '2014' }
 
 <h4>Deferred promises</h4>
 
-<p>jQuery and Q both provide a way to do promises and ECMAScript6 will provide a way to do native promises.</p>
+<p>jQuery and Q both provide a way to do promises and ECMAScript6 will provide a way to do native Javascript promises.</p>
 
 <p>Lets look at the jQuery Deferred object.</p>
 

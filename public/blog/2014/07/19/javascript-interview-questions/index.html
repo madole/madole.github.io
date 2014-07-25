@@ -166,27 +166,6 @@ modules and classes.</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h4>Intermediately scoped variable</h4>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span><span class='line'><span class="kd">function</span> <span class="nx">test</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span> <span class="c1">//100</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
 <h4>Closure</h4>
 
 <p>The return function still has access to the internal variable by trapping it in the closure.
@@ -441,8 +420,13 @@ Inside the test function, the interpreter has seen there&rsquo;s a variable decl
 
 
 <p>
-This would satisfy if condition===&lsquo;undefined&rsquo;, also if condition===null, also if condition===0 and
-also if condition===false.</p>
+This would satisfy if
+condition===&lsquo;undefined&rsquo; or
+condition===null  or
+condition===0     or
+condition===&ldquo;&rdquo;    or
+condition===NaN   or
+condition===false.</p>
 
 <p>This is a common way of checking for null or undefined but you have to double check that your variable
 would not ever be set to false or 0 because it will also satisfy.</p>
@@ -452,7 +436,8 @@ would not ever be set to false or 0 because it will also satisfy.</p>
 <h4>for loop</h4>
 
 <p>You can see in the second loop, we cache the length of the array so we don&rsquo;t need to calculate the length of the
-array each iteration. Micro-performance improvement that can add up over time.</p>
+array each iteration. Micro-performance improvement that can add up over time, although newer Javascript engines like
+V8 will more than likely JIT compile for loops automatically into their most efficient form.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -656,7 +641,7 @@ parenthesis after it</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h4>Try Catch Conditional statements</h4>
+<h4>Try Catch Conditional statements &ndash; THESE ARE NON STANDARD (and do not work in V8)</h4>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -887,7 +872,7 @@ out into the function params.</p>
 
 <h4>Deferred promises</h4>
 
-<p>jQuery and Q both provide a way to do promises and ECMAScript6 will provide a way to do native promises.</p>
+<p>jQuery and Q both provide a way to do promises and ECMAScript6 will provide a way to do native Javascript promises.</p>
 
 <p>Lets look at the jQuery Deferred object.</p>
 

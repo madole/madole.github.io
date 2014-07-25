@@ -3,23 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="48f2680d-0ca4-43ba-aac6-badfd2b79bf0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/atom.xml" afterPath="$PROJECT_DIR$/public/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/atom/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/atom/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/bootstrap/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/bootstrap/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/compass/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/compass/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/css/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/css/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/github/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/github/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/interview-questions/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/interview-questions/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/javascript/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/javascript/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/mongodb/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/mongodb/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/ruby/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/ruby/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/sass/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/sass/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/scout/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/scout/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/sublime-text/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/sublime-text/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/webstorm/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/webstorm/atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/2014/07/19/javascript-interview-questions/index.html" afterPath="$PROJECT_DIR$/public/blog/2014/07/19/javascript-interview-questions/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="madole.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,8 +87,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28985506" vertical-offset="8600" max-vertical-offset="9195">
-              <caret line="580" column="0" selection-start-line="580" selection-start-column="0" selection-end-line="580" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.157754" vertical-offset="8711" max-vertical-offset="9090">
+              <caret line="502" column="106" selection-start-line="502" selection-start-column="106" selection-end-line="502" selection-end-column="106" />
               <folding />
             </state>
           </provider>
@@ -882,8 +865,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28985506" vertical-offset="8600" max-vertical-offset="9195">
-          <caret line="580" column="0" selection-start-line="580" selection-start-column="0" selection-end-line="580" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.157754" vertical-offset="8711" max-vertical-offset="9090">
+          <caret line="502" column="106" selection-start-line="502" selection-start-column="106" selection-end-line="502" selection-end-column="106" />
           <folding />
         </state>
       </provider>
