@@ -378,7 +378,7 @@ var timeout = setTimeout(function(){
 }, 30000)
 
 //To cancel this timeout
-clearInterval(timeout);
+clearTimeout(timeout);
 ```
 
 ##How would you execute a piece of code every 10 seconds?

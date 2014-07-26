@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javascript | Madole's Ramblings]]></title>
   <link href="http://madole.github.io/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-07-25T18:40:57+10:00</updated>
+  <updated>2014-07-26T11:25:24+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -505,7 +505,7 @@ myRoutine(); //may throw three exceptions
 <p>}, 30000)</p>
 
 <p>//To cancel this timeout
-clearInterval(timeout);
+clearTimeout(timeout);
 ```</p>
 
 <h2>How would you execute a piece of code every 10 seconds?</h2>

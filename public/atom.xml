@@ -4,7 +4,7 @@
   <title><![CDATA[Madole's Ramblings]]></title>
   <link href="http://madole.github.io/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-07-25T18:40:57+10:00</updated>
+  <updated>2014-07-26T11:25:24+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -596,7 +596,7 @@ parenthesis after it</p>
 </span><span class='line'><span class="p">},</span> <span class="mi">30000</span><span class="p">)</span>
 </span><span class='line'>
 </span><span class='line'><span class="c1">//To cancel this timeout</span>
-</span><span class='line'><span class="nx">clearInterval</span><span class="p">(</span><span class="nx">timeout</span><span class="p">);</span>
+</span><span class='line'><span class="nx">clearTimeout</span><span class="p">(</span><span class="nx">timeout</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
