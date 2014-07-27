@@ -24,20 +24,11 @@ Next on the list of learning is TypeScript!
 
 You can find me in the following places: 
 
-{% img left ../images/github.png 100 100 %}  
+[{% img left ../images/github.png 100 100 %}](http://www.github.com/madole)
 
-[github.com/madole](http://www.github.com/madole)
-
-{% img left ../images/bird_twitter_new_single.png 100 100 %}  
-
-[twitter.com/madole](http://www.twitter.com/madole)
+[{% img left ../images/bird_twitter_new_single.png 100 100 %}](http://www.twitter.com/madole)
 
 
-{% img left ../images/Gmail-icon.png 100 100 %}
+[{% img left ../images/Gmail-icon.png 100 100 %}](mailto:andrew.g.mcdowell@gmail.com)
 
-[andrew.g.mcdowell@gmail.com](mailto:andrew.g.mcdowell@gmail.com)
-
-{% img left ../images/linkedinsquarelogo.png 100 100 %}
-
-
-[Linked in - Andrew McDowell](http://lnkd.in/bQyNnR8)
+[{% img left ../images/linkedinsquarelogo.png 100 100 %}](http://lnkd.in/bQyNnR8)
