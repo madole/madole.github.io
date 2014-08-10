@@ -9,8 +9,7 @@
   <meta name="author" content="Andrew McDowell">
 
   
-  <meta name="description" content="Javascript Interview Questions I was asked recently by a friend of mine to come up with a list of interview questions that you can get asked during
-a &hellip;">
+  <meta name="description" content="When trying to maintain context, like in a setTimeout, I&rsquo;ve seen lots code that resembles var self = this; self is then used inside the timeout &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +78,58 @@ a &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/08/why-you-should-not-use-var-self-equals-this/">Why You Should Not Use Var Self = This</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-08T07:39:07+10:00" pubdate data-updated="true">Aug 8<sup>th</sup>, 2014</time>
+        
+         | <a href="/blog/2014/08/08/why-you-should-not-use-var-self-equals-this/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When trying to maintain context, like in a setTimeout, I&rsquo;ve seen lots code that resembles</p>
+
+<blockquote><p>var self = this;</p></blockquote>
+
+<p><em>self</em> is then used inside the timeout to execute the code within the scope of the parent function.</p>
+
+<p>Self is a reserved word in the browser which is equal to Window in most browsers and therefore should not be
+overwritten as it could cause confusion for someone thinking self is referring to the window object reference.</p>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window.self">https://developer.mozilla.org/en-US/docs/Web/API/Window.self</a></p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/08/08/why-you-should-not-use-var-self-equals-this/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -229,6 +280,10 @@ to use something different for this learning experience. We then boiled down the
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/08/08/why-you-should-not-use-var-self-equals-this/">Why you should not use var self = this</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/07/19/javascript-interview-questions/">Javascript interview questions</a>
