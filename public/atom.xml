@@ -4,7 +4,7 @@
   <title><![CDATA[Madole's Ramblings]]></title>
   <link href="http://madole.github.io/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-08-11T07:09:26+10:00</updated>
+  <updated>2014-08-18T13:41:30+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -12,6 +12,152 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Patterns: Singleton]]></title>
+    <link href="http://madole.github.io/blog/2014/08/18/patterns-singleton/"/>
+    <updated>2014-08-18T13:21:18+10:00</updated>
+    <id>http://madole.github.io/blog/2014/08/18/patterns-singleton</id>
+    <content type="html"><![CDATA[<blockquote><p>The singleton pattern is a design pattern that restricts the instantiation of a class to one object.
+This is useful when exactly one object is needed to coordinate actions across the system.
+The concept is sometimes generalized to systems that operate more efficiently when only one object exists,
+or that restrict the instantiation to a certain number of objects.
+The term comes from the mathematical concept of a singleton.</p></blockquote>
+
+<!--more-->
+
+
+<p></p>
+
+<h3>Features of the Singleton pattern</h3>
+
+<ul>
+<li>Lazy construction.
+
+<ul>
+<li>The singleton object is not created until it is needed to be used for the first time.</li>
+</ul>
+</li>
+<li>The constructor is private so you can not build new instances of the object.</li>
+<li>The constructor is only ever called by the getInstance function if the object does not already exist.</li>
+</ul>
+
+
+<h3>Code example</h3>
+
+<p>A typical singleton pattern in JavaScript looks like this.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">singletonDriver</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">instance</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">function</span> <span class="nx">init</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>      <span class="c1">//private methods and variables</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Wilson&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">cars</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Porche&#39;</span><span class="p">,</span> <span class="s1">&#39;Ferarri&#39;</span><span class="p">,</span> <span class="s1">&#39;Volvo&#39;</span><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="kd">function</span> <span class="nx">printCars</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cars</span><span class="p">);</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="k">return</span> <span class="p">{</span>
+</span><span class='line'>        <span class="c1">// Public methods</span>
+</span><span class='line'>        <span class="nx">getName</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>          <span class="k">return</span> <span class="nx">name</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">},</span>
+</span><span class='line'>        <span class="nx">getCars</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>          <span class="k">return</span> <span class="nx">cars</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">},</span>
+</span><span class='line'>        <span class="nx">printCars</span><span class="o">:</span> <span class="nx">printCars</span>
+</span><span class='line'>      <span class="p">};</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">return</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">getInstance</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">instance</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>          <span class="nx">instance</span> <span class="o">=</span> <span class="nx">init</span><span class="p">();</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="k">return</span> <span class="nx">instance</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="p">};</span>
+</span><span class='line'>  <span class="p">})();</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">// Usage:</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">driver1</span> <span class="o">=</span> <span class="nx">singletonDriver</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">();</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">driver2</span> <span class="o">=</span> <span class="nx">singletonDriver</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">driver1</span> <span class="o">===</span> <span class="nx">driver2</span><span class="p">);</span> <span class="c1">//true</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">driver1</span><span class="p">.</span><span class="nx">getCars</span><span class="p">()</span> <span class="o">===</span> <span class="nx">driver2</span><span class="p">.</span><span class="nx">getCars</span><span class="p">());</span> <span class="c1">// true</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">driver1</span><span class="p">.</span><span class="nx">getName</span><span class="p">());</span> <span class="c1">//wilson</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">driver2</span><span class="p">.</span><span class="nx">getName</span><span class="p">());</span> <span class="c1">//wilson</span>
+</span><span class='line'>  <span class="nx">driver1</span><span class="p">.</span><span class="nx">printCars</span><span class="p">();</span> <span class="c1">//[ &#39;Porche&#39;, &#39;Ferarri&#39;, &#39;Volvo&#39; ]</span>
+</span><span class='line'><span class="p">})();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Lets look at what we have created.</p>
+
+<ul>
+<li><p>An instance variable that is set to null, this will hold our instance of the singleton when
+the getInstance function is called for the first time.</p></li>
+<li><p>An init() function which will build our singleton. It can contain private and public variables and functions.</p></li>
+<li><p>A public getInstance() function. This will return the instance if it already exists and or if it doesn&rsquo;t,
+it will create it, set our instance variable and then return it.</p></li>
+</ul>
+
+
+<p>That&rsquo;s all there is to it.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Why you should not use var self = this]]></title>

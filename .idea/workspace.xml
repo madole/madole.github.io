@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48f2680d-0ca4-43ba-aac6-badfd2b79bf0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/images/chromeSelf.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/images/firefoxSelf.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/images/safariSelf.jpg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/_posts/callApply.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_deploy" afterPath="$PROJECT_DIR$/_deploy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/atom.xml" afterPath="$PROJECT_DIR$/public/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/atom/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/atom/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/bootstrap/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/bootstrap/atom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/browsers/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/browsers/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/compass/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/compass/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/css/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/css/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/github/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/github/atom.xml" />
@@ -26,9 +22,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/2014/07/13/compass-sass/index.html" afterPath="$PROJECT_DIR$/public/blog/2014/07/13/compass-sass/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/2014/07/16/javascript-toolbox/index.html" afterPath="$PROJECT_DIR$/public/blog/2014/07/16/javascript-toolbox/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/2014/07/19/javascript-interview-questions/index.html" afterPath="$PROJECT_DIR$/public/blog/2014/07/19/javascript-interview-questions/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/2014/08/08/why-you-should-not-use-var-self-equals-this/index.html" afterPath="$PROJECT_DIR$/public/blog/2014/08/08/why-you-should-not-use-var-self-equals-this/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/archives/index.html" afterPath="$PROJECT_DIR$/public/blog/archives/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/atom/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/atom/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/bootstrap/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/bootstrap/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/browsers/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/browsers/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/compass/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/compass/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/css/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/css/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/github/index.html" afterPath="$PROJECT_DIR$/public/blog/categories/github/index.html" />
@@ -67,7 +65,7 @@
       <file leaf-file-name="2014-07-13-compass-sass.markdown" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="525">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="165" max-vertical-offset="525">
               <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
               <folding />
             </state>
@@ -103,11 +101,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-08-08-why-you-should-not-use-var-self-equals-this.markdown" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2014-08-08-why-you-should-not-use-var-self-equals-this.markdown" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/2014-08-08-why-you-should-not-use-var-self-equals-this.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27272728" vertical-offset="0" max-vertical-offset="2775">
-              <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+            <state vertical-scroll-proportion="20.851852" vertical-offset="2408" max-vertical-offset="2775">
+              <caret line="123" column="12" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-08-18-patterns-singleton.markdown" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_posts/2014-08-18-patterns-singleton.markdown">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.613079" vertical-offset="0" max-vertical-offset="1365">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -119,8 +130,8 @@
       <file leaf-file-name="2014-07-19-javascript-interview-questions.markdown" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5501" max-vertical-offset="9090">
-              <caret line="382" column="0" selection-start-line="382" selection-start-column="0" selection-end-line="382" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.333333" vertical-offset="0" max-vertical-offset="9090">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -177,6 +188,9 @@
         <option value="$PROJECT_DIR$/sass/base/_theme.scss" />
         <option value="$PROJECT_DIR$/source/about/index.markdown" />
         <option value="$PROJECT_DIR$/source/_posts/2014-08-08-why-you-should-not-use-var-self-equals-this.markdown" />
+        <option value="$PROJECT_DIR$/source/_posts/test.js" />
+        <option value="$PROJECT_DIR$/source/_posts/2014-08-14-functions-call-vs-apply-vs-bind.markdown" />
+        <option value="$PROJECT_DIR$/source/_posts/2014-08-18-patterns-singleton.markdown" />
       </list>
     </option>
   </component>
@@ -210,6 +224,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -252,31 +267,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_deploy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="madole.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="madole.github.io" />
+              <option name="myItemId" value="source" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_deploy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
+              <option name="myItemId" value="_posts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,7 +299,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.callApply.js">
-    <configuration default="false" name="callApply.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="callApply.js" working-dir="$PROJECT_DIR$/source/_posts">
+    <configuration default="false" name="callApply.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/source/_posts">
       <RunnerSettings RunnerId="NodeJS.debug" />
       <RunnerSettings RunnerId="NodeJS.run" />
       <ConfigurationWrapper RunnerId="NodeJS.debug" />
@@ -369,12 +369,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329235" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989071" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -385,10 +386,9 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -429,35 +429,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4005" max-vertical-offset="6150">
-          <caret line="267" column="23" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/google_analytics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="300">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
@@ -761,17 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5501" max-vertical-offset="9090">
-          <caret line="382" column="0" selection-start-line="382" selection-start-column="0" selection-end-line="382" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="525">
@@ -817,8 +781,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/2014-08-08-why-you-should-not-use-var-self-equals-this.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27272728" vertical-offset="0" max-vertical-offset="2775">
-          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        <state vertical-scroll-proportion="20.851852" vertical-offset="2408" max-vertical-offset="2775">
+          <caret line="123" column="12" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.333333" vertical-offset="0" max-vertical-offset="9090">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/2014-08-18-patterns-singleton.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.613079" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding />
         </state>
       </provider>

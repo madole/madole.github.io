@@ -1,0 +1,49 @@
+<div class="highlight"><pre><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">singletonDriver</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+
+    <span class="kd">var</span> <span class="nx">instance</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+
+    <span class="kd">function</span> <span class="nx">init</span><span class="p">()</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Wilson&#39;</span><span class="p">;</span>
+      <span class="kd">var</span> <span class="nx">cars</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Porche&#39;</span><span class="p">,</span> <span class="s1">&#39;Ferarri&#39;</span><span class="p">,</span> <span class="s1">&#39;Volvo&#39;</span><span class="p">];</span>
+
+      <span class="kd">function</span> <span class="nx">printCars</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cars</span><span class="p">);</span>
+      <span class="p">}</span>
+
+      <span class="k">return</span> <span class="p">{</span>
+        <span class="c1">// Public methods</span>
+        <span class="nx">getName</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+          <span class="k">return</span> <span class="nx">name</span><span class="p">;</span>
+        <span class="p">},</span>
+        <span class="nx">getCars</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+          <span class="k">return</span> <span class="nx">cars</span><span class="p">;</span>
+        <span class="p">},</span>
+        <span class="nx">printCars</span><span class="o">:</span> <span class="nx">printCars</span>
+      <span class="p">};</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="p">{</span>
+      <span class="nx">getInstance</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">instance</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">instance</span> <span class="o">=</span> <span class="nx">init</span><span class="p">();</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nx">instance</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">};</span>
+  <span class="p">})();</span>
+
+
+  <span class="c1">// Usage:</span>
+  <span class="kd">var</span> <span class="nx">driver1</span> <span class="o">=</span> <span class="nx">singletonDriver</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">();</span>
+  <span class="kd">var</span> <span class="nx">driver2</span> <span class="o">=</span> <span class="nx">singletonDriver</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">();</span>
+
+
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">driver1</span><span class="p">.</span><span class="nx">getCars</span><span class="p">()</span> <span class="o">===</span> <span class="nx">driver2</span><span class="p">.</span><span class="nx">getCars</span><span class="p">());</span> <span class="c1">// true</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">driver1</span> <span class="o">===</span> <span class="nx">driver2</span><span class="p">);</span> <span class="c1">//true</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">driver1</span><span class="p">.</span><span class="nx">getName</span><span class="p">());</span> <span class="c1">//wilson</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">driver2</span><span class="p">.</span><span class="nx">getName</span><span class="p">());</span> <span class="c1">//wilson</span>
+  <span class="nx">driver1</span><span class="p">.</span><span class="nx">printCars</span><span class="p">();</span> <span class="c1">//[ &#39;Porche&#39;, &#39;Ferarri&#39;, &#39;Volvo&#39; ]</span>
+<span class="p">})();</span>
+</pre></div>

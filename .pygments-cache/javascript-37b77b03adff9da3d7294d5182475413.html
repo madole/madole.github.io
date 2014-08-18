@@ -1,0 +1,15 @@
+<div class="highlight"><pre><span class="kd">function</span> <span class="nx">Shape</span><span class="p">(</span><span class="nx">sides</span><span class="p">,</span> <span class="nx">shape</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">_sides</span> <span class="o">=</span> <span class="nx">sides</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">_shape</span> <span class="o">=</span> <span class="nx">shape</span><span class="p">;</span>
+    
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="nx">makeShape</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">angles</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;A &#39;</span> <span class="o">+</span> <span class="nx">_shape</span> <span class="o">+</span> <span class="s1">&#39; has &#39;</span> <span class="o">+</span> <span class="nx">_sides</span> <span class="o">+</span> <span class="s1">&#39; and &#39;</span> <span class="o">+</span> <span class="nx">angles</span> <span class="o">+</span> <span class="s1">&#39; degrees angles&#39;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">shape</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Shape</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;rectangle&#39;</span><span class="p">);</span>
+
+<span class="nx">shape</span><span class="p">.</span><span class="nx">makeShape</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span> <span class="c1">// A rectangle has 4 and 90 degrees angles</span>
+</pre></div>
