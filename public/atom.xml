@@ -4,7 +4,7 @@
   <title><![CDATA[Madole's Ramblings]]></title>
   <link href="http://madole.github.io/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-09-30T12:01:50+10:00</updated>
+  <updated>2014-09-30T13:45:59+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -14,7 +14,33 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Cool function.prototype.bind() quirk]]></title>
+    <title type="html"><![CDATA[Priciples: Don't Repeat Yourself (DRY)]]></title>
+    <link href="http://madole.github.io/blog/2014/09/30/priciples-dont-repeat-yourself-dry/"/>
+    <updated>2014-09-30T13:43:13+10:00</updated>
+    <id>http://madole.github.io/blog/2014/09/30/priciples-dont-repeat-yourself-dry</id>
+    <content type="html"><![CDATA[<h2>Principles of software engineering: Don’t Repeat Yourself</h2>
+
+<h3>DRY</h3>
+
+<p>Aimed at reducing the repetition of code.</p>
+
+<blockquote><p>&ldquo;Every piece of knowledge must have a single, unambiguous, authoritative representation within a system”
+&ndash; The Pragmatic Programmer</p></blockquote>
+
+<p>By following the DRY principle when coding, you will write small functions that do only one thing. Then other functions are made up of calls to these small functions.</p>
+
+<p>In this way, you can reuse code and refactor common functionality into modules that can be used in any part of your project.</p>
+
+<p>If you find yourself copying and pasting code, you are more than likely not following the DRY principle. This should be a red flag and a chance to refactor your existing code into smaller reusable components.</p>
+
+<p>Violations of the DRY principle are called WET (‘we enjoy typing’).</p>
+
+<p>Nobody likes getting wet, so keep it DRY to write better code in the future.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cool Function.prototype.bind() quirk]]></title>
     <link href="http://madole.github.io/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/"/>
     <updated>2014-09-30T11:58:10+10:00</updated>
     <id>http://madole.github.io/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk</id>
@@ -68,7 +94,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p><a href="http://jsfiddle.net/madole404/zbLbLymt/">http://jsfiddle.net/madole404/zbLbLymt/</a></p>
+<p><a href="http://jsfiddle.net/madole404/zbLbLymt/1/">http://jsfiddle.net/madole404/zbLbLymt/1/</a></p>
 
 <h4>Outcome:</h4>
 

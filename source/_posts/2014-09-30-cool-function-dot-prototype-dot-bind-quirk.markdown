@@ -39,7 +39,7 @@ funkyFunc(callbackToPass.bind(null, 'hay'));
 
 ```
 
-http://jsfiddle.net/madole404/zbLbLymt/
+http://jsfiddle.net/madole404/zbLbLymt/1/
 
 ####Outcome: 
 When you bind an argument to the callback, it binds it as the first parameter.

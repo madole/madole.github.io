@@ -9,7 +9,7 @@
   <meta name="author" content="Andrew McDowell">
 
   
-  <meta name="description" content="Today I came up against a need to bind a parameter to a callback before passing it to a function. This is fine and a fairly normal thing to do. &hellip;">
+  <meta name="description" content="Principles of software engineering: Don’t Repeat Yourself DRY Aimed at reducing the repetition of code. &ldquo;Every piece of knowledge must have a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -84,7 +84,62 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/">Cool function.prototype.bind() Quirk</a></h1>
+      <h1 class="entry-title"><a href="/blog/2014/09/30/priciples-dont-repeat-yourself-dry/">Priciples: Don&#8217;t Repeat Yourself (DRY)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-30T13:43:13+10:00" pubdate data-updated="true">Sep 30<sup>th</sup>, 2014</time>
+        
+         | <a href="/blog/2014/09/30/priciples-dont-repeat-yourself-dry/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Principles of software engineering: Don’t Repeat Yourself</h2>
+
+<h3>DRY</h3>
+
+<p>Aimed at reducing the repetition of code.</p>
+
+<blockquote><p>&ldquo;Every piece of knowledge must have a single, unambiguous, authoritative representation within a system”
+&ndash; The Pragmatic Programmer</p></blockquote>
+
+<p>By following the DRY principle when coding, you will write small functions that do only one thing. Then other functions are made up of calls to these small functions.</p>
+
+<p>In this way, you can reuse code and refactor common functionality into modules that can be used in any part of your project.</p>
+
+<p>If you find yourself copying and pasting code, you are more than likely not following the DRY principle. This should be a red flag and a chance to refactor your existing code into smaller reusable components.</p>
+
+<p>Violations of the DRY principle are called WET (‘we enjoy typing’).</p>
+
+<p>Nobody likes getting wet, so keep it DRY to write better code in the future.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/">Cool Function.prototype.bind() Quirk</a></h1>
     
     
       <p class="meta">
@@ -159,7 +214,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p><a href="http://jsfiddle.net/madole404/zbLbLymt/">http://jsfiddle.net/madole404/zbLbLymt/</a></p>
+<p><a href="http://jsfiddle.net/madole404/zbLbLymt/1/">http://jsfiddle.net/madole404/zbLbLymt/1/</a></p>
 
 <h4>Outcome:</h4>
 
@@ -422,7 +477,11 @@ to use something different for this learning experience. We then boiled down the
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/">Cool function.prototype.bind() quirk</a>
+        <a href="/blog/2014/09/30/priciples-dont-repeat-yourself-dry/">Priciples: Don&#8217;t Repeat Yourself (DRY)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/">Cool Function.prototype.bind() quirk</a>
       </li>
     
       <li class="post">
@@ -435,10 +494,6 @@ to use something different for this learning experience. We then boiled down the
     
       <li class="post">
         <a href="/blog/2014/07/19/javascript-interview-questions/">Javascript interview questions</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/07/16/javascript-toolbox/">Javascript Toolbox</a>
       </li>
     
   </ul>
