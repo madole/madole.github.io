@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cool function.prototype.bind() quirk"
+title: "Cool Function.prototype.bind() quirk"
 date: 2014-09-30 11:58:10 +1000
 comments: true
 categories: ['JavaScript', 'Functions', 'bind', 'prototypes']
