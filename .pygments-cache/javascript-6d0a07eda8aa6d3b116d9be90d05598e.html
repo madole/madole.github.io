@@ -1,0 +1,14 @@
+<div class="highlight"><pre><span class="kd">function</span> <span class="nx">callbackToPass</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">second</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">first</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">second</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">funkyFunc</span><span class="p">(</span><span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">callback</span><span class="p">(</span><span class="s1">&#39;is good for horses&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">funkyFunc</span><span class="p">(</span><span class="nx">callbackToPass</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s1">&#39;hay&#39;</span><span class="p">));</span>
+
+<span class="c1">//hay</span>
+<span class="c1">//is good for horses</span>
+</pre></div>

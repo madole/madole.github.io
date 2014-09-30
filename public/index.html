@@ -9,8 +9,7 @@
   <meta name="author" content="Andrew McDowell">
 
   
-  <meta name="description" content="The singleton pattern is a design pattern that restricts the instantiation of a class to one object.
-This is useful when exactly one object is needed &hellip;">
+  <meta name="description" content="Today I came up against a need to bind a parameter to a callback before passing it to a function. This is fine and a fairly normal thing to do. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +78,99 @@ This is useful when exactly one object is needed &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/">Cool function.prototype.bind() Quirk</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-30T11:58:10+10:00" pubdate data-updated="true">Sep 30<sup>th</sup>, 2014</time>
+        
+         | <a href="/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Today I came up against a need to bind a parameter to a callback before passing it to a function. This is fine and a fairly normal thing to do.</p>
+
+<p>However, the function that was receiving the callback was also passing a parameter to the callback.</p>
+
+<p>I&rsquo;d not come up against this scenario before so I asked a colleague what would happen, we came up with a list of 3 possibilities.</p>
+
+<ul>
+<li> The function passing the parameter to the callback would overwrite the bound argument.</li>
+<li> The bound argument would be the first parameter and the passed in argument would be the second.</li>
+<li> The passed in argument would be the first parameter and bound argument would be the second.</li>
+</ul>
+
+
+<p>I headed over to JSFiddle.net to mock up a trivial example that would demonstrate my issue so I could see the outcome. I&rsquo;ve copied it below.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">callbackToPass</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">second</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">first</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">second</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">funkyFunc</span><span class="p">(</span><span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">callback</span><span class="p">(</span><span class="s1">&#39;is good for horses&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">funkyFunc</span><span class="p">(</span><span class="nx">callbackToPass</span><span class="p">);</span>
+</span><span class='line'><span class="c1">//is good for horses</span>
+</span><span class='line'><span class="c1">//undefined</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">funkyFunc</span><span class="p">(</span><span class="nx">callbackToPass</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s1">&#39;hay&#39;</span><span class="p">));</span>
+</span><span class='line'><span class="c1">//hay</span>
+</span><span class='line'><span class="c1">//is good for horses</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="http://jsfiddle.net/madole404/zbLbLymt/">http://jsfiddle.net/madole404/zbLbLymt/</a></p>
+
+<h4>Outcome:</h4>
+
+<p>When you bind an argument to the callback, it binds it as the first parameter.
+Then when you pass an argument to the same callback function when you are calling it, it becomes the secondary parameter.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -330,6 +422,10 @@ to use something different for this learning experience. We then boiled down the
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/">Cool function.prototype.bind() quirk</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/08/18/patterns-singleton/">Patterns: Singleton</a>
       </li>
     
@@ -343,10 +439,6 @@ to use something different for this learning experience. We then boiled down the
     
       <li class="post">
         <a href="/blog/2014/07/16/javascript-toolbox/">Javascript Toolbox</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/07/13/compass-sass/">Compass - SASS - Boostrap SASS</a>
       </li>
     
   </ul>

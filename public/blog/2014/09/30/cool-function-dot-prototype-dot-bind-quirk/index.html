@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>about - Madole's Ramblings</title>
+  <title>Cool function.prototype.bind() quirk - Madole's Ramblings</title>
   <meta name="author" content="Andrew McDowell">
 
   
-  <meta name="description" content="About Jul 13th, 2014 I’m 27, I write code for a job, and I write code for fun! I started off as a Java developer but now I mainly use Javascript. &hellip;">
+  <meta name="description" content="Today I came up against a need to bind a parameter to a callback before passing it to a function. This is fine and a fairly normal thing to do. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://madole.github.io/about/">
+  <link rel="canonical" href="http://madole.github.io/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -77,54 +77,15 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">About</h1>
-    <p class="meta">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-07-13T21:25:00+10:00" pubdate data-updated="true">Jul 13<sup>th</sup>, 2014</time></p>
-  </header>
-  
-  <p><img class="right" src="../images/me.jpg" width="300" height="300"></p>
-
-<p>I’m 27, I write code for a job, and I write code for fun!</p>
-
-<p>I started off as a Java developer but now I mainly use Javascript.</p>
-
-<p>Node.js has taken my interest over the last period and highly recommend <a href="http://nodeschool.io">Node School</a>.
-I’m pretty keen on EmberJS too. I have used AngularJS before and found it really interesting as it was my
-first attempt at using that style of JS framework.</p>
-
-<p>For a while, I’ve been trying to find the appeal to CoffeeScript so I spent some time writing sorting algorithms in it to see what I could learn. It’s actually a pretty cool abstraction from javascript and although it might generate verbose code, it’s really quick to knock up a small prototype of something in CoffeeScript! That’s where I see its value!</p>
-
-<p>Next on the list of learning is TypeScript!</p>
-
-<p>You can find me in the following places:</p>
-
-<p><a href="http://www.github.com/madole"><img class="left" src="../images/github.png" width="100" height="100"></a></p>
-
-<p><a href="http://www.twitter.com/madole"><img class="left" src="../images/bird_twitter_new_single.png" width="100" height="100"></a></p>
-
-<p><a href="mailto:andrew.g.mcdowell@gmail.com"><img class="left" src="../images/Gmail-icon.png" width="100" height="100"></a></p>
-
-<p><a href="http://lnkd.in/bQyNnR8"><img class="left" src="../images/linkedinsquarelogo.png" width="100" height="100"></a></p>
-
-  
-    <footer>
+    
+      <h1 class="entry-title">Cool function.prototype.bind() Quirk</h1>
+    
+    
       <p class="meta">
         
-        
 
 
 
@@ -136,13 +97,108 @@ first attempt at using that style of JS framework.</p>
   
 
 
-<time datetime="2014-07-13T21:25:00+10:00" pubdate data-updated="true">Jul 13<sup>th</sup>, 2014</time>
+<time datetime="2014-09-30T11:58:10+10:00" pubdate data-updated="true">Sep 30<sup>th</sup>, 2014</time>
+        
+         | <a href="#disqus_thread">Comments</a>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Today I came up against a need to bind a parameter to a callback before passing it to a function. This is fine and a fairly normal thing to do.</p>
+
+<p>However, the function that was receiving the callback was also passing a parameter to the callback.</p>
+
+<p>I&rsquo;d not come up against this scenario before so I asked a colleague what would happen, we came up with a list of 3 possibilities.</p>
+
+<ul>
+<li> The function passing the parameter to the callback would overwrite the bound argument.</li>
+<li> The bound argument would be the first parameter and the passed in argument would be the second.</li>
+<li> The passed in argument would be the first parameter and bound argument would be the second.</li>
+</ul>
+
+
+<p>I headed over to JSFiddle.net to mock up a trivial example that would demonstrate my issue so I could see the outcome. I&rsquo;ve copied it below.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">callbackToPass</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">second</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">first</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">second</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">funkyFunc</span><span class="p">(</span><span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">callback</span><span class="p">(</span><span class="s1">&#39;is good for horses&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">funkyFunc</span><span class="p">(</span><span class="nx">callbackToPass</span><span class="p">);</span>
+</span><span class='line'><span class="c1">//is good for horses</span>
+</span><span class='line'><span class="c1">//undefined</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">funkyFunc</span><span class="p">(</span><span class="nx">callbackToPass</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s1">&#39;hay&#39;</span><span class="p">));</span>
+</span><span class='line'><span class="c1">//hay</span>
+</span><span class='line'><span class="c1">//is good for horses</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="http://jsfiddle.net/madole404/zbLbLymt/">http://jsfiddle.net/madole404/zbLbLymt/</a></p>
+
+<h4>Outcome:</h4>
+
+<p>When you bind an argument to the callback, it binds it as the first parameter.
+Then when you pass an argument to the same callback function when you are calling it, it becomes the secondary parameter.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://madole.github.io/about/index.html" data-via="madole" data-counturl="http://madole.github.io/about/index.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">Andrew McDowell</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-30T11:58:10+10:00" pubdate data-updated="true">Sep 30<sup>th</sup>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/bind/'>bind</a>, <a class='category' href='/blog/categories/functions/'>functions</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/prototypes/'>prototypes</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://madole.github.io/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/" data-via="madole" data-counturl="http://madole.github.io/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/" >Tweet</a>
   
   
   
@@ -150,9 +206,14 @@ first attempt at using that style of JS framework.</p>
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left" href="/blog/2014/08/18/patterns-singleton/" title="Previous Post: Patterns: Singleton">&laquo; Patterns: Singleton</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
   <section>
@@ -244,8 +305,8 @@ first attempt at using that style of JS framework.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://madole.github.io/about/index.html';
-        var disqus_url = 'http://madole.github.io/about/index.html';
+        var disqus_identifier = 'http://madole.github.io/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/';
+        var disqus_url = 'http://madole.github.io/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/';
         var disqus_script = 'embed.js';
       
     (function () {
