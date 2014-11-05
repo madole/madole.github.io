@@ -4,7 +4,7 @@
   <title><![CDATA[Category: prototypes | Madole's Ramblings]]></title>
   <link href="http://madole.github.io/blog/categories/prototypes/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-09-30T13:45:59+10:00</updated>
+  <updated>2014-09-30T13:49:00+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -23,6 +23,11 @@
 <p>However, the function that was receiving the callback was also passing a parameter to the callback.</p>
 
 <p>I&rsquo;d not come up against this scenario before so I asked a colleague what would happen, we came up with a list of 3 possibilities.</p>
+
+<!--more-->
+
+
+<p></p>
 
 <ul>
 <li> The function passing the parameter to the callback would overwrite the bound argument.</li>

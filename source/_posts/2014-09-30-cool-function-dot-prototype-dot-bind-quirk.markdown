@@ -11,7 +11,7 @@ Today I came up against a need to bind a parameter to a callback before passing 
 However, the function that was receiving the callback was also passing a parameter to the callback. 
 
 I'd not come up against this scenario before so I asked a colleague what would happen, we came up with a list of 3 possibilities. 
-
+<!--more--> 
 
    * The function passing the parameter to the callback would overwrite the bound argument.
    * The bound argument would be the first parameter and the passed in argument would be the second.

@@ -14,6 +14,8 @@ Aimed at reducing the repetition of code.
 >"Every piece of knowledge must have a single, unambiguous, authoritative representation within a system”
 > - The Pragmatic Programmer
 
+<!--more--> 
+
 By following the DRY principle when coding, you will write small functions that do only one thing. Then other functions are made up of calls to these small functions. 
 
 
