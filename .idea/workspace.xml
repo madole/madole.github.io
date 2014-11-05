@@ -2,9 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48f2680d-0ca4-43ba-aac6-badfd2b79bf0" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_deploy" afterPath="$PROJECT_DIR$/_deploy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-09-30-cool-function-dot-prototype-dot-bind-quirk.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-09-30-cool-function-dot-prototype-dot-bind-quirk.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-09-30-priciples-dont-repeat-yourself-dry.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-09-30-priciples-dont-repeat-yourself-dry.markdown" />
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/46c4f64f40e6badf7c44823d56fc6194965582bb/_base.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/46c4f64f40e6badf7c44823d56fc6194965582bb/_partials.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/46c4f64f40e6badf7c44823d56fc6194965582bb/screen.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dbfb6a5358f874dd2132c3be7bba5a96949c7c3/_layout.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dbfb6a5358f874dd2132c3be7bba5a96949c7c3/_solarized.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dbfb6a5358f874dd2132c3be7bba5a96949c7c3/_theme.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dbfb6a5358f874dd2132c3be7bba5a96949c7c3/_typography.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dbfb6a5358f874dd2132c3be7bba5a96949c7c3/_utilities.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_archive.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_blog.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_footer.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_header.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_navigation.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_sharing.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_sidebar.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a60109e4f2bedb833d77d5f4f1ed99368c493e26/_syntax.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/c551f7312ade3e76ae2a58eccef19867dcda2a24/screen.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/db21e486f947d7855e19b97ca4d27f8438cae9ec/_plugins.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/dee6bd536aa22152300d41396745d482f8c77dbc/_colors.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/dee6bd536aa22152300d41396745d482f8c77dbc/_fonts.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/dee6bd536aa22152300d41396745d482f8c77dbc/_layout.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/dee6bd536aa22152300d41396745d482f8c77dbc/_styles.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e6a870f757da9b866fb552f20cbefe6bbd4fdcfd/_base.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e6a870f757da9b866fb552f20cbefe6bbd4fdcfd/_delicious.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e6a870f757da9b866fb552f20cbefe6bbd4fdcfd/_googleplus.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e6a870f757da9b866fb552f20cbefe6bbd4fdcfd/_pinboard.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e6a870f757da9b866fb552f20cbefe6bbd4fdcfd/_twitter.scssc" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_appearance.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_appearance.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_background-clip.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_background-clip.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_background-origin.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_background-origin.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/70b6b6a4e54d16df6bd4ed7f1fb59dc2a77fda23/_base.scssc" afterPath="$PROJECT_DIR$/.sass-cache/70b6b6a4e54d16df6bd4ed7f1fb59dc2a77fda23/_base.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_border-radius.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_border-radius.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/5cc2430aeaae95b73814700706afe3c0bfdb670f/_borders.scssc" afterPath="$PROJECT_DIR$/.sass-cache/5cc2430aeaae95b73814700706afe3c0bfdb670f/_borders.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_box-shadow.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_box-shadow.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_box.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_box.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/458fead6b49a4d396fd2f5e8ef38ab7d648ab8ad/_bullets.scssc" afterPath="$PROJECT_DIR$/.sass-cache/458fead6b49a4d396fd2f5e8ef38ab7d648ab8ad/_bullets.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_columns.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_columns.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_deploy" afterPath="$PROJECT_DIR$/_deploy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_filter.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_filter.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/7c8a94bae89fe024597c36dcb1fe3de542d76dc7/_float.scssc" afterPath="$PROJECT_DIR$/.sass-cache/7c8a94bae89fe024597c36dcb1fe3de542d76dc7/_float.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_font-face.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_font-face.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57328560ff9f81a3a3bda0420fd20de4da72f622/_grid-background.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57328560ff9f81a3a3bda0420fd20de4da72f622/_grid-background.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/7c8a94bae89fe024597c36dcb1fe3de542d76dc7/_hacks.scssc" afterPath="$PROJECT_DIR$/.sass-cache/7c8a94bae89fe024597c36dcb1fe3de542d76dc7/_hacks.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/458fead6b49a4d396fd2f5e8ef38ab7d648ab8ad/_horizontal-list.scssc" afterPath="$PROJECT_DIR$/.sass-cache/458fead6b49a4d396fd2f5e8ef38ab7d648ab8ad/_horizontal-list.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_hyphenation.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_hyphenation.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_images.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_images.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_inline-block.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_inline-block.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/458fead6b49a4d396fd2f5e8ef38ab7d648ab8ad/_inline-list.scssc" afterPath="$PROJECT_DIR$/.sass-cache/458fead6b49a4d396fd2f5e8ef38ab7d648ab8ad/_inline-list.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/7c8a94bae89fe024597c36dcb1fe3de542d76dc7/_min.scssc" afterPath="$PROJECT_DIR$/.sass-cache/7c8a94bae89fe024597c36dcb1fe3de542d76dc7/_min.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_opacity.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_opacity.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_regions.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_regions.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/d103bfdbe14cf732654d1f847530a1dfb09b4fe9/_replacement.scssc" afterPath="$PROJECT_DIR$/.sass-cache/d103bfdbe14cf732654d1f847530a1dfb09b4fe9/_replacement.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_shared.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_shared.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/70b6b6a4e54d16df6bd4ed7f1fb59dc2a77fda23/_sprite-img.scssc" afterPath="$PROJECT_DIR$/.sass-cache/70b6b6a4e54d16df6bd4ed7f1fb59dc2a77fda23/_sprite-img.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_text-shadow.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_text-shadow.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_transform.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_transform.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_transition.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_transition.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_user-interface.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_user-interface.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4916e2617e72294e99d67c49caa184778d2541df/_utilities.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4916e2617e72294e99d67c49caa184778d2541df/_utilities.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/164ddecf13e282c5dd7fcb216b472f47eadd34ab/_vertical_rhythm.scssc" afterPath="$PROJECT_DIR$/.sass-cache/164ddecf13e282c5dd7fcb216b472f47eadd34ab/_vertical_rhythm.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_background-size.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_background-size.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_box-sizing.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0792476a5e0d14a39905ce7910a9671844ba62a2/_box-sizing.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/d103bfdbe14cf732654d1f847530a1dfb09b4fe9/_ellipsis.scssc" afterPath="$PROJECT_DIR$/.sass-cache/d103bfdbe14cf732654d1f847530a1dfb09b4fe9/_ellipsis.scssc" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/atom.xml" afterPath="$PROJECT_DIR$/public/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/atom/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/atom/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/bind/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/bind/atom.xml" />
@@ -25,11 +92,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/singleton/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/singleton/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/sublime-text/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/sublime-text/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/categories/webstorm/atom.xml" afterPath="$PROJECT_DIR$/public/blog/categories/webstorm/atom.xml" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/index.html" afterPath="$PROJECT_DIR$/public/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog/2014/09/30/priciples-dont-repeat-yourself-dry/index.html" afterPath="$PROJECT_DIR$/public/blog/2014/09/30/priciples-dont-repeat-yourself-dry/index.html" />
+=======
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="madole.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,11 +152,19 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="2014-08-08-why-you-should-not-use-var-self-equals-this.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/2014-08-08-why-you-should-not-use-var-self-equals-this.markdown">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="2775">
               <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="12" />
+=======
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_deploy/blog/2014/07/16/javascript-toolbox/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="6495">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
               <folding />
             </state>
           </provider>
@@ -96,8 +173,13 @@
       <file leaf-file-name="2014-09-30-cool-function-dot-prototype-dot-bind-quirk.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/2014-09-30-cool-function-dot-prototype-dot-bind-quirk.markdown">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="765">
               <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
               <folding />
             </state>
           </provider>
@@ -106,8 +188,13 @@
       <file leaf-file-name="2014-09-30-priciples-dont-repeat-yourself-dry.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/2014-09-30-priciples-dont-repeat-yourself-dry.markdown">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="540">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="525">
+              <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
               <folding />
             </state>
           </provider>
@@ -116,8 +203,13 @@
       <file leaf-file-name="2014-11-05-creating-svg-animation-with-walkwayjs.markdown" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_posts/2014-11-05-creating-svg-animation-with-walkwayjs.markdown">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.15463917" vertical-offset="0" max-vertical-offset="679">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="5430" max-vertical-offset="6150">
+              <caret line="362" column="7" selection-start-line="362" selection-start-column="7" selection-end-line="362" selection-end-column="7" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
               <folding />
             </state>
           </provider>
@@ -126,8 +218,13 @@
       <file leaf-file-name="2014-08-18-patterns-singleton.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/2014-08-18-patterns-singleton.markdown">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1365">
               <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2715">
+              <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
               <folding />
             </state>
           </provider>
@@ -136,18 +233,31 @@
       <file leaf-file-name="2014-07-19-javascript-interview-questions.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="9090">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="12" />
+=======
+            <state vertical-scroll-proportion="0.847432" vertical-offset="5214" max-vertical-offset="5895">
+              <caret line="385" column="0" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
               <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+=======
+      <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/stylesheets/screen.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
               <folding />
             </state>
           </provider>
@@ -163,8 +273,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+=======
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/source/about-me/index.markdown" />
+        <option value="$PROJECT_DIR$/source/_posts/2014-07-13-compass.markdown" />
+        <option value="$PROJECT_DIR$/source/_includes/custom/asides/about.html" />
+        <option value="$PROJECT_DIR$/source/about/index.markdown" />
+        <option value="$PROJECT_DIR$/source/_includes/custom/navigation.html" />
+        <option value="$PROJECT_DIR$/source/_includes/google_analytics.html" />
+        <option value="$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown" />
+        <option value="$PROJECT_DIR$/source/stylesheets/screen.css" />
+        <option value="$PROJECT_DIR$/source/_includes/custom/header.html" />
+        <option value="$PROJECT_DIR$/Rakefile" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown" />
+        <option value="$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown" />
+      </list>
+    </option>
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1280" />
@@ -271,18 +402,39 @@
       <recent name="$PROJECT_DIR$/source/images" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Node.js.callApply.js">
     <configuration default="false" name="callApply.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/source/_posts">
       <RunnerSettings RunnerId="NodeJS.debug" />
       <RunnerSettings RunnerId="NodeJS.run" />
       <ConfigurationWrapper RunnerId="NodeJS.debug" />
       <ConfigurationWrapper RunnerId="NodeJS.run" />
+=======
+  <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+=======
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -292,10 +444,13 @@
       <setting name="preferredDebugBrowser" value="Chrome" />
       <method />
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
       <envs />
       <method />
     </configuration>
+=======
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -325,8 +480,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
+=======
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="false" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -339,6 +499,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329235" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989071" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -366,6 +527,14 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
+=======
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -391,6 +560,32 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5475" max-vertical-offset="6150">
+          <caret line="362" column="7" selection-start-line="362" selection-start-column="7" selection-end-line="362" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_includes/google_analytics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="300">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
     <entry file="file://$PROJECT_DIR$/source/_includes/custom/navigation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
@@ -410,6 +605,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
           <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_layouts/post.html">
@@ -439,6 +637,9 @@
           <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
@@ -482,6 +683,9 @@
           <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
         </state>
       </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -503,6 +707,9 @@
           <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
@@ -528,8 +735,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/custom/navigation.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
           <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
         </state>
       </provider>
     </entry>
@@ -540,17 +752,32 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/source/_includes/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/source/about/index.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="735">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
         </state>
       </provider>
     </entry>
@@ -561,6 +788,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/source/_includes/navigation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08559201" vertical-offset="0" max-vertical-offset="701">
@@ -569,10 +797,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/octopress.js">
+=======
+    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown">
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="5.3061223" vertical-offset="0" max-vertical-offset="2505">
           <caret line="156" column="242" selection-start-line="156" selection-start-column="242" selection-end-line="156" selection-end-column="242" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
@@ -584,29 +818,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="735">
           <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="300">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/custom/asides/about.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/custom/navigation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
+<<<<<<< HEAD
           <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+=======
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/google_analytics.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="300">
           <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="210">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
         </state>
       </provider>
     </entry>
@@ -628,6 +881,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
         </state>
       </provider>
     </entry>
@@ -636,6 +890,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="681">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+=======
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
         </state>
       </provider>
     </entry>
@@ -662,13 +918,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="681">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="735">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="525">
           <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
           <folding />
@@ -685,7 +947,21 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="585">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="41" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/about/index.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/images/firefoxSelf.jpg">
@@ -695,29 +971,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="2745">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="9090">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="12" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="300">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/2014-08-18-patterns-singleton.markdown">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-0.0" vertical-offset="225" max-vertical-offset="1365">
           <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="689">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/source/_posts/2014-08-08-why-you-should-not-use-var-self-equals-this.markdown">
+=======
+    <entry file="file://$PROJECT_DIR$/source/index.html">
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="2775">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="12" />
@@ -725,12 +1020,22 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/source/_posts/2014-09-30-cool-function-dot-prototype-dot-bind-quirk.markdown">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="765">
           <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+=======
+    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-13-compass-sass.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="525">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/2014-09-30-priciples-dont-repeat-yourself-dry.markdown">
@@ -740,7 +1045,14 @@
           <folding />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="525">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="635">
@@ -753,8 +1065,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15463917" vertical-offset="0" max-vertical-offset="679">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-16-javascript-toolbox.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2715">
+          <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/2014-07-19-javascript-interview-questions.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.847432" vertical-offset="5214" max-vertical-offset="5895">
+          <caret line="385" column="0" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>

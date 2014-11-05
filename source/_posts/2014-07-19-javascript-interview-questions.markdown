@@ -540,7 +540,11 @@ These are useful when you are making calls out to a webservice for data.
 
 ##Some Javascript shortcuts/hacks
 
+<<<<<<< HEAD
 ###Ternary operators 
+=======
+####Ternary operators 
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
 
 These are great for situations where you want to assign a var based on a condition.
 
@@ -557,6 +561,7 @@ console.log(returnTrueIfLessThanTen(9)); //true
 console.log(returnTrueIfLessThanTen(29)); //false
 ```
 
+<<<<<<< HEAD
 ###Using bitwise operators in place of Math.floor 
 
 You can have a play with these and see them in action at [JSFiddle](http://jsfiddle.net/madole404/g34mL/)
@@ -571,6 +576,11 @@ You can have a play with these and see them in action at [JSFiddle](http://jsfid
  -  You might not get the outcome you are expecting
     -   Math.floor(NaN) === NaN
     -   (NaN >> 0) === 0
+=======
+####Using bitwise operators in place of Math.floor 
+
+You can have a play with these and see them in action at [JSFiddle.net](http://jsfiddle.net/madole404/g34mL/)
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
 
 ```javascript
 var result = 84.3/12.5;
@@ -591,7 +601,11 @@ console.log(bitwiseRight) //6
 var bitwiseLeft = (84.3/12.5) << 0;
 console.log(bitwiseLeft) //6
 
+<<<<<<< HEAD
 var bitwiseOr = (84.3/12.5) | 0;
+=======
+var bitwiseOr = (84.3/12.5) << 0;
+>>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
 console.log(bitwiseOr); //6
 
 var parseInteger = parseInt(84.3/12.5);
