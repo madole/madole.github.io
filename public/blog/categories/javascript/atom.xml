@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javascript | Madole's Ramblings]]></title>
   <link href="http://madole.github.io/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-11-20T20:31:00+11:00</updated>
+  <updated>2014-11-20T22:25:11+11:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[JSFiddle - Firebug Lite]]></title>
+    <link href="http://madole.github.io/blog/2014/11/20/jsfiddle-firebug-lite/"/>
+    <updated>2014-11-20T20:45:26+11:00</updated>
+    <id>http://madole.github.io/blog/2014/11/20/jsfiddle-firebug-lite</id>
+    <content type="html"><![CDATA[<p>I recently discovered a cool feature in JSFiddle which changed the way I use it.</p>
+
+<p>Until now, I&rsquo;ve been hopping on to JSFiddle to test out little bits of code and logging out to the console.</p>
+
+<p>If you&rsquo;re like me, you&rsquo;ll be familiar with having Chrome Dev Tools open to view your console logs.</p>
+
+<p><img src="/images/devToolsConsoleLog.png" width="700" title="" ></p>
+
+<!--more-->
+
+
+<p>This can be a bit of a pain to have to open every time, and especially for showing your JSFiddle to other people when you
+send them a link, they have to open their Dev Tools up too.</p>
+
+<h4><em>Firebug Lite to the rescue</em></h4>
+
+<p>I came across a stack overflow where the user gave an answer and link to a JSFiddle with Firebug Lite enabled.</p>
+
+<p>I now use it every single time I use JSFiddle.</p>
+
+<p>Here&rsquo;s how to enable it.</p>
+
+<p>First of all, write a line of code that logs to the console so you know it&rsquo;s worked at the end.</p>
+
+<p><img src="/images/logToConsole.png" width="700" title="" ></p>
+
+<p>Then in the Frameworks and Extensions section, add jQuery (edge) to the Fiddle.</p>
+
+<p><img src="/images/addjQueryEdge.png" width="700" title="" ></p>
+
+<p>It should look like this with a bunch of checkboxes you can choose from.</p>
+
+<p><img src="/images/jQueryEdgeAdded.png" width="700" title="" ></p>
+
+<p>Click Firebug Lite to add it to the Fiddle</p>
+
+<p><img src="/images/chooseFirebug.png" width="700" title="" ></p>
+
+<p>Finally, Run your JavaScript to see it logged out to the Firebug Lite Console in the output window.</p>
+
+<p><img src="/images/loggedOut.png" width="700" title="" ></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cool Function.prototype.bind() quirk]]></title>
@@ -1122,167 +1171,6 @@ console.log(bitwiseOr); //6</p>
 console.log(parseInteger) //6</p>
 
 <p>```</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Javascript Toolbox]]></title>
-    <link href="http://madole.github.io/blog/2014/07/16/javascript-toolbox/"/>
-    <updated>2014-07-16T19:05:22+10:00</updated>
-    <id>http://madole.github.io/blog/2014/07/16/javascript-toolbox</id>
-    <content type="html"><![CDATA[<p>I write Javascript most days and have done so for a few years now. I still find new tools, websites, frameworks and
-ways to do things. I thought I&rsquo;d write them down and get the list online as it may help other people discover some
-useful tools of the trade. If you have any suggestions, stick them in the comments section.</p>
-
-<!--more-->
-
-
-<p></p>
-
-<h2>IDEs and editors</h2>
-
-<h3>Sublime Text 2</h3>
-
-<p>Your go to text editor. When you download it fresh, it won&rsquo;t feel like much but once you load it full of plugins
-that you can find at <a href="https://sublime.wbond.net/">Package Control</a>. It becomes a great tool for knocking up Javascript. I&rsquo;ll do another post on my sublime 2
- plugins later.</p>
-
-<p><a href="http://www.sublimetext.com/">Sublime Text 2</a></p>
-
-<h3>Sublime Text 3</h3>
-
-<p>The younger more unstable brother of Sublime Text 2. I use this even though it&rsquo;s still in beta because it allows
-JSGutter to run Node.js and jshint my code in real time instead of just on every save or load.</p>
-
-<p><a href="http://www.sublimetext.com/3">Sublime Text 3</a></p>
-
-<h3>Webstorm</h3>
-
-<p>I used Webstorm in a project in my previous job, and I&rsquo;m not sure whether it was my laptop being substandard or Webstorm
-being a resource hungry beast but it was slow and sluggish for a JS IDE. But, fast forward a year, I&rsquo;m not sure if it
-got more efficient or my machine upgrades provide it with the juice it needs but WHOAAA! I&rsquo;m running it on both Fedora 20
-and OSX with i5 and i7 processors and 16Gb ram in each, it&rsquo;s the tool I was expecting it to be. Fast, great linting,
-unmatched intellisense. It&rsquo;s a great product. Sometimes you can get the feeling it&rsquo;s got too much on screen but it&rsquo;s
-just a case of finding the configuration that works for you. It is loaded with keyboard shortcuts so my advice is to
-print out a Webstorm cheatsheet and tack it to the wall beside your screen. When you start storing them in muscle
-memory, you&rsquo;ll barely even need a mouse in your life! Check out the <a href="http://www.jetbrains.com/webstorm/download/">30 day trial</a>!</p>
-
-<p><a href="http://www.jetbrains.com/webstorm/">Webstorm</a></p>
-
-<h3>Atom</h3>
-
-<p>This is worth a mention and with a tagline of &ldquo;The hackable text editor&rdquo; its definitely one to keep an eye on. A Javascript
-editor written in Javascript! It&rsquo;s being developed by GitHub. Imagine Sublime Text that you can write your own plugins in
-Javascript! Cool&hellip;eh? I got on the beta trial a few months ago and it seemed a bit unstable but definitely a watch
-this space product! You can check out the <a href="https://github.com/atom">github page</a> where the code is hosted, I was
-suprised to find it written in CoffeeScript. I&rsquo;m quite happy about this as I&rsquo;ve just made the move to CoffeeScript myself.</p>
-
-<p><a href="http://atom.io">Atom.io</a></p>
-
-<h2>Online Javascript Playgrounds</h2>
-
-<h3>Jsfiddle.net</h3>
-
-<p>I like this webapp to test out exactly what happens in a particular scenario that you&rsquo;re not quite sure what way
-Javascript will react. Yesterday, I had a case during a code review I was doing where a setInterval as being assigned
-to a var and a clearInterval was being called a little later, but a deviation in the code path caused a second
-setInterval to be assigned to that same var. I had suspected then that the var would only hold reference to the
-last one and therefore keep the first one ticking on but just wanted to make sure. A few seconds later I confirmed
-it and dinged the commit explaining why. It&rsquo;s also useful that you can send your JSFiddle to the person to explain
-what you mean.</p>
-
-<p><a href="http://jsfiddle.net">JSFiddle</a></p>
-
-<h3>JSbin.com</h3>
-
-<p>Exactly the same idea as JSFiddle except I like the fact that it live reloads so you don&rsquo;t have to click a run button
-each time. Just write your JS and watch your logs appear  in the console or output window</p>
-
-<p><a href="http://jsbin.com">JSBin</a></p>
-
-<h3>Codepen.io</h3>
-
-<p>A very clean interface that does much the same as the above two. I get the feeling this is more for mocking up full html
-pages rather than just knocking out a bit of Javascript though. Some very interesting demos on the &ldquo;Picked Pens&rdquo; section
-of the homepage</p>
-
-<p><a href="http://codepen.io/">Codepen.io</a></p>
-
-<h2>Performance</h2>
-
-<h3>JSPerf.com</h3>
-
-<p>Great website for comparing the performance of different ways to do the same thing. For instance, whether an
-incrementing for loop is quicker than a decrementing for loop or while loop or a for in loop. My team mate did a
-blog post about this a few weeks ago
-(<a href="http://www.christopherlaughlin.co.uk/2014/06/29/Javascript-loop-performance/">For Loop Performance</a>).
-These are only micro-performance improvements, but in work, I write
-Javascript to run in a browser on embedded devices with limited resources so every little helps!</p>
-
-<p><a href="http://jsperf.com">JSPerf</a></p>
-
-<h2>Podcasts</h2>
-
-<h3>Javascript Jabber</h3>
-
-<p>My favorite Javascript podcast. They do weekly shows and have people on who are either working for some of the top
-Javascript companies or are big contributors to the open source JS community.</p>
-
-<p><a href="http://Javascriptjabber.com/">Javascriptjabber.com/</a></p>
-
-<h3>Frontside the podcast</h3>
-
-<p>I&rsquo;ve just started listening to this podcast and they seem to have a ton of interesting topics of discussion.
-Worth checking out.</p>
-
-<p><a href="https://frontsidethepodcast.simplecast.fm/episodes">Frontside the podcast</a></p>
-
-<h3>Node up (&amp; Node down)</h3>
-
-<p>My teammate at CAM tech just told me about these podcasts, apparently NodeUp is an already established podcast and
-they&rsquo;re starting a NodeDown for the Southern Hemisphere. I&rsquo;ll be checking these out. You should too!</p>
-
-<p><a href="http://nodeup.com/">http://nodeup.com/</a></p>
-
-<h2>Meetups</h2>
-
-<p>I live in Sydney and there are many Javascript meetups. Just checkout <a href="http://www.meetup.com/">Meetup.com</a>.
-I&rsquo;ve been meaning to get myself to <a href="http://www.sydjs.com/">SydJS</a> and the Sydney NodeJs meetups.
-Someday I&rsquo;ll get there.</p>
-
-<h3>MongoDb Meetup</h3>
-
-<p>MongoDb meetup is one I attend when I can. We use MongoDb in our side project so it&rsquo;s interesting to listen to case
-studies and experts talk about it. Also, Stennie (<a href="http://twitter.com/stennie">@stennie</a>) and the rest of the Mongo
-crew are super friendly and always willing to help out if you have any issues with your Mongo implementation.</p>
-
-<p><a href="https://www.google.com.au/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CBwQFjAA&amp;url=http%3A%2F%2Fwww.meetup.com%2FSydney-MongoDB-User-Group%2F&amp;ei=q0jGU8SNNYui8AWTuYDICA&amp;usg=AFQjCNG382vYUazai3it5h71d3OhSurkVA&amp;sig2=cI8e_dwfmgOW-cGpL2u4Ig">MongoDb Sydney User Group</a></p>
-
-<h2>Books</h2>
-
-<h3>Javascript: The Good Parts &ndash; Douglas Crockford &ndash; O'Reilly</h3>
-
-<p>The first Javascript book I ever read. Takes you through all the concepts and topics you need to know about to get
-on your way to being a great Javascript programmer.</p>
-
-<p><a href="http://shop.oreilly.com/product/9780596517748.do">Javascript: The Good Parts</a></p>
-
-<h3>Clean Code &ndash; Robert C. Martin</h3>
-
-<p>This is actually a book written about Java but I constantly refer to it no matter what language I write in which is
-why I&rsquo;m including it in my list. It takes you through examples of bad code and explains why they are bad and how to
-make them better by transforming them into great looking, readable code. Because after all, 99% of the time, you&rsquo;re
-not writing code for you too look at, you&rsquo;re writing code which other people need to be able to maintain with ease.</p>
-
-<p><a href="http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882">Clean Code &ndash; Amazon</a></p>
-
-<h3>CoffeeScript Cookbook</h3>
-
-<p>Just started reading through this online when I was learning CoffeeScript last week. Some great examples well laid
-out of all the different constructs and how they translate into Javascript. Along with the <a href="http://coffeescript.org/">CoffeeScript website</a>,
-you should be up and running in CoffeeScript in no time.</p>
-
-<p><a href="http://coffeescriptcookbook.com/">CoffeeScript Cookbook</a></p>
 ]]></content>
   </entry>
   

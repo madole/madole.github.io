@@ -4,7 +4,7 @@
   <title><![CDATA[Madole's Ramblings]]></title>
   <link href="http://madole.github.io/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-11-20T20:31:00+11:00</updated>
+  <updated>2014-11-20T22:25:11+11:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[JSFiddle - Firebug Lite]]></title>
+    <link href="http://madole.github.io/blog/2014/11/20/jsfiddle-firebug-lite/"/>
+    <updated>2014-11-20T20:45:26+11:00</updated>
+    <id>http://madole.github.io/blog/2014/11/20/jsfiddle-firebug-lite</id>
+    <content type="html"><![CDATA[<p>I recently discovered a cool feature in JSFiddle which changed the way I use it.</p>
+
+<p>Until now, I&rsquo;ve been hopping on to JSFiddle to test out little bits of code and logging out to the console.</p>
+
+<p>If you&rsquo;re like me, you&rsquo;ll be familiar with having Chrome Dev Tools open to view your console logs.</p>
+
+<p><img src="http://madole.github.io/images/devToolsConsoleLog.png" width="700" title="" ></p>
+
+<!--more-->
+
+
+<p>This can be a bit of a pain to have to open every time, and especially for showing your JSFiddle to other people when you
+send them a link, they have to open their Dev Tools up too.</p>
+
+<h4><em>Firebug Lite to the rescue</em></h4>
+
+<p>I came across a stack overflow where the user gave an answer and link to a JSFiddle with Firebug Lite enabled.</p>
+
+<p>I now use it every single time I use JSFiddle.</p>
+
+<p>Here&rsquo;s how to enable it.</p>
+
+<p>First of all, write a line of code that logs to the console so you know it&rsquo;s worked at the end.</p>
+
+<p><img src="http://madole.github.io/images/logToConsole.png" width="700" title="" ></p>
+
+<p>Then in the Frameworks and Extensions section, add jQuery (edge) to the Fiddle.</p>
+
+<p><img src="http://madole.github.io/images/addjQueryEdge.png" width="700" title="" ></p>
+
+<p>It should look like this with a bunch of checkboxes you can choose from.</p>
+
+<p><img src="http://madole.github.io/images/jQueryEdgeAdded.png" width="700" title="" ></p>
+
+<p>Click Firebug Lite to add it to the Fiddle</p>
+
+<p><img src="http://madole.github.io/images/chooseFirebug.png" width="700" title="" ></p>
+
+<p>Finally, Run your JavaScript to see it logged out to the Firebug Lite Console in the output window.</p>
+
+<p><img src="http://madole.github.io/images/loggedOut.png" width="700" title="" ></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A growing list of everyday Linux Bash commands]]></title>
