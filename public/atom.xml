@@ -4,11 +4,7 @@
   <title><![CDATA[Madole's Ramblings]]></title>
   <link href="http://madole.github.io/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-<<<<<<< HEAD
-  <updated>2014-09-30T13:49:00+10:00</updated>
-=======
-  <updated>2014-07-20T16:07:35+10:00</updated>
->>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
+  <updated>2014-11-20T20:31:00+11:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -16,6 +12,258 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A growing list of everyday Linux Bash commands]]></title>
+    <link href="http://madole.github.io/blog/2014/11/20/a-growing-list-of-everyday-linux-bash-commands/"/>
+    <updated>2014-11-20T20:12:59+11:00</updated>
+    <id>http://madole.github.io/blog/2014/11/20/a-growing-list-of-everyday-linux-bash-commands</id>
+    <content type="html"><![CDATA[<h2>A growing list of everyday Linux Bash commands</h2>
+
+<p>I decided to write down a list of every day commands that I use in the the Bash command line in Linux.
+This is by no means a definitive list and it will grow as I remember or come across commands that make
+my life easier</p>
+
+<!--more-->
+
+
+<h3>ls</h3>
+
+<ul>
+<li>  list information about files in the directory</li>
+</ul>
+
+
+<h3>ls -la</h3>
+
+<ul>
+<li>  list information about files in the directory</li>
+<li>  <em>-l</em> means long listing format</li>
+<li>  <em>-a</em> means list all files including ones that start with .</li>
+</ul>
+
+
+<h3>cd [directory]</h3>
+
+<ul>
+<li>  change directory to the specified directory</li>
+</ul>
+
+
+<h3>ps</h3>
+
+<ul>
+<li>  snapshot of the current processes</li>
+</ul>
+
+
+<h3>ps -ef</h3>
+
+<ul>
+<li>  <em>-e</em> select all processes</li>
+<li>  <em>-f</em> full format listing</li>
+</ul>
+
+
+<h3>ps -ef | grep [processname]</h3>
+
+<ul>
+<li>  grep for the details of a specific process</li>
+</ul>
+
+
+<h3>alias (usually used in the bash profile to be persisted)</h3>
+
+<ul>
+<li>  <em>ll &ndash;> ls -la</em></li>
+<li> Aliases for shortcuts to frequently visited directories</li>
+<li> Aliases to bash scripts I&rsquo;ve written to automate things like sync&#8217;ing a github pages branch with master and pushing to the cloud</li>
+</ul>
+
+
+<h3>source [filename]</h3>
+
+<ul>
+<li>  source is a bash shell built-in command that executes the content of the file passed as argument, in the current shell. It has a synonym in &lsquo;.&rsquo; (period).</li>
+</ul>
+
+
+<h3>source ~/.bash_profile</h3>
+
+<ul>
+<li>  this has the effect of reloading the bash_profile so you don&rsquo;t have to kill &amp; open the terminal to see changes</li>
+</ul>
+
+
+<h3>&amp;&amp;</h3>
+
+<ul>
+<li>  used for tying consecutive commands together</li>
+<li>  example <em>$ cd Documents &amp;&amp; ls -la</em></li>
+</ul>
+
+
+<h3>top</h3>
+
+<ul>
+<li>  Provides a real time summary of the processes running on your system.</li>
+<li>  Can be used to see what&rsquo;s chewing up memory</li>
+</ul>
+
+
+<h3>Ctrl + R</h3>
+
+<ul>
+<li>  Reverse search through your bash command history</li>
+</ul>
+
+
+<h3>sudo</h3>
+
+<ul>
+<li> run command as the superuser</li>
+</ul>
+
+
+<h3>sudo -u [user]</h3>
+
+<ul>
+<li> run command as a different user</li>
+</ul>
+
+
+<h3>sudo !!</h3>
+
+<ul>
+<li> run the last command as super user</li>
+</ul>
+
+
+<h3>vi [file]</h3>
+
+<ul>
+<li>  edit the file with vi text editor</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Creating SVG animation with WalkwayJS]]></title>
+    <link href="http://madole.github.io/blog/2014/11/05/creating-svg-animation-with-walkwayjs/"/>
+    <updated>2014-11-05T15:14:27+11:00</updated>
+    <id>http://madole.github.io/blog/2014/11/05/creating-svg-animation-with-walkwayjs</id>
+    <content type="html"><![CDATA[<p>A few days ago this link (<a href="http://www.connoratherton.com/walkway">http://www.connoratherton.com/walkway</a>) popped up on Reddit’s <a href="http://reddit.com/r/javascript">/r/javascript</a>.</p>
+
+<p>I liked how it looked so I set about having a go. Turns out Connor Atherton’s library has made this super easy so I thought I’d document the steps to make your own.</p>
+
+<p>First of all you want to pick an image you want to turn into a SVG line drawing.</p>
+
+<p>Open it in Gimp/Pixelmator/Photoshop</p>
+
+<p><img src="http://madole.github.io/images/svgAnimateImages/chosenImage.png" width="600" title="" ></p>
+
+<!--more-->
+
+
+<p>Use the magic wand to select the outline you want</p>
+
+<p><img src="http://madole.github.io/images/svgAnimateImages/selectionImage.png" width="600" title="" ></p>
+
+<p>Create a new layer and paste in your selection</p>
+
+<p><img src="http://madole.github.io/images/svgAnimateImages/selectionPasted.png" width="600" title="" ></p>
+
+<p>If you’re using Gimp or Photoshop, you can probably go ahead and export your image to SVG, but I’m using Pixelmator which doesn’t support SVG export so at this point, I’ll jump over to iDraw to do the export.</p>
+
+<p>It should look something like this if you open it in a text editor like SublimeText</p>
+
+<p><img src="http://madole.github.io/images/svgAnimateImages/svgCode.png" width="600" title="" ></p>
+
+<p>At this point you should go to the walkway github page and clone the repo. <a href="https://github.com/ConnorAtherton/walkway">https://github.com/ConnorAtherton/walkway</a></p>
+
+<p>Now it’s time to create your webpage.</p>
+
+<p>All you need is a simple webpage, which imports the walkway.min.js (or the unminified version if you like) and jQuery</p>
+
+<p>Then paste in your SVG code and give the parent SVG tag an id which you can use in your JavaScript. I’ve called mine “#pic’.</p>
+
+<p><img src="http://madole.github.io/images/svgAnimateImages/simpleWebsite.png" width="600" title="" ></p>
+
+<p>Now create a JavaScript file and import it in your html file.</p>
+
+<p>The code needed to draw the SVG is very very simple.</p>
+
+<p>I’ve pasted mine below and I’ve added just an extra little bit of SVG text which will draw at the same time as the image.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kd">function</span> <span class="nx">_drawMadole</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">opts</span><span class="p">,</span> <span class="nx">svg</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">opts</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;#madole&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">duration</span><span class="o">:</span> <span class="s1">&#39;6000&#39;</span>
+</span><span class='line'>    <span class="p">};</span>
+</span><span class='line'>    <span class="nx">svg</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Walkway</span><span class="p">(</span><span class="nx">opts</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">svg</span><span class="p">.</span><span class="nx">draw</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kd">function</span> <span class="nx">_drawHead</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">opts</span><span class="p">,</span> <span class="nx">svg</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">opts</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;#pic&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">duration</span><span class="o">:</span> <span class="s1">&#39;9000&#39;</span>
+</span><span class='line'>    <span class="p">};</span>
+</span><span class='line'>    <span class="nx">svg</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Walkway</span><span class="p">(</span><span class="nx">opts</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">svg</span><span class="p">.</span><span class="nx">draw</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">_drawHead</span><span class="p">();</span>
+</span><span class='line'>  <span class="nx">_drawMadole</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">})();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>What I’m doing here is creating an options object which has a selector and duration you want the drawing to last for.</p>
+
+<p>Then create an walkway instance, I’ve called this svg.</p>
+
+<p>Then just svg.draw() will cause it to draw.</p>
+
+<p>That’s all there is to it.</p>
+
+<p><img src="http://madole.github.io/images/svgAnimateImages/endProduct.png" width="600" title="" ></p>
+
+<h3>You can view my demo at <a href="http://madole.github.io/SVGAnimate-WalkwayJS/">SVGAnimate</a></h3>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Priciples: Don't Repeat Yourself (DRY)]]></title>
@@ -1380,11 +1628,7 @@ function will get executed.</p>
 
 <h2>Some Javascript shortcuts/hacks</h2>
 
-<<<<<<< HEAD
-<h3>Ternary operators</h3>
-=======
 <h4>Ternary operators</h4>
->>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
 
 <p>These are great for situations where you want to assign a var based on a condition.</p>
 
@@ -1407,7 +1651,6 @@ function will get executed.</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<<<<<<< HEAD
 <h3>Using bitwise operators in place of Math.floor</h3>
 
 <p>You can have a play with these and see them in action at <a href="http://jsfiddle.net/madole404/g34mL/">JSFiddle</a></p>
@@ -1425,17 +1668,17 @@ function will get executed.</p>
 <li>You might not get the outcome you are expecting
 
 <ul>
-<li>Math.floor(NaN) === NaN</li>
-<li>(NaN >> 0) === 0</li>
+<li>Math.floor(NaN) === NaN
+
+<h1>&ndash;   (NaN >> 0) === 0</h1>
+
+<h4>Using bitwise operators in place of Math.floor</h4></li>
 </ul>
 </li>
 </ul>
 
-=======
-<h4>Using bitwise operators in place of Math.floor</h4>
 
 <p>You can have a play with these and see them in action at <a href="http://jsfiddle.net/madole404/g34mL/">JSFiddle.net</a></p>
->>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -1478,11 +1721,7 @@ function will get executed.</p>
 </span><span class='line'><span class="kd">var</span> <span class="nx">bitwiseLeft</span> <span class="o">=</span> <span class="p">(</span><span class="mf">84.3</span><span class="o">/</span><span class="mf">12.5</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="mi">0</span><span class="p">;</span>
 </span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">bitwiseLeft</span><span class="p">)</span> <span class="c1">//6</span>
 </span><span class='line'>
-<<<<<<< HEAD
 </span><span class='line'><span class="kd">var</span> <span class="nx">bitwiseOr</span> <span class="o">=</span> <span class="p">(</span><span class="mf">84.3</span><span class="o">/</span><span class="mf">12.5</span><span class="p">)</span> <span class="o">|</span> <span class="mi">0</span><span class="p">;</span>
-=======
-</span><span class='line'><span class="kd">var</span> <span class="nx">bitwiseOr</span> <span class="o">=</span> <span class="p">(</span><span class="mf">84.3</span><span class="o">/</span><span class="mf">12.5</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="mi">0</span><span class="p">;</span>
->>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
 </span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">bitwiseOr</span><span class="p">);</span> <span class="c1">//6</span>
 </span><span class='line'>
 </span><span class='line'><span class="kd">var</span> <span class="nx">parseInteger</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="mf">84.3</span><span class="o">/</span><span class="mf">12.5</span><span class="p">);</span>
@@ -1499,13 +1738,7 @@ function will get executed.</p>
     <id>http://madole.github.io/blog/2014/07/16/javascript-toolbox</id>
     <content type="html"><![CDATA[<p>I write Javascript most days and have done so for a few years now. I still find new tools, websites, frameworks and
 ways to do things. I thought I&rsquo;d write them down and get the list online as it may help other people discover some
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream</p>
-
-<h1>useful tools of the trade. If you have any other suggestions, let me know in the comments section. </h1>
-
-<p>useful tools of the trade. If you have any suggestions, stick them in the comments section.</p>
-
-<blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>Stashed changes</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote>
+useful tools of the trade. If you have any suggestions, stick them in the comments section.</p>
 
 <!--more-->
 
@@ -1660,11 +1893,21 @@ you should be up and running in CoffeeScript in no time.</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Compass - SASS - Boostrap SASS]]></title>
+    <title type="html"><![CDATA[Compass Sass]]></title>
     <link href="http://madole.github.io/blog/2014/07/13/compass-sass/"/>
-    <updated>2014-07-13T21:25:58+10:00</updated>
+    <updated>2014-07-13T00:00:00+10:00</updated>
     <id>http://madole.github.io/blog/2014/07/13/compass-sass</id>
-    <content type="html"><![CDATA[<p>About a month ago, we decided to use SASS on our side project because we wanted to learn some of the new ways to
+    <content type="html"><![CDATA[<pre><code>---
+</code></pre>
+
+<p>layout: post
+title: &ldquo;Compass &ndash; SASS &ndash; Boostrap SASS&rdquo;
+date: 2014-07-13 21:25:58 +1000
+comments: true</p>
+
+<h2>categories: [&lsquo;SASS&rsquo;, &lsquo;Bootstrap&rsquo;, &lsquo;Compass&rsquo;, &lsquo;Ruby&rsquo;, &lsquo;Scout&rsquo;, &lsquo;CSS&rsquo;] </h2>
+
+<p>About a month ago, we decided to use SASS on our side project because we wanted to learn some of the new ways to
 pre-process CSS. I have used LESS before (which is a Node.js preprocessor) in a work project so it makes sense
 to use something different for this learning experience. We then boiled down the choices to just two, SASS or Stylus.</p>
 

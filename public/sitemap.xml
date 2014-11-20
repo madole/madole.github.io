@@ -3,6 +3,18 @@
   
   
   <url>
+    <loc>http://madole.github.io/blog/2014/11/20/a-growing-list-of-everyday-linux-bash-commands/</loc>
+    <lastmod>2014-11-20T20:12:59+11:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://madole.github.io/blog/2014/11/05/creating-svg-animation-with-walkwayjs/</loc>
+    <lastmod>2014-11-05T15:14:27+11:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://madole.github.io/blog/2014/09/30/priciples-dont-repeat-yourself-dry/</loc>
     <lastmod>2014-09-30T13:43:13+10:00</lastmod>
     <priority>0.8</priority>
@@ -40,40 +52,28 @@
   
   <url>
     <loc>http://madole.github.io/blog/2014/07/13/compass-sass/</loc>
-    <lastmod>2014-07-13T21:25:58+10:00</lastmod>
+    <lastmod>2014-07-13T00:00:00+10:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   
   <url>
     <loc>http://madole.github.io/blog/archives/</loc>
-<<<<<<< HEAD
-    <lastmod>2014-09-30T13:49:00+10:00</lastmod>
-=======
-    <lastmod>2014-07-20T16:07:35+10:00</lastmod>
->>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
+    <lastmod>2014-11-20T20:31:00+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://madole.github.io/</loc>
-<<<<<<< HEAD
-    <lastmod>2014-09-30T13:49:00+10:00</lastmod>
-=======
-    <lastmod>2014-07-20T16:07:35+10:00</lastmod>
->>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
+    <lastmod>2014-11-20T20:31:00+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://madole.github.io/about/</loc>
-<<<<<<< HEAD
-    <lastmod>2014-09-30T13:49:00+10:00</lastmod>
-=======
-    <lastmod>2014-07-20T16:07:35+10:00</lastmod>
->>>>>>> 9f2243e5e6f34265fee690c60ada6733056627c5
+    <lastmod>2014-11-20T20:31:00+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

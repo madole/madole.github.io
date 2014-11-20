@@ -10,11 +10,8 @@ description: 'A post detailing a Javascript engineers toolbox'
 
 I write Javascript most days and have done so for a few years now. I still find new tools, websites, frameworks and 
 ways to do things. I thought I'd write them down and get the list online as it may help other people discover some 
-<<<<<<< Updated upstream
-useful tools of the trade. If you have any other suggestions, let me know in the comments section. 
-=======
 useful tools of the trade. If you have any suggestions, stick them in the comments section.
->>>>>>> Stashed changes
+
 
 <!--more--> 
 

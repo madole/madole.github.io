@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Creating SVG animation with WalkwayJS - Madole's Ramblings</title>
+  <meta name="author" content="Andrew McDowell">
+
+  
+  <meta name="description" content="A few days ago this link (http://www.connoratherton.com/walkway) popped up on Reddit’s /r/javascript. I liked how it looked so I set about having a &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://madole.github.io/blog/2014/11/05/creating-svg-animation-with-walkwayjs/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Madole's Ramblings" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-52796439-1']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_setDomainName','github.io']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Madole's Ramblings</a></h1>
+  
+    <h2>Things I've learned about code.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:madole.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Creating SVG Animation With WalkwayJS</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-05T15:14:27+11:00" pubdate data-updated="true">Nov 5<sup>th</sup>, 2014</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>A few days ago this link (<a href="http://www.connoratherton.com/walkway">http://www.connoratherton.com/walkway</a>) popped up on Reddit’s <a href="http://reddit.com/r/javascript">/r/javascript</a>.</p>
+
+<p>I liked how it looked so I set about having a go. Turns out Connor Atherton’s library has made this super easy so I thought I’d document the steps to make your own.</p>
+
+<p>First of all you want to pick an image you want to turn into a SVG line drawing.</p>
+
+<p>Open it in Gimp/Pixelmator/Photoshop</p>
+
+<p><img src="/images/svgAnimateImages/chosenImage.png" width="600" title="" ></p>
+
+<!--more-->
+
+
+<p>Use the magic wand to select the outline you want</p>
+
+<p><img src="/images/svgAnimateImages/selectionImage.png" width="600" title="" ></p>
+
+<p>Create a new layer and paste in your selection</p>
+
+<p><img src="/images/svgAnimateImages/selectionPasted.png" width="600" title="" ></p>
+
+<p>If you’re using Gimp or Photoshop, you can probably go ahead and export your image to SVG, but I’m using Pixelmator which doesn’t support SVG export so at this point, I’ll jump over to iDraw to do the export.</p>
+
+<p>It should look something like this if you open it in a text editor like SublimeText</p>
+
+<p><img src="/images/svgAnimateImages/svgCode.png" width="600" title="" ></p>
+
+<p>At this point you should go to the walkway github page and clone the repo. <a href="https://github.com/ConnorAtherton/walkway">https://github.com/ConnorAtherton/walkway</a></p>
+
+<p>Now it’s time to create your webpage.</p>
+
+<p>All you need is a simple webpage, which imports the walkway.min.js (or the unminified version if you like) and jQuery</p>
+
+<p>Then paste in your SVG code and give the parent SVG tag an id which you can use in your JavaScript. I’ve called mine “#pic’.</p>
+
+<p><img src="/images/svgAnimateImages/simpleWebsite.png" width="600" title="" ></p>
+
+<p>Now create a JavaScript file and import it in your html file.</p>
+
+<p>The code needed to draw the SVG is very very simple.</p>
+
+<p>I’ve pasted mine below and I’ve added just an extra little bit of SVG text which will draw at the same time as the image.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kd">function</span> <span class="nx">_drawMadole</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">opts</span><span class="p">,</span> <span class="nx">svg</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">opts</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;#madole&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">duration</span><span class="o">:</span> <span class="s1">&#39;6000&#39;</span>
+</span><span class='line'>    <span class="p">};</span>
+</span><span class='line'>    <span class="nx">svg</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Walkway</span><span class="p">(</span><span class="nx">opts</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">svg</span><span class="p">.</span><span class="nx">draw</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kd">function</span> <span class="nx">_drawHead</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">opts</span><span class="p">,</span> <span class="nx">svg</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">opts</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;#pic&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">duration</span><span class="o">:</span> <span class="s1">&#39;9000&#39;</span>
+</span><span class='line'>    <span class="p">};</span>
+</span><span class='line'>    <span class="nx">svg</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Walkway</span><span class="p">(</span><span class="nx">opts</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">svg</span><span class="p">.</span><span class="nx">draw</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">_drawHead</span><span class="p">();</span>
+</span><span class='line'>  <span class="nx">_drawMadole</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">})();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>What I’m doing here is creating an options object which has a selector and duration you want the drawing to last for.</p>
+
+<p>Then create an walkway instance, I’ve called this svg.</p>
+
+<p>Then just svg.draw() will cause it to draw.</p>
+
+<p>That’s all there is to it.</p>
+
+<p><img src="/images/svgAnimateImages/endProduct.png" width="600" title="" ></p>
+
+<h3>You can view my demo at <a href="http://madole.github.io/SVGAnimate-WalkwayJS/">SVGAnimate</a></h3>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Andrew McDowell</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-05T15:14:27+11:00" pubdate data-updated="true">Nov 5<sup>th</sup>, 2014</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://madole.github.io/blog/2014/11/05/creating-svg-animation-with-walkwayjs/" data-via="madole" data-counturl="http://madole.github.io/blog/2014/11/05/creating-svg-animation-with-walkwayjs/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/09/30/priciples-dont-repeat-yourself-dry/" title="Previous Post: Priciples: Don't Repeat Yourself (DRY)">&laquo; Priciples: Don't Repeat Yourself (DRY)</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/11/20/a-growing-list-of-everyday-linux-bash-commands/" title="Next Post: A growing list of everyday Linux Bash commands">A growing list of everyday Linux Bash commands &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/11/20/a-growing-list-of-everyday-linux-bash-commands/">A growing list of everyday Linux Bash commands</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/05/creating-svg-animation-with-walkwayjs/">Creating SVG animation with WalkwayJS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/30/priciples-dont-repeat-yourself-dry/">Priciples: Don't Repeat Yourself (DRY)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/">Cool Function.prototype.bind() quirk</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/18/patterns-singleton/">Patterns: Singleton</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/madole">@madole</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'madole',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Andrew McDowell -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>. Design by <a href="http://octopressthemes.com">Octopress Themes</a>.</span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'madole';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://madole.github.io/blog/2014/11/05/creating-svg-animation-with-walkwayjs/';
+        var disqus_url = 'http://madole.github.io/blog/2014/11/05/creating-svg-animation-with-walkwayjs/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
