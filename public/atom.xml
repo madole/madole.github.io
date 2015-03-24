@@ -4,7 +4,7 @@
   <title><![CDATA[Madole's Ramblings]]></title>
   <link href="http://madole.github.io/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2014-11-20T22:25:11+11:00</updated>
+  <updated>2015-03-24T23:47:06+11:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -12,6 +12,67 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Selenium ActionSequence]]></title>
+    <link href="http://madole.github.io/blog/2015/03/24/selenium-action-sequence/"/>
+    <updated>2015-03-24T23:30:03+11:00</updated>
+    <id>http://madole.github.io/blog/2015/03/24/selenium-action-sequence</id>
+    <content type="html"><![CDATA[<h4>Selenium test</h4>
+
+<p>Should do something when an outer div is clicked with an inner div over the top in the middle</p>
+
+<h4>How to usually do this?</h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">driver</span><span class="p">.</span><span class="nx">findElement</span><span class="p">(</span><span class="nx">webdriver</span><span class="p">.</span><span class="nx">By</span><span class="p">.</span><span class="nx">className</span><span class="p">(</span><span class="s1">&#39;outer&#39;</span><span class="p">)).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>     <span class="nx">element</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>Uncaught UnknownError: unknown error: Element is not clickable at point (170, 90).
+Other element would receive the click: &lt;div class="midde"&gt;&lt;/div&gt;
+</code></pre>
+
+<!--more-->
+
+
+<p>Say our test is trying to test that a video plays when an image is clicked.</p>
+
+<p>But our image has a play button overlay right in the center like below.</p>
+
+<p><img src="http://madole.github.io/images/Keyboard_cat.png" width="500" title="" ></p>
+
+<p>Selenium&rsquo;s default behaviour is to click right in the middle of your selected element.</p>
+
+<p>Because there is a &ldquo;play&rdquo; div over the top of it right in the middle, selenium complains that your element is not clickable.</p>
+
+<h4>How to get around this?</h4>
+
+<p><a href="https://selenium.googlecode.com/git/docs/api/javascript/class_webdriver_ActionSequence.html">Selenium Docs: ActionSequence</a></p>
+
+<p>Selenium&rsquo;s WebDriver ActionSequence provides a mouseMove function on its prototype</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">ActionSequence</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">moveMouse</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We create an action sequence that moves the mouse to the outer div, but with an offset from its top left corner.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="k">new</span> <span class="nx">webdriver</span><span class="p">.</span><span class="nx">ActionSequence</span><span class="p">(</span><span class="nx">driver</span><span class="p">).</span><span class="nx">moveMouse</span><span class="p">(</span><span class="nx">outerElement</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="nx">outerElement</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will now click 10px in from the top of the outer element and 10px in from the left.</p>
+
+<p>By doing this we can now avoid clicking the middle div while clicking the outer div programmatically.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[JSFiddle - Firebug Lite]]></title>

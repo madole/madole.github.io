@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>A growing list of everyday Linux Bash commands - Madole's Ramblings</title>
+  <title>Selenium ActionSequence - Madole's Ramblings</title>
   <meta name="author" content="Andrew McDowell">
 
   
-  <meta name="description" content="A growing list of everyday Linux Bash commands">
-  <meta name="keywords" content="Linux, Bash, Commands">
+  <meta name="description" content="Using Selenium ActionSequence to get around a click issue">
+  <meta name="keywords" content="SeleniumJavaScript">
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://madole.github.io/blog/2014/11/20/a-growing-list-of-everyday-linux-bash-commands/">
+  <link rel="canonical" href="http://madole.github.io/blog/2015/03/24/selenium-action-sequence/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">A Growing List of Everyday Linux Bash Commands</h1>
+      <h1 class="entry-title">Selenium ActionSequence</h1>
     
     
       <p class="meta">
@@ -97,7 +97,7 @@
   
 
 
-<time datetime="2014-11-20T20:12:59+11:00" pubdate data-updated="true">Nov 20<sup>th</sup>, 2014</time>
+<time datetime="2015-03-24T23:30:03+11:00" pubdate data-updated="true">Mar 24<sup>th</sup>, 2015</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,133 +106,59 @@
   </header>
 
 
-<div class="entry-content"><h2>A growing list of everyday Linux Bash commands</h2>
+<div class="entry-content"><h4>Selenium test</h4>
 
-<p>I decided to write down a list of every day commands that I use in the the Bash command line in Linux.
-This is by no means a definitive list and it will grow as I remember or come across commands that make
-my life easier</p>
+<p>Should do something when an outer div is clicked with an inner div over the top in the middle</p>
+
+<h4>How to usually do this?</h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">driver</span><span class="p">.</span><span class="nx">findElement</span><span class="p">(</span><span class="nx">webdriver</span><span class="p">.</span><span class="nx">By</span><span class="p">.</span><span class="nx">className</span><span class="p">(</span><span class="s1">&#39;outer&#39;</span><span class="p">)).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>     <span class="nx">element</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>Uncaught UnknownError: unknown error: Element is not clickable at point (170, 90).
+Other element would receive the click: &lt;div class="midde"&gt;&lt;/div&gt;
+</code></pre>
 
 <!--more-->
 
 
-<h3>ls</h3>
+<p>Say our test is trying to test that a video plays when an image is clicked.</p>
 
-<ul>
-<li>  list information about files in the directory</li>
-</ul>
+<p>But our image has a play button overlay right in the center like below.</p>
 
+<p><img src="/images/Keyboard_cat.png" width="500" title="" ></p>
 
-<h3>ls -la</h3>
+<p>Selenium&rsquo;s default behaviour is to click right in the middle of your selected element.</p>
 
-<ul>
-<li>  list information about files in the directory</li>
-<li>  <em>-l</em> means long listing format</li>
-<li>  <em>-a</em> means list all files including ones that start with .</li>
-</ul>
+<p>Because there is a &ldquo;play&rdquo; div over the top of it right in the middle, selenium complains that your element is not clickable.</p>
 
+<h4>How to get around this?</h4>
 
-<h3>cd [directory]</h3>
+<p><a href="https://selenium.googlecode.com/git/docs/api/javascript/class_webdriver_ActionSequence.html">Selenium Docs: ActionSequence</a></p>
 
-<ul>
-<li>  change directory to the specified directory</li>
-</ul>
+<p>Selenium&rsquo;s WebDriver ActionSequence provides a mouseMove function on its prototype</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">ActionSequence</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">moveMouse</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
-<h3>ps</h3>
+<p>We create an action sequence that moves the mouse to the outer div, but with an offset from its top left corner.</p>
 
-<ul>
-<li>  snapshot of the current processes</li>
-</ul>
-
-
-<h3>ps -ef</h3>
-
-<ul>
-<li>  <em>-e</em> select all processes</li>
-<li>  <em>-f</em> full format listing</li>
-</ul>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="k">new</span> <span class="nx">webdriver</span><span class="p">.</span><span class="nx">ActionSequence</span><span class="p">(</span><span class="nx">driver</span><span class="p">).</span><span class="nx">moveMouse</span><span class="p">(</span><span class="nx">outerElement</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="nx">outerElement</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
-<h3>ps -ef | grep [processname]</h3>
+<p>This will now click 10px in from the top of the outer element and 10px in from the left.</p>
 
-<ul>
-<li>  grep for the details of a specific process</li>
-</ul>
-
-
-<h3>alias (usually used in the bash profile to be persisted)</h3>
-
-<ul>
-<li>  <em>ll &ndash;> ls -la</em></li>
-<li> Aliases for shortcuts to frequently visited directories</li>
-<li> Aliases to bash scripts I&rsquo;ve written to automate things like sync&#8217;ing a github pages branch with master and pushing to the cloud</li>
-</ul>
-
-
-<h3>source [filename]</h3>
-
-<ul>
-<li>  source is a bash shell built-in command that executes the content of the file passed as argument, in the current shell. It has a synonym in &lsquo;.&rsquo; (period).</li>
-</ul>
-
-
-<h3>source ~/.bash_profile</h3>
-
-<ul>
-<li>  this has the effect of reloading the bash_profile so you don&rsquo;t have to kill &amp; open the terminal to see changes</li>
-</ul>
-
-
-<h3>&amp;&amp;</h3>
-
-<ul>
-<li>  used for tying consecutive commands together</li>
-<li>  example <em>$ cd Documents &amp;&amp; ls -la</em></li>
-</ul>
-
-
-<h3>top</h3>
-
-<ul>
-<li>  Provides a real time summary of the processes running on your system.</li>
-<li>  Can be used to see what&rsquo;s chewing up memory</li>
-</ul>
-
-
-<h3>Ctrl + R</h3>
-
-<ul>
-<li>  Reverse search through your bash command history</li>
-</ul>
-
-
-<h3>sudo</h3>
-
-<ul>
-<li> run command as the superuser</li>
-</ul>
-
-
-<h3>sudo -u [user]</h3>
-
-<ul>
-<li> run command as a different user</li>
-</ul>
-
-
-<h3>sudo !!</h3>
-
-<ul>
-<li> run the last command as super user</li>
-</ul>
-
-
-<h3>vi [file]</h3>
-
-<ul>
-<li>  edit the file with vi text editor</li>
-</ul>
-
+<p>By doing this we can now avoid clicking the middle div while clicking the outer div programmatically.</p>
 </div>
 
 
@@ -255,7 +181,7 @@ my life easier</p>
   
 
 
-<time datetime="2014-11-20T20:12:59+11:00" pubdate data-updated="true">Nov 20<sup>th</sup>, 2014</time>
+<time datetime="2015-03-24T23:30:03+11:00" pubdate data-updated="true">Mar 24<sup>th</sup>, 2015</time>
       
 
 
@@ -263,7 +189,7 @@ my life easier</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://madole.github.io/blog/2014/11/20/a-growing-list-of-everyday-linux-bash-commands/" data-via="madole" data-counturl="http://madole.github.io/blog/2014/11/20/a-growing-list-of-everyday-linux-bash-commands/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://madole.github.io/blog/2015/03/24/selenium-action-sequence/" data-via="madole" data-counturl="http://madole.github.io/blog/2015/03/24/selenium-action-sequence/" >Tweet</a>
   
   
   
@@ -274,10 +200,8 @@ my life easier</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/11/05/creating-svg-animation-with-walkwayjs/" title="Previous Post: Creating SVG animation with WalkwayJS">&laquo; Creating SVG animation with WalkwayJS</a>
+        <a class="basic-alignment left" href="/blog/2014/11/20/jsfiddle-firebug-lite/" title="Previous Post: JSFiddle - Firebug Lite">&laquo; JSFiddle - Firebug Lite</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/11/20/jsfiddle-firebug-lite/" title="Next Post: JSFiddle - Firebug Lite">JSFiddle - Firebug Lite &raquo;</a>
       
     </p>
   </footer>
@@ -372,8 +296,8 @@ my life easier</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://madole.github.io/blog/2014/11/20/a-growing-list-of-everyday-linux-bash-commands/';
-        var disqus_url = 'http://madole.github.io/blog/2014/11/20/a-growing-list-of-everyday-linux-bash-commands/';
+        var disqus_identifier = 'http://madole.github.io/blog/2015/03/24/selenium-action-sequence/';
+        var disqus_url = 'http://madole.github.io/blog/2015/03/24/selenium-action-sequence/';
         var disqus_script = 'embed.js';
       
     (function () {
