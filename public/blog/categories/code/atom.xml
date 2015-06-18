@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: code | Madole's Ramblings]]></title>
+  <link href="http://madole.github.io/blog/categories/code/atom.xml" rel="self"/>
+  <link href="http://madole.github.io/"/>
+  <updated>2015-06-18T12:39:25+10:00</updated>
+  <id>http://madole.github.io/</id>
+  <author>
+    <name><![CDATA[Andrew McDowell]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mobile browser sharing to WhatsApp native app]]></title>
+    <link href="http://madole.github.io/blog/2015/06/18/mobile-browser-sharing-to-whatsapp-native-app/"/>
+    <updated>2015-06-18T11:59:02+10:00</updated>
+    <id>http://madole.github.io/blog/2015/06/18/mobile-browser-sharing-to-whatsapp-native-app</id>
+    <content type="html"><![CDATA[<h4>BuzzFeed Says:</h4>
+
+<blockquote><p>iPhone users are clicking their new WhatsApp button more than Twitter&rsquo;s. This was enough for us to build a WhatsApp sharing button generator, so you can easily create your own.</p></blockquote>
+
+<p>They have a built a button generator, for you to generate a button for your site and you can just drop a script tag into your site and link with it.</p>
+
+<p><img src="http://i.imgur.com/1twQFTnm.png" alt="Imgur" /></p>
+
+<p><a href="http://whatsapp-sharing.com">WhatsApp-Sharing.com</a></p>
+
+<h3>What if you want more control over your button?</h3>
+
+<!--more-->
+
+
+<p><em>How does your mobile browser hand off to the WhatsApp application?</em></p>
+
+<h4>Opening WhatsApp from your browser</h4>
+
+<p>Type <code>whatsapp://</code> into your mobile browser address bar.</p>
+
+<p>It should open the WhatsApp application on your phone.</p>
+
+<h4>Sending a text from the browser</h4>
+
+<p>In order to send a text here, we want to open directly at the contacts page, to do this type this into the address bar</p>
+
+<p><code>whatsapp://send</code></p>
+
+<p>This should open the app at the contacts page where you can choose a contact to send a message to.</p>
+
+<h4>How do you send text content to application?</h4>
+
+<p>You can add a text query string to the url which will appear in the input area.</p>
+
+<p><code>whatsapp://send?text=test</code></p>
+
+<p>This text needs to be encoded, you can do this with javascript&rsquo;s native encodeURIComponent() function.</p>
+
+<p><code>whatsapp://send?text=hello%20world!</code></p>
+
+<p>All you have to do now is to put it in an a tag, style it and click it on a mobile device.</p>
+
+<p><code>&lt;a href="whatsapp://send?text=hello%20world!"&gt;Send to WhatsApp&lt;/a&gt;</code></p>
+
+<p>To do this dynamically in your website, here&rsquo;s an example using jQuery</p>
+
+<p data-height="268" data-theme-id="0" data-slug-hash="rVzRxE" data-default-tab="result" data-user="madole" class='codepen'>See the Pen <a href='http://codepen.io/madole/pen/rVzRxE/'>Whatsapp Share</a> by Andrew McDowell (<a href='http://codepen.io/madole'>@madole</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
+<p>This approach works on both Android and iOS phones with WhatsApp installed.</p>
+
+<p>Have a play with it and leave some feedback in the comments if you have any.</p>
+]]></content>
+  </entry>
+  
+</feed>

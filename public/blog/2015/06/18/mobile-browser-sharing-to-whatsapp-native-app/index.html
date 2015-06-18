@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: javascript - Madole's Ramblings</title>
+  <title>Mobile browser sharing to WhatsApp native app - Madole's Ramblings</title>
   <meta name="author" content="Andrew McDowell">
 
   
-  <meta name="description" content="Category: javascript">
-  
+  <meta name="description" content="Custom sharing button for WhatsApp native apps from the mobile browser">
+  <meta name="keywords" content="whatsapp, sharing, social, browser, native">
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://madole.github.io/blog/categories/javascript/">
+  <link rel="canonical" href="http://madole.github.io/blog/2015/06/18/mobile-browser-sharing-to-whatsapp-native-app/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -77,106 +77,150 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Javascript</h1>
+    
+      <h1 class="entry-title">Mobile Browser Sharing to WhatsApp Native App</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-06-18T11:59:02+10:00" pubdate data-updated="true">Jun 18<sup>th</sup>, 2015</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><h4>BuzzFeed Says:</h4>
 
-  
-  <h2>2014</h2>
+<blockquote><p>iPhone users are clicking their new WhatsApp button more than Twitter&rsquo;s. This was enough for us to build a WhatsApp sharing button generator, so you can easily create your own.</p></blockquote>
 
-<article>
-  
-<h1><a href="/blog/2014/11/20/jsfiddle-firebug-lite/">JSFiddle - Firebug Lite</a></h1>
-<time datetime="2014-11-20T20:45:26+11:00" pubdate><span class='month'>Nov</span> <span class='day'>20</span> <span class='year'>2014</span></time>
+<p>They have a built a button generator, for you to generate a button for your site and you can just drop a script tag into your site and link with it.</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/javascript/'>javascript</a></span>
-</footer>
+<p><img src="http://i.imgur.com/1twQFTnm.png" alt="Imgur" /></p>
 
+<p><a href="http://whatsapp-sharing.com">WhatsApp-Sharing.com</a></p>
 
-</article>
+<h3>What if you want more control over your button?</h3>
+
+<!--more-->
 
 
+<p><em>How does your mobile browser hand off to the WhatsApp application?</em></p>
 
-<article>
-  
-<h1><a href="/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/">Cool Function.prototype.bind() quirk</a></h1>
-<time datetime="2014-09-30T11:58:10+10:00" pubdate><span class='month'>Sep</span> <span class='day'>30</span> <span class='year'>2014</span></time>
+<h4>Opening WhatsApp from your browser</h4>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/bind/'>bind</a>, <a class='category' href='/blog/categories/functions/'>functions</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/prototypes/'>prototypes</a></span>
-</footer>
+<p>Type <code>whatsapp://</code> into your mobile browser address bar.</p>
 
+<p>It should open the WhatsApp application on your phone.</p>
 
-</article>
+<h4>Sending a text from the browser</h4>
 
+<p>In order to send a text here, we want to open directly at the contacts page, to do this type this into the address bar</p>
 
+<p><code>whatsapp://send</code></p>
 
-<article>
-  
-<h1><a href="/blog/2014/08/18/patterns-singleton/">Patterns: Singleton</a></h1>
-<time datetime="2014-08-18T13:21:18+10:00" pubdate><span class='month'>Aug</span> <span class='day'>18</span> <span class='year'>2014</span></time>
+<p>This should open the app at the contacts page where you can choose a contact to send a message to.</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/patterns/'>patterns</a>, <a class='category' href='/blog/categories/singleton/'>singleton</a></span>
-</footer>
+<h4>How do you send text content to application?</h4>
 
+<p>You can add a text query string to the url which will appear in the input area.</p>
 
-</article>
+<p><code>whatsapp://send?text=test</code></p>
 
+<p>This text needs to be encoded, you can do this with javascript&rsquo;s native encodeURIComponent() function.</p>
 
+<p><code>whatsapp://send?text=hello%20world!</code></p>
 
-<article>
-  
-<h1><a href="/blog/2014/08/08/why-you-should-not-use-var-self-equals-this/">Why you should not use var self = this</a></h1>
-<time datetime="2014-08-08T07:39:07+10:00" pubdate><span class='month'>Aug</span> <span class='day'>08</span> <span class='year'>2014</span></time>
+<p>All you have to do now is to put it in an a tag, style it and click it on a mobile device.</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/browsers/'>browsers</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a></span>
-</footer>
+<p><code>&lt;a href="whatsapp://send?text=hello%20world!"&gt;Send to WhatsApp&lt;/a&gt;</code></p>
+
+<p>To do this dynamically in your website, here&rsquo;s an example using jQuery</p>
+
+<p data-height="268" data-theme-id="0" data-slug-hash="rVzRxE" data-default-tab="result" data-user="madole" class='codepen'>See the Pen <a href='http://codepen.io/madole/pen/rVzRxE/'>Whatsapp Share</a> by Andrew McDowell (<a href='http://codepen.io/madole'>@madole</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
 
-</article>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
+<p>This approach works on both Android and iOS phones with WhatsApp installed.</p>
 
-<article>
-  
-<h1><a href="/blog/2014/07/19/javascript-interview-questions/">Javascript interview questions</a></h1>
-<time datetime="2014-07-19T18:29:09+10:00" pubdate><span class='month'>Jul</span> <span class='day'>19</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/interview-questions/'>interview questions</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/07/16/javascript-toolbox/">Javascript Toolbox</a></h1>
-<time datetime="2014-07-16T19:05:22+10:00" pubdate><span class='month'>Jul</span> <span class='day'>16</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/atom/'>atom</a>, <a class='category' href='/blog/categories/github/'>github</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/mongodb/'>mongodb</a>, <a class='category' href='/blog/categories/sublime-text/'>sublime text</a>, <a class='category' href='/blog/categories/webstorm/'>webstorm</a></span>
-</footer>
-
-
-</article>
-
+<p>Have a play with it and leave some feedback in the comments if you have any.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Andrew McDowell</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-06-18T11:59:02+10:00" pubdate data-updated="true">Jun 18<sup>th</sup>, 2015</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/code/'>code</a>, <a class='category' href='/blog/categories/example/'>example</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://madole.github.io/blog/2015/06/18/mobile-browser-sharing-to-whatsapp-native-app/" data-via="madole" data-counturl="http://madole.github.io/blog/2015/06/18/mobile-browser-sharing-to-whatsapp-native-app/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/03/24/selenium-action-sequence/" title="Previous Post: Selenium ActionSequence">&laquo; Selenium ActionSequence</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -260,7 +304,10 @@
       var disqus_shortname = 'madole';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://madole.github.io/blog/2015/06/18/mobile-browser-sharing-to-whatsapp-native-app/';
+        var disqus_url = 'http://madole.github.io/blog/2015/06/18/mobile-browser-sharing-to-whatsapp-native-app/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
