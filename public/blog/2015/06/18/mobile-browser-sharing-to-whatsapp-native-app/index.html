@@ -1,112 +1,104 @@
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Mobile browser sharing to WhatsApp native app - Madole's Ramblings</title>
-  <meta name="author" content="Andrew McDowell">
+	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
+	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<meta charset="utf-8">
+	<title>Mobile browser sharing to WhatsApp native app  | Madole's words</title>
 
-  
-  <meta name="description" content="Custom sharing button for WhatsApp native apps from the mobile browser">
-  <meta name="keywords" content="whatsapp, sharing, social, browser, native">
+<meta name="author" content="Andrew McDowell"> 
 
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Custom sharing button for WhatsApp native apps from the mobile browser"> <meta name="keywords" content="whatsapp, sharing, social, browser, native">
 
-  
-  <link rel="canonical" href="http://madole.github.io/blog/2015/06/18/mobile-browser-sharing-to-whatsapp-native-app/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="Madole's Ramblings" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-52796439-1']);
-    _gaq.push(['_trackPageview']);
-    _gaq.push(['_setDomainName','github.io']);
+	<link href="/atom.xml" rel="alternate" title="Madole's words" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.fancybox.pack.js"></script>
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
+<script language="Javascript" type="text/javascript">
+$(document).ready(
+  function() {
+    (function($) {
+      $(".fancybox[data-content-id]").each(function() {
+        this.href = $(this).data('content-id');
+      });
+      $(".fancybox").fancybox({
+        beforeLoad: function() {
+          var el, 
+              id = $(this.element).data('title-id');
 
+          if (id) {
+            el = $('#' + id);
 
+            if (el.length) {
+              this.title = el.html();
+            }
+          }
+          if ($(this).data('content')) {
+            this.content = $(this).data('content');
+          }
+        },
+        helpers: {
+          title: {
+            type: 'inside'
+          }
+        }
+      });
+    })(jQuery);
+  }
+);
+</script>
+
+	
 </head>
 
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Madole's Ramblings</a></h1>
-  
-    <h2>Things I've learned about code.</h2>
-  
-</hgroup>
+
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">Madole's words</a></h1>
+<h4>Code Stuff.</h4>
+<nav id="main-nav"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="http://github.com/madole">Github</a></li>
+	<li><a href="/archives">Archive</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="http://github.com/madole">Github</a></li>
+	<li><a href="/archives">Archive</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="https://www.google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:madole.github.io">
+			</form>
+		</div>
+	</div>
+</nav>
+
 
 </header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:madole.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/about">About Me</a></li>
-</ul>
 
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
-    
-      <h1 class="entry-title">Mobile Browser Sharing to WhatsApp Native App</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-06-18T11:59:02+10:00" pubdate data-updated="true">Jun 18<sup>th</sup>, 2015</time>
-        
-         | <a href="#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><h4>BuzzFeed Says:</h4>
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">Mobile Browser Sharing to WhatsApp Native App</h2>
+	<div class="entry-content"><h4>BuzzFeed Says:</h4>
 
 <blockquote><p>iPhone users are clicking their new WhatsApp button more than Twitter&rsquo;s. This was enough for us to build a WhatsApp sharing button generator, so you can easily create your own.</p></blockquote>
 
@@ -165,14 +157,8 @@
 </div>
 
 
-  <footer>
-    <p class="meta">
-      
-  
-
-<span class="byline author vcard">Posted by <span class="fn">Andrew McDowell</span></span>
-
-      
+<div class="meta">
+	<div class="date">
 
 
 
@@ -184,121 +170,58 @@
   
 
 
-<time datetime="2015-06-18T11:59:02+10:00" pubdate data-updated="true">Jun 18<sup>th</sup>, 2015</time>
-      
+<time datetime="2015-06-18T11:59:02+10:00" pubdate data-updated="true">Jun 18<sup>th</sup>, 2015</time></div>
+	
 
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/code/'>code</a>, <a class='category' href='/blog/categories/example/'>example</a>
-  
-</span>
+<div class="tags">
 
+	<a class='category' href='/blog/categories/code/'>code</a>, <a class='category' href='/blog/categories/example/'>example</a>
 
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://madole.github.io/blog/2015/06/18/mobile-browser-sharing-to-whatsapp-native-app/" data-via="madole" data-counturl="http://madole.github.io/blog/2015/06/18/mobile-browser-sharing-to-whatsapp-native-app/" >Tweet</a>
-  
-  
-  
-    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
-  
 </div>
 
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2015/03/24/selenium-action-sequence/" title="Previous Post: Selenium ActionSequence">&laquo; Selenium ActionSequence</a>
-      
-      
-    </p>
-  </footer>
-</article>
 
-  <section>
-    <h1>Comments</h1>
+	
+		<span class="comments"><a href="/blog/2015/06/18/mobile-browser-sharing-to-whatsapp-native-app/#disqus_thread">Comments</a></span>
+	
+</div></article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+<!---	<a class="addthis_counter addthis_pill_style"></a> --->
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+<section id="comment">
+    <h2 class="title">Comments</h2>
     <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-  </section>
-
+</section>
 </div>
+	<footer id="footer" class="inner">Copyright &copy; 2015
 
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2015/06/18/mobile-browser-sharing-to-whatsapp-native-app/">Mobile browser sharing to WhatsApp native app</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/03/24/selenium-action-sequence/">Selenium ActionSequence</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/11/20/jsfiddle-firebug-lite/">JSFiddle - Firebug Lite</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/11/20/a-growing-list-of-everyday-linux-bash-commands/">A growing list of everyday Linux Bash commands</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/11/05/creating-svg-animation-with-walkwayjs/">Creating SVG animation with WalkwayJS</a>
-      </li>
-    
-  </ul>
-</section>
+    Andrew McDowell
 
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
-  </ul>
-  
-  <a href="https://github.com/madole">@madole</a> on GitHub
-  
-  <script type="text/javascript">
-    $.domReady(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'madole',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-
-
-
-  
-</aside>
-
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - Andrew McDowell -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>. Design by <a href="http://octopressthemes.com">Octopress Themes</a>.</span>
-</p>
-
+<br>
+Powered by Octopress.
 </footer>
-  
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
 
 <script type="text/javascript">
       var disqus_shortname = 'madole';
@@ -311,37 +234,25 @@
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
 
 
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+ga('create', 'UA-52796439-1');
+ga('send', 'pageview');
 
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
+</script>
+<!-- End Google Analytics -->
 
 
 

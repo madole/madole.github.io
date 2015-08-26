@@ -1,3 +1,9 @@
 [submodule ".themes/light"]
 	path = .themes/light
 	url = git://github.com/octothemes/classic-light.git
+[submodule ".themes/BlogTheme"]
+	path = .themes/BlogTheme
+	url = https://github.com/rastersize/BlogTheme.git
+[submodule ".themes/cleanpress"]
+	path = .themes/cleanpress
+	url = git://github.com/macjasp/cleanpress.git

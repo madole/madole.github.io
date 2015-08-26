@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: interview questions | Madole's Ramblings]]></title>
+  <title><![CDATA[Category: interview questions | Madole's words]]></title>
   <link href="http://madole.github.io/blog/categories/interview-questions/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2015-06-18T12:39:25+10:00</updated>
+  <updated>2015-08-26T21:55:15+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>

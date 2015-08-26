@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Madole's Ramblings]]></title>
+  <title><![CDATA[Madole's words]]></title>
   <link href="http://madole.github.io/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2015-06-18T12:39:25+10:00</updated>
+  <updated>2015-08-26T21:55:15+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -12,6 +12,174 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Setting up webpack dev middleware in express]]></title>
+    <link href="http://madole.github.io/blog/2015/08/26/setting-up-webpack-dev-middleware-in-your-express-application/"/>
+    <updated>2015-08-26T19:18:02+10:00</updated>
+    <id>http://madole.github.io/blog/2015/08/26/setting-up-webpack-dev-middleware-in-your-express-application</id>
+    <content type="html"><![CDATA[<p> <strong>What is webpack dev server?</strong></p>
+
+<p>Webpack dev server is a live reloading server for webpack.</p>
+
+<p><strong>What is webpack dev middleware?</strong></p>
+
+<p>It&rsquo;s a simple wrapper middleware for webpack. It serves the files emitted from webpack over a connect server.</p>
+
+<p>It has a few advantages over bundling it as files:</p>
+
+<ul>
+<li>No files are written to disk, it handles the files in memory</li>
+<li>If files changed in watch mode, the middleware no longer serves the old bundle, but delays requests until the compiling has finished. You don&rsquo;t have to wait before refreshing the page after a file modification.</li>
+</ul>
+
+
+<p><strong>What is webpack hot middleware?</strong></p>
+
+<p>Webpack hot reloading using only webpack-dev-middleware. This allows you to add hot reloading into an existing server without webpack-dev-server.</p>
+
+<p><strong>Using webpack-dev-server as a middleware</strong></p>
+
+<p>Web pack provides an express middleware that you can plug into your app to serve up your fronted assets via web pack-dev-server rather than express.static or express/serve-static.<br/>
+To do this you’ll need to install webpack-dev-middleware and webpack-hot-middleware</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>npm i webpack-dev-middleware webpack-hot-middleware
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+First off you need to make a webpack.dev.config file.
+In your config, add <code>webpack/hot/dev-server</code>  and  <code>webpack-hot-middleware/client</code> to your entry point as well as your js or coffee script frontend entry point.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nv">entry: </span>   <span class="p">[</span>
+</span><span class='line'>    <span class="s">&#39;webpack/hot/dev-server&#39;</span>
+</span><span class='line'>    <span class="s">&#39;webpack-hot-middleware/client&#39;</span>
+</span><span class='line'>    <span class="s">&quot;</span><span class="si">#{</span><span class="nx">__dirname</span><span class="si">}</span><span class="s">/../client/index.coffee&quot;</span>
+</span><span class='line'><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Make your output path ‘/‘ because remember, you’re building your app into memory now rather than a build folder.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nv">output: </span><span class="p">{</span> 
+</span><span class='line'>    <span class="nv">path: </span><span class="s">&#39;/&#39;</span>
+</span><span class='line'>    <span class="nv">publicPath: </span><span class="s">&#39;http://localhost:3000/scripts/&#39;</span>
+</span><span class='line'>    <span class="nv">filename: </span><span class="s">&#39;bundle.js&#39;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>Add in whatever loaders and plugins you need and target &lsquo;web&rsquo; … you can see my config <a href="https://github.com/madole/webpack-dev-middleware-boilerplate/blob/master/src/config/webpack.dev.config.coffee">here</a></p>
+
+<!--more-->
+
+
+<p>Now we’ve got our dev config, we need to build our express application.<br/>
+We need to require webpack, webpack-dev-middleware and webpack-hot-middleware as well as express.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nv">express = </span><span class="nx">require</span> <span class="s">&#39;express&#39;</span>
+</span><span class='line'><span class="nv">webpack = </span><span class="nx">require</span> <span class="s">&#39;webpack&#39;</span>
+</span><span class='line'><span class="nv">webpackDevMiddleware = </span><span class="nx">require</span> <span class="s">&#39;webpack-dev-middleware&#39;</span>
+</span><span class='line'><span class="nv">webpackHotMiddleware = </span><span class="nx">require</span> <span class="s">&#39;webpack-hot-middleware&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We need to create our express app as usual and a router to receive our requests.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nv">app = </span><span class="nx">express</span><span class="p">()</span>
+</span><span class='line'><span class="nv">router = </span><span class="nx">express</span><span class="p">.</span><span class="nx">Router</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">router</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="p">,</span> <span class="nx">someController</span><span class="p">)</span>
+</span><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">router</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now for the webpack magic, we need to import our webpack config</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nv">config = </span><span class="nx">require</span> <span class="s">&#39;./config/webpack.dev.config&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>Next, we need to create a compiler by feeding our config into webpack.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nv">compiler = </span><span class="nx">webpack</span><span class="p">(</span><span class="nx">config</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>Now we need to hook in the webpack-dev-middleware</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">webpackDevMiddleware</span><span class="p">(</span><span class="nx">compiler</span><span class="p">,</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nv">publicPath: </span><span class="nx">config</span><span class="p">.</span><span class="nx">output</span><span class="p">.</span><span class="nx">publicPath</span><span class="p">,</span>
+</span><span class='line'>    <span class="nv">stats: </span><span class="p">{</span><span class="nv">colors: </span><span class="kc">true</span><span class="p">}</span>
+</span><span class='line'><span class="p">}))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The public path here is where you want your front-end bundle to end up. <br/>
+We also need to plug in the webpack-hot-middleware</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">webpackHotMiddleware</span><span class="p">(</span><span class="nx">compiler</span><span class="p">,</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nv">log: </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span>
+</span><span class='line'><span class="p">}))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>When all this is done, call listen on the app.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span>  <span class="nf">-&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span> <span class="s">&#39;listening on 3000&#39;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now we just need to include the bundle.js in your index.html and we’re off. <br/>
+I use nodemon to monitor my back end files so I can make changes and restart the node process, but remember to exclude your client-side files so webpack-dev-middleware can take care of them instead.</p>
+
+<p>When you load up the app, you should see webpack-hot-middleware trying to connect to the dev server in the console</p>
+
+<p><img src="http://i.imgur.com/MovchxZ.png" alt="Imgur" /></p>
+
+<p><strong>How do you hook this into production code?</strong></p>
+
+<p>Simple, have a conditional statement checking your environment variable, if you’re in a dev environment use the webpack-dev-middleware, if not, use express.static to serve your static assets.</p>
+
+<p>You can checkout my boilerplate express app with webpack-dev-middleware and webpack-hot-middleware plugged in at <a href="https://github.com/madole/webpack-dev-middleware-boilerplate">https://github.com/madole/webpack-dev-middleware-boilerplate</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mobile browser sharing to WhatsApp native app]]></title>

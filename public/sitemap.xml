@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://madole.github.io/blog/2015/08/26/setting-up-webpack-dev-middleware-in-your-express-application/</loc>
+    <lastmod>2015-08-26T19:18:02+10:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://madole.github.io/blog/2015/06/18/mobile-browser-sharing-to-whatsapp-native-app/</loc>
     <lastmod>2015-06-18T11:59:02+10:00</lastmod>
     <priority>0.8</priority>
@@ -76,22 +82,43 @@
   
   
   <url>
-    <loc>http://madole.github.io/blog/archives/</loc>
-    <lastmod>2015-06-18T12:39:25+10:00</lastmod>
+    <loc>http://madole.github.io/404.html</loc>
+    <lastmod>2015-08-26T21:55:15+10:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://madole.github.io/blog/</loc>
+    <lastmod>2015-08-26T21:55:15+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://madole.github.io/</loc>
-    <lastmod>2015-06-18T12:39:25+10:00</lastmod>
+    <lastmod>2015-08-26T21:55:15+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
+    <loc>http://madole.github.io/archives/</loc>
+    <lastmod>2015-08-26T21:55:15+10:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://madole.github.io/blog/archives/</loc>
+    <lastmod>2015-08-26T21:55:15+10:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
     <loc>http://madole.github.io/about/</loc>
-    <lastmod>2015-06-18T12:39:25+10:00</lastmod>
+    <lastmod>2015-08-26T21:55:15+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
