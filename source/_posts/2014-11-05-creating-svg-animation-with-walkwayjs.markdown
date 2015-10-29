@@ -47,33 +47,15 @@ The code needed to draw the SVG is very very simple.
 
 I’ve pasted mine below and I’ve added just an extra little bit of SVG text which will draw at the same time as the image. 
 
-```javascript
-(function () {
-
-  function _drawMadole() {
-    var opts, svg;
-    opts = {
-      selector: '#madole',
-      duration: '6000'
-    };
-    svg = new Walkway(opts);
-    svg.draw();
-  }
-
-  function _drawHead() {
-    var opts, svg;
-    opts = {
-      selector: '#pic',
-      duration: '9000'
-    };
-    svg = new Walkway(opts);
-    svg.draw();
-  }
-
-  _drawHead();
-  _drawMadole();
-
-})();
+```coffeescript
+$ ->
+  drawSvg = (selector, duration) ->
+    svg = new Walkway({selector, duration})
+    svg.draw()
+  
+  drawSvg('#madole', '6000')
+  drawSvg('#pic', '9000')
+  
 ```
 
 What I’m doing here is creating an options object which has a selector and duration you want the drawing to last for. 

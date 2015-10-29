@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: browsers | Madole's words]]></title>
+  <title><![CDATA[Category: browsers | Code Stuff.]]></title>
   <link href="http://madole.github.io/blog/categories/browsers/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2015-08-26T21:55:15+10:00</updated>
+  <updated>2015-08-27T17:34:02+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -136,39 +136,44 @@ return {
 
 <hr />
 
-<h2>GOOD: </h2>
+<h2>GOOD: Revealing module pattern</h2>
 
 <p>```javascript</p>
 
-<p>function MathPrint() {</p>
+<p>function printMath() {</p>
 
 <pre><code>var x = 10;
 var y = 100;
+
+function multiply(a, b) {
+    return a * b;
+}
+
+function printToConsole(text) {
+    console.log(text);
+}
+function printAndMultiplyAsync() {
+    setTimeout(function() {
+        printToConsole(multiply(x,y));
+    }, 2000);
+}
+
 return {
-    multiply: function (a, b) {
-        return a * b;
-    },
-    printToConsole: function (text) {
-        console.log(text);
-    },
-    printAndMultiplyAfterWait: function () {
-        var that = this;
-        setTimeout(function () {
-        that.printToConsole(that.multiply(x, y));
-        }, 2000);
-    }
-};
+    multiply: multiply,
+    printToConsole: printToConsole,
+    printAndMultiplyAsync: printAndMultiplyAsync
+}
 </code></pre>
 
 <p>}</p>
 
-<p>var mathPrint = new MathPrint();</p>
+<p>var printMathInstance = printMath();</p>
 
-<p>console.log(mathPrint.multiply(10, 5)); //50</p>
+<p>console.log(printMathInstance.multiply(5, 5)); //25</p>
 
-<p>mathPrint.printToConsole(2000); //2000</p>
+<p>printMathInstance.printAndMultiplyAsync(); //1000</p>
 
-<p>mathPrint.printAndMultiplyAfterWait(); //1000</p>
+<p>printMathInstance.printToConsole(2000); //2000</p>
 
 <p>```</p>
 

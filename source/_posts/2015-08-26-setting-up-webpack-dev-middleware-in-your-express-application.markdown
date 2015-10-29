@@ -3,9 +3,9 @@ layout: post
 title: "Setting up webpack dev middleware in express"
 date: 2015-08-26 19:18:02 +1000
 comments: true
-categories: 
-keywords: 
-description: 
+categories: workflow
+keywords: webpack, javascript, webpack-dev-server, webpack-dev-middleware, hot reloading
+description: "Setting up webpack dev middleware with hot reloading in express"
 ---
  
  **What is webpack dev server?**

@@ -114,36 +114,42 @@ mathPrint.printAndMultiplyAfterWait(); //1000
 ```
 
 ----------------------------
-GOOD: 
+GOOD: Revealing module pattern
 ----------------------------
 ```javascript
 
-function MathPrint() {
-    var x = 10;
-    var y = 100;
+function printMath() {
+ 	var x = 10;
+ 	var y = 100;
+    
+    function multiply(a, b) {
+    	return a * b;
+    }
+    
+    function printToConsole(text) {
+        console.log(text);
+    }
+    function printAndMultiplyAsync() {
+    	setTimeout(function() {
+        	printToConsole(multiply(x,y));
+        }, 2000);
+    }
+    
     return {
-        multiply: function (a, b) {
-            return a * b;
-        },
-        printToConsole: function (text) {
-            console.log(text);
-        },
-        printAndMultiplyAfterWait: function () {
-            var that = this;
-            setTimeout(function () {
-            that.printToConsole(that.multiply(x, y));
-            }, 2000);
-        }
-    };
+    	multiply: multiply,
+        printToConsole: printToConsole,
+        printAndMultiplyAsync: printAndMultiplyAsync
+    }
 }
 
-var mathPrint = new MathPrint();
 
-console.log(mathPrint.multiply(10, 5)); //50
+var printMathInstance = printMath();
 
-mathPrint.printToConsole(2000); //2000
+console.log(printMathInstance.multiply(5, 5)); //25
 
-mathPrint.printAndMultiplyAfterWait(); //1000
+printMathInstance.printAndMultiplyAsync(); //1000
+
+printMathInstance.printToConsole(2000); //2000
 
 ```
 

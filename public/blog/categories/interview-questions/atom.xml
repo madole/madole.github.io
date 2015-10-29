@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: interview questions | Madole's words]]></title>
+  <title><![CDATA[Category: interview questions | Code Stuff.]]></title>
   <link href="http://madole.github.io/blog/categories/interview-questions/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2015-08-26T21:55:15+10:00</updated>
+  <updated>2015-08-27T17:34:02+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -18,9 +18,7 @@
     <link href="http://madole.github.io/blog/2014/07/19/javascript-interview-questions/"/>
     <updated>2014-07-19T18:29:09+10:00</updated>
     <id>http://madole.github.io/blog/2014/07/19/javascript-interview-questions</id>
-    <content type="html"><![CDATA[<h2>Javascript Interview Questions</h2>
-
-<p>I was asked recently by a friend of mine to come up with a list of interview questions that you can get asked during
+    <content type="html"><![CDATA[<p>I was asked recently by a friend of mine to come up with a list of interview questions that you can get asked during
 a Javascript interview. I looked by to my last interview and came up with a few topics for him to brush up on.
 I thought I&rsquo;d write them down so others might make use of them. If you were asked anything I&rsquo;ve not included, let me
 know in the comments section.</p>

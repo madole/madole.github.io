@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: sublime text | Madole's words]]></title>
+  <title><![CDATA[Category: sublime text | Code Stuff.]]></title>
   <link href="http://madole.github.io/blog/categories/sublime-text/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2015-08-26T21:55:15+10:00</updated>
+  <updated>2015-08-27T17:34:02+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>

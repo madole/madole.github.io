@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: workflow | Code Stuff.]]></title>
+  <link href="http://madole.github.io/blog/categories/workflow/atom.xml" rel="self"/>
+  <link href="http://madole.github.io/"/>
+  <updated>2015-08-27T17:34:02+10:00</updated>
+  <id>http://madole.github.io/</id>
+  <author>
+    <name><![CDATA[Andrew McDowell]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Setting up webpack dev middleware in express]]></title>
+    <link href="http://madole.github.io/blog/2015/08/26/setting-up-webpack-dev-middleware-in-your-express-application/"/>
+    <updated>2015-08-26T19:18:02+10:00</updated>
+    <id>http://madole.github.io/blog/2015/08/26/setting-up-webpack-dev-middleware-in-your-express-application</id>
+    <content type="html"><![CDATA[<p> <strong>What is webpack dev server?</strong></p>
+
+<p>Webpack dev server is a live reloading server for webpack.</p>
+
+<p><strong>What is webpack dev middleware?</strong></p>
+
+<p>It&rsquo;s a simple wrapper middleware for webpack. It serves the files emitted from webpack over a connect server.</p>
+
+<p>It has a few advantages over bundling it as files:</p>
+
+<ul>
+<li>No files are written to disk, it handles the files in memory</li>
+<li>If files changed in watch mode, the middleware no longer serves the old bundle, but delays requests until the compiling has finished. You don&rsquo;t have to wait before refreshing the page after a file modification.</li>
+</ul>
+
+
+<p><strong>What is webpack hot middleware?</strong></p>
+
+<p>Webpack hot reloading using only webpack-dev-middleware. This allows you to add hot reloading into an existing server without webpack-dev-server.</p>
+
+<p><strong>Using webpack-dev-server as a middleware</strong></p>
+
+<p>Web pack provides an express middleware that you can plug into your app to serve up your fronted assets via web pack-dev-server rather than express.static or express/serve-static.<br/>
+To do this you’ll need to install webpack-dev-middleware and webpack-hot-middleware<br/>
+```bash</p>
+
+<pre><code>npm i webpack-dev-middleware webpack-hot-middleware 
+</code></pre>
+
+<p><code>  
+First off you need to make a webpack.dev.config file.
+In your config, add</code>webpack/hot/dev-server<code> and </code>webpack-hot-middleware/client``` to your entry point as well as your js or coffee script frontend entry point.</p>
+
+<p>```coffeescript
+entry:    [</p>
+
+<pre><code>'webpack/hot/dev-server'  
+'webpack-hot-middleware/client'  
+"#{__dirname}/../client/index.coffee"  
+</code></pre>
+
+<p>]
+```</p>
+
+<p>Make your output path ‘/‘ because remember, you’re building your app into memory now rather than a build folder.</p>
+
+<p>```coffeescript
+output: {</p>
+
+<pre><code>path: '/'
+publicPath: 'http://localhost:3000/scripts/'
+filename: 'bundle.js' 
+</code></pre>
+
+<p>}
+```</p>
+
+<p>Add in whatever loaders and plugins you need and target &lsquo;web&rsquo; … you can see my config <a href="https://github.com/madole/webpack-dev-middleware-boilerplate/blob/master/src/config/webpack.dev.config.coffee">here</a></p>
+
+<!--more-->
+
+
+<p>Now we’ve got our dev config, we need to build our express application.<br/>
+We need to require webpack, webpack-dev-middleware and webpack-hot-middleware as well as express.</p>
+
+<p><code>coffeescript
+express = require 'express'  
+webpack = require 'webpack'  
+webpackDevMiddleware = require 'webpack-dev-middleware'  
+webpackHotMiddleware = require 'webpack-hot-middleware'  
+</code></p>
+
+<p>We need to create our express app as usual and a router to receive our requests.</p>
+
+<p>```coffeescript
+app = express()
+router = express.Router()</p>
+
+<p>router.get(&lsquo;/&rsquo;, someController)
+app.use(router)
+```</p>
+
+<p>Now for the webpack magic, we need to import our webpack config</p>
+
+<p><code>coffeescript
+config = require './config/webpack.dev.config'
+</code></p>
+
+<p>Next, we need to create a compiler by feeding our config into webpack.</p>
+
+<p><code>coffeescript
+compiler = webpack(config)
+</code></p>
+
+<p>Now we need to hook in the webpack-dev-middleware</p>
+
+<p>```coffeescript
+app.use(webpackDevMiddleware(compiler, {</p>
+
+<pre><code>publicPath: config.output.publicPath,  
+stats: {colors: true}  
+</code></pre>
+
+<p>}))
+```</p>
+
+<p>The public path here is where you want your front-end bundle to end up. <br/>
+We also need to plug in the webpack-hot-middleware</p>
+
+<p>```coffeescript
+app.use(webpackHotMiddleware(compiler, {</p>
+
+<pre><code>log: console.log 
+</code></pre>
+
+<p>}))
+```</p>
+
+<p>When all this is done, call listen on the app.</p>
+
+<p><code>coffeescript
+app.listen(3000,  -&gt; console.log 'listening on 3000')
+</code>
+Now we just need to include the bundle.js in your index.html and we’re off. <br/>
+I use nodemon to monitor my back end files so I can make changes and restart the node process, but remember to exclude your client-side files so webpack-dev-middleware can take care of them instead.</p>
+
+<p>When you load up the app, you should see webpack-hot-middleware trying to connect to the dev server in the console</p>
+
+<p><img src="http://i.imgur.com/MovchxZ.png" alt="Imgur" /></p>
+
+<p><strong>How do you hook this into production code?</strong></p>
+
+<p>Simple, have a conditional statement checking your environment variable, if you’re in a dev environment use the webpack-dev-middleware, if not, use express.static to serve your static assets.</p>
+
+<p>You can checkout my boilerplate express app with webpack-dev-middleware and webpack-hot-middleware plugged in at <a href="https://github.com/madole/webpack-dev-middleware-boilerplate">https://github.com/madole/webpack-dev-middleware-boilerplate</a></p>
+]]></content>
+  </entry>
+  
+</feed>

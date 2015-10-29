@@ -5,8 +5,6 @@ date: 2014-09-30 13:43:13 +1000
 comments: true
 categories: 
 ---
-
-##Principles of software engineering: Don’t Repeat Yourself
 ###DRY
 
 Aimed at reducing the repetition of code. 

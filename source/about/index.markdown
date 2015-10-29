@@ -20,3 +20,5 @@ You can find me in the following places:
 [Github](http://www.github.com/madole)
 
 [Twitter](http://www.twitter.com/madole)
+
+[WhiskeyNerds](http://whiskeynerds.com)

@@ -8,8 +8,6 @@ keywords: Linux, Bash, Commands
 description: A growing list of everyday Linux Bash commands
 ---
 
-## A growing list of everyday Linux Bash commands
-
 I decided to write down a list of every day commands that I use in the the Bash command line in Linux.
 This is by no means a definitive list and it will grow as I remember or come across commands that make
 my life easier

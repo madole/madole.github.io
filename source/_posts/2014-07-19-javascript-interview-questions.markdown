@@ -6,8 +6,6 @@ comments: true
 categories: ['Javascript', 'Interview questions']
 ---
 
-##Javascript Interview Questions
-
 I was asked recently by a friend of mine to come up with a list of interview questions that you can get asked during
 a Javascript interview. I looked by to my last interview and came up with a few topics for him to brush up on. 
 I thought I'd write them down so others might make use of them. If you were asked anything I've not included, let me

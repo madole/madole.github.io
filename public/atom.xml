@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Madole's words]]></title>
+  <title><![CDATA[Code Stuff.]]></title>
   <link href="http://madole.github.io/atom.xml" rel="self"/>
   <link href="http://madole.github.io/"/>
-  <updated>2015-08-26T21:55:15+10:00</updated>
+  <updated>2015-08-27T17:34:02+10:00</updated>
   <id>http://madole.github.io/</id>
   <author>
     <name><![CDATA[Andrew McDowell]]></name>
@@ -360,9 +360,7 @@ send them a link, they have to open their Dev Tools up too.</p>
     <link href="http://madole.github.io/blog/2014/11/20/a-growing-list-of-everyday-linux-bash-commands/"/>
     <updated>2014-11-20T20:12:59+11:00</updated>
     <id>http://madole.github.io/blog/2014/11/20/a-growing-list-of-everyday-linux-bash-commands</id>
-    <content type="html"><![CDATA[<h2>A growing list of everyday Linux Bash commands</h2>
-
-<p>I decided to write down a list of every day commands that I use in the the Bash command line in Linux.
+    <content type="html"><![CDATA[<p>I decided to write down a list of every day commands that I use in the the Bash command line in Linux.
 This is by no means a definitive list and it will grow as I remember or come across commands that make
 my life easier</p>
 
@@ -546,50 +544,14 @@ my life easier</p>
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nx">$</span> <span class="nf">-&gt;</span>
+</span><span class='line'>  <span class="nv">drawSvg = </span><span class="nf">(selector, duration) -&gt;</span>
+</span><span class='line'>    <span class="nv">svg = </span><span class="k">new</span> <span class="nx">Walkway</span><span class="p">({</span><span class="nx">selector</span><span class="p">,</span> <span class="nx">duration</span><span class="p">})</span>
+</span><span class='line'>    <span class="nx">svg</span><span class="p">.</span><span class="nx">draw</span><span class="p">()</span>
 </span><span class='line'>
-</span><span class='line'>  <span class="kd">function</span> <span class="nx">_drawMadole</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="kd">var</span> <span class="nx">opts</span><span class="p">,</span> <span class="nx">svg</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">opts</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;#madole&#39;</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">duration</span><span class="o">:</span> <span class="s1">&#39;6000&#39;</span>
-</span><span class='line'>    <span class="p">};</span>
-</span><span class='line'>    <span class="nx">svg</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Walkway</span><span class="p">(</span><span class="nx">opts</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">svg</span><span class="p">.</span><span class="nx">draw</span><span class="p">();</span>
-</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nx">drawSvg</span><span class="p">(</span><span class="s">&#39;#madole&#39;</span><span class="p">,</span> <span class="s">&#39;6000&#39;</span><span class="p">)</span>
+</span><span class='line'>  <span class="nx">drawSvg</span><span class="p">(</span><span class="s">&#39;#pic&#39;</span><span class="p">,</span> <span class="s">&#39;9000&#39;</span><span class="p">)</span>
 </span><span class='line'>
-</span><span class='line'>  <span class="kd">function</span> <span class="nx">_drawHead</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="kd">var</span> <span class="nx">opts</span><span class="p">,</span> <span class="nx">svg</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">opts</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;#pic&#39;</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">duration</span><span class="o">:</span> <span class="s1">&#39;9000&#39;</span>
-</span><span class='line'>    <span class="p">};</span>
-</span><span class='line'>    <span class="nx">svg</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Walkway</span><span class="p">(</span><span class="nx">opts</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">svg</span><span class="p">.</span><span class="nx">draw</span><span class="p">();</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="nx">_drawHead</span><span class="p">();</span>
-</span><span class='line'>  <span class="nx">_drawMadole</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">})();</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -612,9 +574,7 @@ my life easier</p>
     <link href="http://madole.github.io/blog/2014/09/30/priciples-dont-repeat-yourself-dry/"/>
     <updated>2014-09-30T13:43:13+10:00</updated>
     <id>http://madole.github.io/blog/2014/09/30/priciples-dont-repeat-yourself-dry</id>
-    <content type="html"><![CDATA[<h2>Principles of software engineering: Don’t Repeat Yourself</h2>
-
-<h3>DRY</h3>
+    <content type="html"><![CDATA[<h3>DRY</h3>
 
 <p>Aimed at reducing the repetition of code.</p>
 
@@ -635,75 +595,6 @@ my life easier</p>
 <p>Violations of the DRY principle are called WET (‘we enjoy typing’).</p>
 
 <p>Nobody likes getting wet, so keep it DRY to write better code in the future.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cool Function.prototype.bind() quirk]]></title>
-    <link href="http://madole.github.io/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk/"/>
-    <updated>2014-09-30T11:58:10+10:00</updated>
-    <id>http://madole.github.io/blog/2014/09/30/cool-function-dot-prototype-dot-bind-quirk</id>
-    <content type="html"><![CDATA[<p>Today I came up against a need to bind a parameter to a callback before passing it to a function. This is fine and a fairly normal thing to do.</p>
-
-<p>However, the function that was receiving the callback was also passing a parameter to the callback.</p>
-
-<p>I&rsquo;d not come up against this scenario before so I asked a colleague what would happen, we came up with a list of 3 possibilities.</p>
-
-<!--more-->
-
-
-<p></p>
-
-<ul>
-<li> The function passing the parameter to the callback would overwrite the bound argument.</li>
-<li> The bound argument would be the first parameter and the passed in argument would be the second.</li>
-<li> The passed in argument would be the first parameter and bound argument would be the second.</li>
-</ul>
-
-
-<p>I headed over to JSFiddle.net to mock up a trivial example that would demonstrate my issue so I could see the outcome. I&rsquo;ve copied it below.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">callbackToPass</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">second</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">first</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">second</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">function</span> <span class="nx">funkyFunc</span><span class="p">(</span><span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">callback</span><span class="p">(</span><span class="s1">&#39;is good for horses&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">funkyFunc</span><span class="p">(</span><span class="nx">callbackToPass</span><span class="p">);</span>
-</span><span class='line'><span class="c1">//is good for horses</span>
-</span><span class='line'><span class="c1">//undefined</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">funkyFunc</span><span class="p">(</span><span class="nx">callbackToPass</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s1">&#39;hay&#39;</span><span class="p">));</span>
-</span><span class='line'><span class="c1">//hay</span>
-</span><span class='line'><span class="c1">//is good for horses</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><a href="http://jsfiddle.net/madole404/zbLbLymt/1/">http://jsfiddle.net/madole404/zbLbLymt/1/</a></p>
-
-<h4>Outcome:</h4>
-
-<p>When you bind an argument to the callback, it binds it as the first parameter.
-Then when you pass an argument to the same callback function when you are calling it, it becomes the secondary parameter.</p>
 ]]></content>
   </entry>
   
@@ -1025,7 +916,7 @@ return a function.</p>
 
 <hr />
 
-<h2>GOOD: </h2>
+<h2>GOOD: Revealing module pattern</h2>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -1053,32 +944,44 @@ return a function.</p>
 <span class='line-number'>24</span>
 <span class='line-number'>25</span>
 <span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">MathPrint</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-</span><span class='line'>    <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">printMath</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">function</span> <span class="nx">multiply</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">function</span> <span class="nx">printToConsole</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="kd">function</span> <span class="nx">printAndMultiplyAsync</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>          <span class="nx">printToConsole</span><span class="p">(</span><span class="nx">multiply</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">));</span>
+</span><span class='line'>        <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
 </span><span class='line'>    <span class="k">return</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">multiply</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>            <span class="k">return</span> <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span><span class="p">;</span>
-</span><span class='line'>        <span class="p">},</span>
-</span><span class='line'>        <span class="nx">printToConsole</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
-</span><span class='line'>        <span class="p">},</span>
-</span><span class='line'>        <span class="nx">printAndMultiplyAfterWait</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>            <span class="kd">var</span> <span class="nx">that</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
-</span><span class='line'>            <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>            <span class="nx">that</span><span class="p">.</span><span class="nx">printToConsole</span><span class="p">(</span><span class="nx">that</span><span class="p">.</span><span class="nx">multiply</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">));</span>
-</span><span class='line'>            <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>    <span class="p">};</span>
+</span><span class='line'>      <span class="nx">multiply</span><span class="o">:</span> <span class="nx">multiply</span><span class="p">,</span>
+</span><span class='line'>        <span class="nx">printToConsole</span><span class="o">:</span> <span class="nx">printToConsole</span><span class="p">,</span>
+</span><span class='line'>        <span class="nx">printAndMultiplyAsync</span><span class="o">:</span> <span class="nx">printAndMultiplyAsync</span>
+</span><span class='line'>    <span class="p">}</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">mathPrint</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MathPrint</span><span class="p">();</span>
 </span><span class='line'>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mathPrint</span><span class="p">.</span><span class="nx">multiply</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">));</span> <span class="c1">//50</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">printMathInstance</span> <span class="o">=</span> <span class="nx">printMath</span><span class="p">();</span>
 </span><span class='line'>
-</span><span class='line'><span class="nx">mathPrint</span><span class="p">.</span><span class="nx">printToConsole</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span> <span class="c1">//2000</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">printMathInstance</span><span class="p">.</span><span class="nx">multiply</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">));</span> <span class="c1">//25</span>
 </span><span class='line'>
-</span><span class='line'><span class="nx">mathPrint</span><span class="p">.</span><span class="nx">printAndMultiplyAfterWait</span><span class="p">();</span> <span class="c1">//1000</span>
+</span><span class='line'><span class="nx">printMathInstance</span><span class="p">.</span><span class="nx">printAndMultiplyAsync</span><span class="p">();</span> <span class="c1">//1000</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">printMathInstance</span><span class="p">.</span><span class="nx">printToConsole</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span> <span class="c1">//2000</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -1142,9 +1045,7 @@ return a function.</p>
     <link href="http://madole.github.io/blog/2014/07/19/javascript-interview-questions/"/>
     <updated>2014-07-19T18:29:09+10:00</updated>
     <id>http://madole.github.io/blog/2014/07/19/javascript-interview-questions</id>
-    <content type="html"><![CDATA[<h2>Javascript Interview Questions</h2>
-
-<p>I was asked recently by a friend of mine to come up with a list of interview questions that you can get asked during
+    <content type="html"><![CDATA[<p>I was asked recently by a friend of mine to come up with a list of interview questions that you can get asked during
 a Javascript interview. I looked by to my last interview and came up with a few topics for him to brush up on.
 I thought I&rsquo;d write them down so others might make use of them. If you were asked anything I&rsquo;ve not included, let me
 know in the comments section.</p>

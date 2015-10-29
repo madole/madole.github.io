@@ -5,7 +5,7 @@
 	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
 	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<meta charset="utf-8">
-	<title>Why you should not use var self = this  | Madole's words</title>
+	<title>Why you should not use var self = this  | Code Stuff.</title>
 
 <meta name="author" content="Andrew McDowell"> 
 
@@ -13,7 +13,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link href="/atom.xml" rel="alternate" title="Madole's words" type="application/atom+xml">
+	<link href="/atom.xml" rel="alternate" title="Code Stuff." type="application/atom+xml">
 	<link rel="canonical" href="">
 	<link href="/favicon.png" rel="shortcut icon">
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -62,8 +62,8 @@ $(document).ready(
 
 
 <body>
-	<header id="header" class="inner"><h1><a href="/">Madole's words</a></h1>
-<h4>Code Stuff.</h4>
+	<header id="header" class="inner"><h1><a href="/">Code Stuff.</a></h1>
+<h4>Madole's words</h4>
 <nav id="main-nav"><ul>
 	<li><a href="/">Blog</a></li>
 	<li><a href="/about">About</a></li>
@@ -265,7 +265,7 @@ return a function.</p>
 
 <hr />
 
-<h2>GOOD: </h2>
+<h2>GOOD: Revealing module pattern</h2>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -293,32 +293,44 @@ return a function.</p>
 <span class='line-number'>24</span>
 <span class='line-number'>25</span>
 <span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">MathPrint</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-</span><span class='line'>    <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">printMath</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">function</span> <span class="nx">multiply</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">function</span> <span class="nx">printToConsole</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="kd">function</span> <span class="nx">printAndMultiplyAsync</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>          <span class="nx">printToConsole</span><span class="p">(</span><span class="nx">multiply</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">));</span>
+</span><span class='line'>        <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
 </span><span class='line'>    <span class="k">return</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">multiply</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>            <span class="k">return</span> <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span><span class="p">;</span>
-</span><span class='line'>        <span class="p">},</span>
-</span><span class='line'>        <span class="nx">printToConsole</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
-</span><span class='line'>        <span class="p">},</span>
-</span><span class='line'>        <span class="nx">printAndMultiplyAfterWait</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>            <span class="kd">var</span> <span class="nx">that</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
-</span><span class='line'>            <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>            <span class="nx">that</span><span class="p">.</span><span class="nx">printToConsole</span><span class="p">(</span><span class="nx">that</span><span class="p">.</span><span class="nx">multiply</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">));</span>
-</span><span class='line'>            <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>    <span class="p">};</span>
+</span><span class='line'>      <span class="nx">multiply</span><span class="o">:</span> <span class="nx">multiply</span><span class="p">,</span>
+</span><span class='line'>        <span class="nx">printToConsole</span><span class="o">:</span> <span class="nx">printToConsole</span><span class="p">,</span>
+</span><span class='line'>        <span class="nx">printAndMultiplyAsync</span><span class="o">:</span> <span class="nx">printAndMultiplyAsync</span>
+</span><span class='line'>    <span class="p">}</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">mathPrint</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MathPrint</span><span class="p">();</span>
 </span><span class='line'>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mathPrint</span><span class="p">.</span><span class="nx">multiply</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">));</span> <span class="c1">//50</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">printMathInstance</span> <span class="o">=</span> <span class="nx">printMath</span><span class="p">();</span>
 </span><span class='line'>
-</span><span class='line'><span class="nx">mathPrint</span><span class="p">.</span><span class="nx">printToConsole</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span> <span class="c1">//2000</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">printMathInstance</span><span class="p">.</span><span class="nx">multiply</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">));</span> <span class="c1">//25</span>
 </span><span class='line'>
-</span><span class='line'><span class="nx">mathPrint</span><span class="p">.</span><span class="nx">printAndMultiplyAfterWait</span><span class="p">();</span> <span class="c1">//1000</span>
+</span><span class='line'><span class="nx">printMathInstance</span><span class="p">.</span><span class="nx">printAndMultiplyAsync</span><span class="p">();</span> <span class="c1">//1000</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">printMathInstance</span><span class="p">.</span><span class="nx">printToConsole</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span> <span class="c1">//2000</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
